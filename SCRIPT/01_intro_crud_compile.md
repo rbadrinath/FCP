@@ -41,16 +41,16 @@
     * lets also use the opportunity to play with the program statements.
 
 * EXERICISE: Can you download the same program and do what you saw in class?
- - eratosthenes.c
- - Can you do it for another program ?
+    * eratosthenes.c
+    * Can you do it for another program ?
 * EXERCISE: download, compile and execute each of these:
- - fact.c
- - 3np1.c
- - stats.c
+    * fact.c
+    * 3np1.c
+    * stats.c
 
 * EXERCISE: download, compile and execute:
- - hello_world.c and hello_world.h    : A program can be split over files.
- - simple_timing.c and timeutil.c and timeutil.h
+    * hello\_world.c and hello\_world.h    : A program can be split over files.
+    * simple\_timing.c and timeutil.c and timeutil.h
 
 * END CLASS EXERCISE: 
   Can you download the following C program and compile it and
@@ -69,8 +69,8 @@ later on... I mean the next thing.)
     * Try objdump --disassemble on some program a.out to see what 
 		the final executable looks like.
 	
-* HISTORY:
-* Now to some historical perspective of computing
+* HISTORY:  
+  Now to some historical perspective of computing
   What lead to the invention of the computer?
   The stored program model of computation
   What problems were solved by early computers?
@@ -80,12 +80,12 @@ later on... I mean the next thing.)
   The growth of programming languages as the interface to computation.
   Imperative programming languages and the rest.
   Other branches of computer science
-	Formal Languages and Automata
-	Computer Arch and operating systems
-	Data structures and Algorithms
-	Discrete mathematics - combinatorics and graph theory
+	* Formal Languages and Automata
+	* Computer Arch and operating systems
+	* Data structures and Algorithms
+	* Discrete mathematics - combinatorics and graph theory
   The notion of algorithms : What it means to computer programming
-	- all of programming is a certian way to implement algorithms
+	* all of programming is a certian way to implement algorithms
 
 * END OF CLASS CHECK:
     * How is a computer different from a calculator
