@@ -3,8 +3,9 @@
 
 This directory contains programs used to illustrate simple 
 programming concepts in C.
-The material here is meant to be used in conjunction with lectures in the class,
-not as stand alone teaching material.
+The material here is meant to be used in conjunction with lectures in the class, not as stand alone teaching material.
+
+In addition to the program files listed here there is also a SCRIPT/ directory. That contains a detailed description of the files and the order in which they can possibly be used in lectures.
 
 Below we list files by topic:
 
