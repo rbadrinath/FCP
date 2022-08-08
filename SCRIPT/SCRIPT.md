@@ -394,7 +394,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
          read and and write into an array
          find an element in the array
 
-## ARRAYS 
+## BASIC USAGE
+## USAGE IN LOOPS
 * arrays and for and while loops -  BE CAREFUL ABOUT THE END OF THE ARRAY
 * arrays and reading from files
 * writing arrays to files
@@ -417,7 +418,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
     * make a new list list3[] with items from both list1[] and list2[]
     * what if you wanted to shuffle the elements of list1[] and list2 into list3
     * Assume list1 and list2 are sorted, can you merge them together into list3?
-# END CLASS CHECK:
+## END CLASS CHECK:
 * Student should be able to write a small program to
     * read and and write into an array
     * find an element in the array
@@ -427,9 +428,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 09_strings.md ---------)
-* OBJECTIVES
+# OBJECTIVES
   * Notion of strings and arrays
-
   * STRINGS of characters
   * Characters strings are just arrays
   * Notion of end of string marker
@@ -437,7 +437,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
   * Can you now concatenate two strings into a third string?
   * Can you shuffle two strings?
 
-* END OF CLASS CHECK:
+## END OF CLASS CHECK:
   * Student should be able to walk through a string as an array and print
     its characters one by one and know when it ends.
   * Student should be able to capitalize a string of characters.
@@ -446,23 +446,23 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 10_strings_libraries.md ---------)
-OBJECTIVE:
+# STANDARD STRING LIBRARY FUNCTION in C
+## OBJECTIVE:
   * String library usages
   * Notion of library
 
-  * Making life easy
-      the C library has many funcitons that make life easy
-	Functions from string.h
-	Functions from math.h
-	Functions from ctype.h
-	... many others
+## WHY LIBRARY FUNCTIONS  
+*  The C library has many funcitons that make life easy
+  *	Functions from string.h
+  *	Functions from math.h
+  *	Functions from ctype.h ... many others
   * Use the string.h functions to do some of the stuff we did earlier
   * Can you convert a string to an int and vice versa using functions
     in ctype.h
   * Use the math.h functions to do interesting stuff like powers and trignometry
   * Remember to always check return value for errors. Read the man page!
 
-* END OF CLASS CHECK:
+## END OF CLASS CHECK:
   * Student should be able to use string.h functions and strings in order 
      - to concatenate two strings.
      - to convert string to ascii and vice versa
@@ -473,18 +473,18 @@ OBJECTIVE:
 
 
 [comment]: # (--------- 11_multid_arrays.md ---------)
-* OBJECTIVE:
+# OBJECTIVE:
   * more on pointers and arrays
   * multi dimentional arrays
-* How to declare each of these
+## DECLARATIOS AND USAGE
   * Arrays of pointers
   *   argv and argc
-  * Multiple arrays in a program EXERCISE related_arrays.c
+  * Multiple arrays in a program EXERCISE related\_arrays.c
   * Multidimentional arrays
   * More than two dimensions
-* EXECISES How to use them
+## EXECISES How to use them
   * Matrix multiplication
-  EXERCISE matmul.c
+  * matmul.c
   
 
 
@@ -493,24 +493,27 @@ OBJECTIVE:
 
 
 [comment]: # (--------- 12_functions.md ---------)
-  * FUNCTIONS
-  * Functions no parametrs
+# FUNCTIONS
+## CONCEPTS
+  * Declaration syntax
+  * Functions with no parametrs
   * The notion of call and return
   * The concept of returning values
-  * EXAMPLE funcs.c
+    * EXAMPLE funcs.c
   * Function arguments
-  * EXAMPLE funcs_params.c
-  * arguments are values
-  *   swap revisited
-  *   swap revisited with pointers
-  *   Revisit scope 
-  *   prototype declarations
-  *   EXAMPLE funcs_scope.c
+    * EXAMPLE funcs\_params.c
+  * Arguments are values
+    *   swap revisited
+    *   swap revisited with pointers
+    *   Revisit scope 
+## Declaration vs Definition
+  * Prototype declarations
+    *   EXAMPLE funcs\_scope.c
   * EXAMPLES WITH FUNCTIONS AND POINTERS
 	* finding the minum in an array
 	* magically array increment of all elements works very well
 	* we can push any of our earlier examples into functions
-  * Recursion
+## RECURSION
 	* Base case
 	* recusion step
 	* relationship to recursive definition
@@ -521,19 +524,23 @@ OBJECTIVE:
 
 
 [comment]: # (--------- 13_complexity_sorting_searching.md ---------)
-  * ALGORITHM COMPLEXITY NOTIONS
+# ALGORITHM COMPLEXITY NOTIONS
   * Complexity of matrix multiplication as an example
+## SIMPLE SEARCH
   * Searching and complexity of searching
   * Simple linear search. try to create search.c
+## BINARY SEARCH
   * Searching - can we do better than linear search
     * Searching in a sorted array binary-search.c
     * EXERCISE Look at search.c
+## SORTING
   * rearranging elemtnts    - Sorting
   * Elementary sorting algos
 	* insertion sort
 	* selection sort
 	* bubble sort
-        * EXERCISE look at basic_sorts.c
+	* EXERCISE look at basic\_sorts.c
+## COMPUTING THE COMPLEXITY
   * Computing their complexity
   * Big O notion - introductory level
 
@@ -541,7 +548,7 @@ OBJECTIVE:
 
 
 [comment]: # (--------- 14_more_complexity.md ---------)
-  * ALGORITHM COMPLEXITY CALCULATION
+# ALGORITHM COMPLEXITY CALCULATION
   * Revisit the three sorting algorithms
   * Searching, linear and binary search
   * Analysis including that of recursion
@@ -551,19 +558,20 @@ OBJECTIVE:
 
 
 [comment]: # (--------- 15_structure.md ---------)
-  * Simple notions of structure type - 
-	declaration, access, via pointers?
-  * Structure examples.
-  * Typedef and its use in structures. Example is simple-timing.c
-  * Arrays of structures.
-  * Notions of declarations and typedef
-  * Array of structure and multiple arrays comparision
-  * EXAMPLES USING structures, arrays, functions
+# STRUCTURE AND UNIONS in C
+* Simple notions of structure type - declaration, access, via pointers?
+* Structure examples.
+* Typedef and its use in structures. Example is simple-timing.c
+* Arrays of structures.
+* Notions of declarations and typedef
+* Array of structure and multiple arrays comparision
+* Examples using structures, arrays, functions
 
 
 
 
 [comment]: # (--------- 16_linked_list.md ---------)
+# LINKED LIST
   * Linked list as a useful higher level data structure
   * (So called recursive structure notion)
   * advantages over an array
@@ -576,31 +584,28 @@ OBJECTIVE:
 
 
 [comment]: # (--------- 17_mergesort.md ---------)
-  * More complex sorting : Merge sort
-    * Algorithm - This is the more important part
-	- Plan of the algorithm
-	- Simple split
-	- The recursion
-	- How to merge two arrays
-		- what is the base case (no further recursive calls needed)
-	- Lets fill in the code
+# ADVANCED SORT - MERGESORT
+  * Algorithm - This is the more important part
+	* Plan of the algorithm
+	* Simple split
+	* The recursion
+	* How to merge two arrays - what is the base case (no further recursive calls needed)
+	* Lets fill in the code
   * see msort.c
 
 
 
 
 [comment]: # (--------- 18_quicksort.md ---------)
-  * More complex sorting - quick sort
+# ADVANCED SORTING - QUICKSORT
     * Algorithm - This is the more important part
-	- Plan of the algorithm
-	- How to get a good pivot (middle most?, worst ?)
-	- How to partition around the pivot 
-		with extra space vs in-place
-		EXERCISE start with fillin_qsort.c (with extra space)  answer is in qsort_extraspace.c
-	- Hope and probability
-	- The recursion
-		- what is the base case (no further recursive calls needed)
-	- Lets fill in the code
+	* Plan of the algorithm
+	* How to get a good pivot (middle most?, worst ?)
+	* How to partition around the pivot  (a) with extra space vs (b) in-place
+	* EXERCISE start with fillin\_qsort.c (with extra space)  answer is in qsort\_extraspace.c
+	* Hope and probability
+	* The recursion - what is the base case (no further recursive calls needed)
+	* Lets fill in the code
 
     * See qsort.c
 

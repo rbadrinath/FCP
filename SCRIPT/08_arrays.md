@@ -9,7 +9,8 @@
          read and and write into an array
          find an element in the array
 
-## ARRAYS 
+## BASIC USAGE
+## USAGE IN LOOPS
 * arrays and for and while loops -  BE CAREFUL ABOUT THE END OF THE ARRAY
 * arrays and reading from files
 * writing arrays to files
@@ -32,7 +33,7 @@
     * make a new list list3[] with items from both list1[] and list2[]
     * what if you wanted to shuffle the elements of list1[] and list2 into list3
     * Assume list1 and list2 are sorted, can you merge them together into list3?
-# END CLASS CHECK:
+## END CLASS CHECK:
 * Student should be able to write a small program to
     * read and and write into an array
     * find an element in the array
