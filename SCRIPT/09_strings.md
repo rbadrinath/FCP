@@ -1,4 +1,4 @@
-# OBJECTIVES
+# STRINGS and ARRAYS
   * Notion of strings and arrays
   * STRINGS of characters
   * Characters strings are just arrays

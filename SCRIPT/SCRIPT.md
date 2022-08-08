@@ -428,7 +428,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 09_strings.md ---------)
-# OBJECTIVES
+# STRINGS and ARRAYS
   * Notion of strings and arrays
   * STRINGS of characters
   * Characters strings are just arrays
