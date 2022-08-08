@@ -473,7 +473,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 11_multid_arrays.md ---------)
-# OBJECTIVE:
+# MULTI-DIMENSIONAL ARRAYS
+## OBJECTIVES
   * more on pointers and arrays
   * multi dimentional arrays
 ## DECLARATIOS AND USAGE

@@ -1,4 +1,5 @@
-# OBJECTIVE:
+# MULTI-DIMENSIONAL ARRAYS
+## OBJECTIVES
   * more on pointers and arrays
   * multi dimentional arrays
 ## DECLARATIOS AND USAGE
