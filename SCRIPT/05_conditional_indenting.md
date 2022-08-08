@@ -7,6 +7,7 @@
   * The one that requires checking a condition
   * The one that requires repeatedly doing something
   * The one that requires us to store a large number of values of the same kind
+
 ##  EXAMPLES
   * read 2 numbers and print the maximum and the minumum
   * read a number and find its smallest factor > 1 
@@ -16,19 +17,21 @@
   * read a sequence of numbers and print them in reverse order
   * Find the mental constructs needed for each of these.
 * Concept of condition checking
+
 ##  IF () expression
-	* Which problems can you solve
-	* what about quadratic solving
-	* Can you find max of  2 items
-	*    what about 3 items ?
-	*    what about 4 items ?
-	*	Does the program grow really big?
-* EXERCISE fillin\_if.c  // answer is in find\_max.c
+  * Which problems can you solve
+  * what about quadratic solving
+  * Can you find max of  2 items
+  *    what about 3 items ?
+  *    what about 4 items ?
+  *	Does the program grow really big?
+  * EXERCISE fillin\_if.c  // answer is in find\_max.c ; 
    what if you wanted to do different things on different values of a variable.
-   SWITCH() statements
-	* read two integers x and y
-	* read a third character
-	* do the correspinding operation, see do\_op.c
+
+## SWITCH() statement
+  * read two integers x and y
+  * read a third character
+  * do the correspinding operation, see do\_op.c
 
 * Why we should write well indented code. See examples.
 
