@@ -1,4 +1,4 @@
-
+# CONFIDENCE BUILDING EXERCISES AND A LITTLE MORE I/O
 * OBJECTIVE: 
     * Student is more confident with number representations
     * Student can understand ASCII order
@@ -9,7 +9,7 @@
     * Understand that a function is simply another control flow change
 * Write a simple program with input and outputs
 * Revisit the notion of expressions and values
-* Can you check print_next_char.c
+* Can you check print\_next\_char.c
 
 * recall the notion of expression values
 * an interesting expression value is address
@@ -24,8 +24,8 @@
 * fopen, fscanf
 * See fileio.c and io.c
 * remember to check the return value for error
-* EXERCISE fillin_file.c
-* EXERCISE fillin_simple.c
+* EXERCISE fillin\_file.c
+* EXERCISE fillin\_simple.c
 * EXERCISE The notion of function calls as simply changing flow of control: funcs.c 
      
 

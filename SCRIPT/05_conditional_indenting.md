@@ -1,4 +1,4 @@
-CLASS 5:
+# CONDITIONAL STATEMENTS
 * OBJECTIVE
     * Why do we need conditionals
     * if and switch
@@ -15,20 +15,20 @@ CLASS 5:
 	* read a sequence of numbers and find the standard deviation
 	* read a sequence of numbers and print them in reverse order
 * Find the mental constructs needed for each of these.
-* CONDITION checking
-  IF () expression
+* COncept of condition checking
+##  IF () expression
 	* Which problems can you solve
 	* what about quadratic solving
 	* Can you find max of  2 items
 	*    what about 3 items ?
 	*    what about 4 items ?
 	*	Does the program grow really big?
-   EXERCISE fillin_if.c  // answer is in find_max.c
+* EXERCISE fillin\_if.c  // answer is in find\_max.c
    what if you wanted to do different things on different values of a variable.
    SWITCH() statements
 	* read two integers x and y
 	* read a third character
-	* do the correspinding operation, see do_op.c
+	* do the correspinding operation, see do\_op.c
 
 * Why we should write well indented code. See examples.
 

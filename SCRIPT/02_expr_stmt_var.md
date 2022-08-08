@@ -1,6 +1,7 @@
 
 
 
+# EXPRESSIONS, STATEMENTS and BLOCKS in C
 * OBJECTIVE: 
     * Notion of expressions, statements, blocks
       ( Lets try to look at programs and what its elements are. )

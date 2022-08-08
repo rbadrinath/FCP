@@ -1,3 +1,4 @@
+# BINARY REPRESENTATATION
 * OBJECTIVE: Binary representations and arithmentic
 * Important to know
 * The notion of binary representations

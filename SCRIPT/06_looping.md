@@ -1,24 +1,25 @@
+# EXPRESSING REPEATED EXECUTION
+## FOR
 * LOOPING through a sequence of values
-   FOR
-   findmax_list_f.c
+   * FOR
+   * findmax\_list\_f.c
+## WHILE and its variations
 * LOOPING through a condition
-	WHILE
-         findmax_list_w.c
-	DO WHILE
-         findmax_list_d.c
+	* WHILE see findmax\_list\_w.c
+	* DO WHILE see findmax\_list\_d.c
 * What problems can you solve
-  PRACTICE fillin_while.c    fillin_findmax_loop.c
+  * PRACTICE fillin\_while.c    fillin\_findmax\_loop.c
   * max of 10 items?
   * sum of 10 items ?
   * sum of an unfixed number of items ?
   * the 3np1 problem ?
   * find if a given number is prime ?
 
-* understanding the FOR better
+* Understanding the FOR better
 
 * END CLASS CHECK:
     * Student should be able to find the avarage of an arbitrary 
       number of integers input by the user.
-    * EXERCISE list_avg_f.c list_avg_w.c list_avg_d.c
+    * EXERCISE list\_avg\_f.c list\_avg\_w.c list\_avg\_d.c
 
 

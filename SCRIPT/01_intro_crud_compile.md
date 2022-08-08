@@ -1,5 +1,6 @@
 
-
+# COMPUTER COMMAND FAMILIARITY
+## SIMPLE LINUX COMMANDS
 * OBJECTIVE: Student to be able to do the following:
     * Basic linux commands echo, exit,
 			   ls, pwd, mkdir, cd, 
@@ -13,7 +14,9 @@
 * NOTES:
     * First class to be boring to those with programming experience already
     * Are the students able to 
-* OBJECTIVE-1: CRUD files 
+
+## CREATE AND EDIT FILES
+* OBJECTIVE: CRUD files 
     * Create: copy, rename files
     * Read:   cat files
     * Update: edit files, 
@@ -28,7 +31,8 @@
         * Delete the file using rm				rm f3
     * Repeat this exercise - The teacher will repeatedly ask people to do things
 
-* OBJECTIVE-2: COMPILE and EXECUTE programs
+## COMPILE AND EXECUTE PROGRAMS
+* OBJECTIVE: COMPILE and EXECUTE programs
     * Lets start by taking a 'largish' example. Sieve of eratosthenes.
     *  Notion of writing a program
     * Notion of compiling a program
@@ -37,7 +41,7 @@
     *	Make small changes just to the output ie edit. 
         Again compile and execute.
 
-* OBJECTIVE-3: Be comfortable making small changes to a program
+* OBJECTIVE: Be comfortable making small changes to a program
     * lets also use the opportunity to play with the program statements.
 
 * EXERICISE: Can you download the same program and do what you saw in class?
@@ -69,7 +73,7 @@ later on... I mean the next thing.)
     * Try objdump --disassemble on some program a.out to see what 
 		the final executable looks like.
 	
-* HISTORY:  
+# HISTORY:  
   Now to some historical perspective of computing
   What lead to the invention of the computer?
   The stored program model of computation
