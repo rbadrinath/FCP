@@ -289,12 +289,12 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 ### Notion of operator precedence.
 
 ## END OF CLASS CHECK:
-    * Student should be able to write a program corresponding to a simple word 
+* Student should be able to write a program corresponding to a simple word 
       problem. Eg. Find the number that is 1/5th of 17 more than twice the number.
-    * .. how does one write the output of the hellow world program to a file?
-    * Can you read an integer from a file and print twice its value to another file?
-    * what does bitwise left shift to a number do?
-    * Can you check if  a&b is giving you the right value through some examples?
+* How does one write the output of the hello world program to a file?
+* Can you read an integer from a file and print twice its value to another file?
+* what does bitwise left shift to a number do?
+* Can you check if  a&b is giving you the right value through some examples?
 
 
 
@@ -302,22 +302,22 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 [comment]: # (--------- 05_conditional_indenting.md ---------)
 # CONDITIONAL STATEMENTS
 * OBJECTIVE
-    * Why do we need conditionals
-    * if and switch
+  * Why do we need conditionals
+  * if and switch
 
 * Attempt to write more useful programs:
   * The one that requires checking a condition
   * The one that requires repeatedly doing something
   * The one that requires us to store a large number of values of the same kind
-  EXAMPLES
-	* read 2 numbers and print the maximum and the minumum
-	* read a number and find its smallest factor > 1 
-        * read a sequence of numbers and find the maximum
-	* read a sequence of numbers and find the average
-	* read a sequence of numbers and find the standard deviation
-	* read a sequence of numbers and print them in reverse order
-* Find the mental constructs needed for each of these.
-* COncept of condition checking
+##  EXAMPLES
+  * read 2 numbers and print the maximum and the minumum
+  * read a number and find its smallest factor > 1 
+  * read a sequence of numbers and find the maximum
+  * read a sequence of numbers and find the average
+  * read a sequence of numbers and find the standard deviation
+  * read a sequence of numbers and print them in reverse order
+  * Find the mental constructs needed for each of these.
+* Concept of condition checking
 ##  IF () expression
 	* Which problems can you solve
 	* what about quadratic solving

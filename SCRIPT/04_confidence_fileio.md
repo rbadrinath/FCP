@@ -50,9 +50,9 @@
 ### Notion of operator precedence.
 
 ## END OF CLASS CHECK:
-    * Student should be able to write a program corresponding to a simple word 
+* Student should be able to write a program corresponding to a simple word 
       problem. Eg. Find the number that is 1/5th of 17 more than twice the number.
-    * .. how does one write the output of the hellow world program to a file?
-    * Can you read an integer from a file and print twice its value to another file?
-    * what does bitwise left shift to a number do?
-    * Can you check if  a&b is giving you the right value through some examples?
+* How does one write the output of the hello world program to a file?
+* Can you read an integer from a file and print twice its value to another file?
+* what does bitwise left shift to a number do?
+* Can you check if  a&b is giving you the right value through some examples?

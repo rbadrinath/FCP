@@ -1,21 +1,21 @@
 # CONDITIONAL STATEMENTS
 * OBJECTIVE
-    * Why do we need conditionals
-    * if and switch
+  * Why do we need conditionals
+  * if and switch
 
 * Attempt to write more useful programs:
   * The one that requires checking a condition
   * The one that requires repeatedly doing something
   * The one that requires us to store a large number of values of the same kind
-  EXAMPLES
-	* read 2 numbers and print the maximum and the minumum
-	* read a number and find its smallest factor > 1 
-        * read a sequence of numbers and find the maximum
-	* read a sequence of numbers and find the average
-	* read a sequence of numbers and find the standard deviation
-	* read a sequence of numbers and print them in reverse order
-* Find the mental constructs needed for each of these.
-* COncept of condition checking
+##  EXAMPLES
+  * read 2 numbers and print the maximum and the minumum
+  * read a number and find its smallest factor > 1 
+  * read a sequence of numbers and find the maximum
+  * read a sequence of numbers and find the average
+  * read a sequence of numbers and find the standard deviation
+  * read a sequence of numbers and print them in reverse order
+  * Find the mental constructs needed for each of these.
+* Concept of condition checking
 ##  IF () expression
 	* Which problems can you solve
 	* what about quadratic solving
