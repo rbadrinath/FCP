@@ -425,11 +425,11 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 ## What problems can you solve
   * reverse a list of numbers and print in reversed order
   * compute the standard deviation of a given se of numbers
-  * Using multiple arrays
-	student_id[]
-        marks_sub1[]
-        marks_sub2[]
-        marks_sub3[]
+  * Using multiple arrays  
+    * student\_id[]  
+    * marks\_sub1[]  
+    * marks\_sub2[]  
+    * marks\_sub3[]  
   * Find the student(s) with maximum marks in sub1.
     * Find the student(s) with maximum marks in all three subs taken together.
   * Using multiple arrays
