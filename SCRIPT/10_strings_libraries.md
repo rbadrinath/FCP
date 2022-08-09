@@ -4,7 +4,7 @@
   * Notion of library
 
 ## WHY LIBRARY FUNCTIONS  
-*  The C library has many funcitons that make life easy
+  *  The C library has many funcitons that make life easy
   *	Functions from string.h
   *	Functions from math.h
   *	Functions from ctype.h ... many others
@@ -16,7 +16,7 @@
 
 ## END OF CLASS CHECK:
   * Student should be able to use string.h functions and strings in order 
-     - to concatenate two strings.
-     - to convert string to ascii and vice versa
-     - to use the man page
+    * to concatenate two strings.
+    * to convert string to ascii and vice versa
+    * to use the man page
 

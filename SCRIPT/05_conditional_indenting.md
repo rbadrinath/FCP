@@ -1,9 +1,9 @@
 # CONDITIONAL STATEMENTS
-* OBJECTIVE
+## OBJECTIVE
   * Why do we need conditionals
   * if and switch
 
-* Attempt to write more useful programs:
+## Attempt to write more useful programs:
   * The one that requires checking a condition
   * The one that requires repeatedly doing something
   * The one that requires us to store a large number of values of the same kind
@@ -16,7 +16,7 @@
   * read a sequence of numbers and find the standard deviation
   * read a sequence of numbers and print them in reverse order
   * Find the mental constructs needed for each of these.
-* Concept of condition checking
+  * Note the need for comparision of some kind in each of these
 
 ##  IF () expression
   * Which problems can you solve
@@ -35,7 +35,7 @@
 
 * Why we should write well indented code. See examples.
 
-* END OF CLASS CHECK:
+* End of class check:
     * Student should be able to write a program to  swap two variables.
     * Student should be able to write a program to check that numbers are
       give in order, increasing or decreasing and make a statement.

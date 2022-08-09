@@ -5,4 +5,4 @@
   * Example implementation
   * Insert at the beginning
   * Insert at the end
-  * print
+  * print elements of the linked list

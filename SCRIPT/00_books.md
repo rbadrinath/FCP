@@ -1,4 +1,4 @@
-# SUGGESTED TEXTS
+# Suggested texts to learn programming and the C language
 This is a practical course. We learn only by doing!
 However a good text is an asset especially when we 
 wish to refer to how something works in C (syntax).
