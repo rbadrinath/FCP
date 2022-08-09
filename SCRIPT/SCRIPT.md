@@ -150,6 +150,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 * EXERCISE download and edit main.c
 
 * Lets summarize the learning:  
+~~~text
 | Expressions		| "Type" of the value
 | --------------------- | -------------------
 | 5			| integer
@@ -158,6 +159,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 | 'c'			| single character
 | "Hello world"		| character string
 | sin(0.5)		| function call expression
+~~~
 
 * Notions of constants and operators in expressions
 
