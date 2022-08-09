@@ -7,4 +7,4 @@ Use any textbook you wish. However as a very good
 reference we can use the classic C book:  
 _The C Programming Language_ by Kernighan and Ritchie, 2nd Edition.
 
-=Remember you learn more by doing than by reading.=
+**Remember you learn more by doing than by reading.**
