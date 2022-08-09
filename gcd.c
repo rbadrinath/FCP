@@ -2,25 +2,33 @@
 #include <stdlib.h>
 // A Method to compute the GCD of two given numbers
 //
-// This is through this function called gcd()
+// This is written this C function called gcd()
 // It takes two parameters
 //      n1, n2 which are the two numbers
 // It returns a value which is the gcd of the two numbers
 int gcd(int n1, int n2){
-	// Lets assume n1 >= n2 > 0
-	// gcd of 1 and another number is 1
-	// if the smaller divides the larger then the smaller is the gcd
-	// Else the gcd of two number is the gcd of the difference and the smaller of the two numbers
-	// ie gcd of n1 and n2  is same as gcd n2 and n1%n2
+	// How it works:
+	// 1. Lets assume n1 >= n2 > 0
+	// 2. GCD of 1 and another number is 1
+	// 3. If n2 | n1 then n2 is the GCD
+	// 4. Else the GCD of two numbers is the same as  
+	//                          the gcd of n2 and the remainder of n1/n2 
+	//         i.e. GCD of n1 and n2  is same as gcd n2 and n1%n2
+	//
+	// ----- Now the same in the C Language -----
+	// 1.
 	if ( n1 < n2 || n2 <= 0 ) {
 		printf(" The given values are not as assumed; "
 				"error! Just cant compute exiting\n");
 		exit(1);
 	}
+	// 2.
 	if (n2 == 1)
 		return 1;
+	// 3.
 	if (n1%n2 == 0 )
 		return n2;
+	// 4.
 	else {
 		int n3=n1%n2;
 		return gcd(n2,n3);
