@@ -34,14 +34,14 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 * Lets summarize the learning:  
 ~~~text
-| Expressions		| "Type" of the value
-| --------------------- | -------------------
+| Expressions		| "Type" of the value in C
+| --------------------- | ------------------------
 | 5			| integer
 | 5+3			| integer
-| 6.023 * 2		| floating point
-| 'c'			| single character
-| "Hello world"		| character string
-| sin(0.5)		| function call expression
+| 6.023 * 2		| float    (real number)
+| 'c'			| character
+| "Hello world"		| character sequence (a pointer to the first character)
+| sin(0.5)   		| (function call expression resulting in) a floating point value
 ~~~
 
 * Notions of constants and operators in expressions
