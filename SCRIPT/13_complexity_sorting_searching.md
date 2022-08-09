@@ -1,4 +1,4 @@
-# ALGORITHM COMPLEXITY NOTIONS
+# Algorithm Complexity Notions
   * Complexity of matrix multiplication as an example
 ## Simple search
   * Searching and complexity of searching

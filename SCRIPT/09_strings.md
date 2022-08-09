@@ -1,4 +1,4 @@
-# STRINGS and ARRAYS
+# Strings and Arrays
   * Notion of strings and arrays
   * STRINGS of characters
   * Characters strings are just arrays
@@ -7,7 +7,7 @@
   * Can you now concatenate two strings into a third string?
   * Can you shuffle two strings?
 
-## END OF CLASS CHECK:
+## End of class check
   * Student should be able to walk through a string as an array and print
     its characters one by one and know when it ends.
   * Student should be able to capitalize a string of characters.

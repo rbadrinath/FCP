@@ -1,14 +1,16 @@
-# MULTI-DIMENSIONAL ARRAYS
-## OBJECTIVES
+# Multi-dimensional arrays
+## Objectives
   * more on pointers and arrays
   * multi dimentional arrays
-## DECLARATIOS AND USAGE
+
+## Declaratios and usage
   * Arrays of pointers
   *   argv and argc
   * Multiple arrays in a program EXERCISE related\_arrays.c
   * Multidimentional arrays
   * More than two dimensions
-## EXECISES How to use them
+
+## Execises
   * Matrix multiplication
   * matmul.c
   

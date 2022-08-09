@@ -1,5 +1,5 @@
-# ARRAYS
-## OBJECTIVE :
+# Arrays
+## Objective
   * Arrays definition
   * Arrays usage via  indexing
   * Arrays end
@@ -9,10 +9,10 @@
          read and and write into an array
          find an element in the array
 
-## BASIC USAGE
+## Basic usage
   * Notion of indexing
 
-## USAGE IN LOOPS
+## Usage in loops
   * arrays and for and while loops -  BE CAREFUL ABOUT THE END OF THE ARRAY
   * arrays and reading from files
   * writing arrays to files
@@ -35,7 +35,8 @@
     * make a new list list3[] with items from both list1[] and list2[]
     * what if you wanted to shuffle the elements of list1[] and list2 into list3
     * Assume list1 and list2 are sorted, can you merge them together into list3?
-## END CLASS CHECK:
+
+## End class check
   * Student should be able to write a small program to
     * read and and write into an array
     * find an element in the array

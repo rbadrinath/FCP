@@ -344,8 +344,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 05_conditional_indenting.md ---------)
-# CONDITIONAL STATEMENTS
-## OBJECTIVE
+# Conditional Statements
+## Objective
   * Why do we need conditionals
   * if and switch
 
@@ -354,7 +354,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
   * The one that requires repeatedly doing something
   * The one that requires us to store a large number of values of the same kind
 
-##  EXAMPLES
+##  Examples - go through by hand
   * read 2 numbers and print the maximum and the minumum
   * read a number and find its smallest factor > 1 
   * read a sequence of numbers and find the maximum
@@ -393,10 +393,12 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 [comment]: # (--------- 06_looping.md ---------)
 # EXPRESSING REPEATED EXECUTION
+
 ## FOR
-  * LOOPING through a sequence of values
+  * Looping through a sequence of values
     * FOR
     * findmax\_list\_f.c
+
 ## WHILE and its variations
   * LOOPING through a condition
     * WHILE see findmax\_list\_w.c
@@ -423,15 +425,15 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 [comment]: # (--------- 07_more_looping.md ---------)
 
-# MORE PRACTICE EXERCISES
+# More Practice Exercises
   TBD
 
 
 
 
 [comment]: # (--------- 08_arrays.md ---------)
-# ARRAYS
-## OBJECTIVE :
+# Arrays
+## Objective
   * Arrays definition
   * Arrays usage via  indexing
   * Arrays end
@@ -441,10 +443,10 @@ Clearly we can put paranethesis to make it clear to us (and to others)
          read and and write into an array
          find an element in the array
 
-## BASIC USAGE
+## Basic usage
   * Notion of indexing
 
-## USAGE IN LOOPS
+## Usage in loops
   * arrays and for and while loops -  BE CAREFUL ABOUT THE END OF THE ARRAY
   * arrays and reading from files
   * writing arrays to files
@@ -467,7 +469,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
     * make a new list list3[] with items from both list1[] and list2[]
     * what if you wanted to shuffle the elements of list1[] and list2 into list3
     * Assume list1 and list2 are sorted, can you merge them together into list3?
-## END CLASS CHECK:
+
+## End class check
   * Student should be able to write a small program to
     * read and and write into an array
     * find an element in the array
@@ -477,7 +480,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 09_strings.md ---------)
-# STRINGS and ARRAYS
+# Strings and Arrays
   * Notion of strings and arrays
   * STRINGS of characters
   * Characters strings are just arrays
@@ -486,7 +489,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
   * Can you now concatenate two strings into a third string?
   * Can you shuffle two strings?
 
-## END OF CLASS CHECK:
+## End of class check
   * Student should be able to walk through a string as an array and print
     its characters one by one and know when it ends.
   * Student should be able to capitalize a string of characters.
@@ -495,23 +498,23 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 10_strings_libraries.md ---------)
-# STANDARD STRING LIBRARY FUNCTION in C
-## OBJECTIVE:
+# Standard string library function in C
+## Objective
   * String library usages
   * Notion of library
 
-## WHY LIBRARY FUNCTIONS  
+## Why library functions  
   *  The C library has many funcitons that make life easy
-  *	Functions from string.h
-  *	Functions from math.h
-  *	Functions from ctype.h ... many others
+  * Functions from string.h
+  * Functions from math.h
+  * Functions from ctype.h ... many others
   * Use the string.h functions to do some of the stuff we did earlier
   * Can you convert a string to an int and vice versa using functions
     in ctype.h
   * Use the math.h functions to do interesting stuff like powers and trignometry
   * Remember to always check return value for errors. Read the man page!
 
-## END OF CLASS CHECK:
+## End of class check:
   * Student should be able to use string.h functions and strings in order 
     * to concatenate two strings.
     * to convert string to ascii and vice versa
@@ -522,17 +525,19 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 11_multid_arrays.md ---------)
-# MULTI-DIMENSIONAL ARRAYS
-## OBJECTIVES
+# Multi-dimensional arrays
+## Objectives
   * more on pointers and arrays
   * multi dimentional arrays
-## DECLARATIOS AND USAGE
+
+## Declaratios and usage
   * Arrays of pointers
   *   argv and argc
   * Multiple arrays in a program EXERCISE related\_arrays.c
   * Multidimentional arrays
   * More than two dimensions
-## EXECISES How to use them
+
+## Execises
   * Matrix multiplication
   * matmul.c
   
@@ -543,8 +548,11 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 12_functions.md ---------)
-# FUNCTIONS
-## CONCEPTS
+# Functions
+
+## What and Why
+
+## Concepts
   * Declaration syntax
   * Functions with no parametrs
   * The notion of call and return
@@ -558,12 +566,12 @@ Clearly we can put paranethesis to make it clear to us (and to others)
     *   Revisit scope 
 ## Declaration vs Definition
   * Prototype declarations
-    *   EXAMPLE funcs\_scope.c
-  * EXAMPLES WITH FUNCTIONS AND POINTERS
+    *   Example: funcs\_scope.c
+  * Examples with functions and pointers:
     * finding the minum in an array
     * magically array increment of all elements works very well
     * we can push any of our earlier examples into functions
-## RECURSION
+## Recursion
   * Base case
   * recusion step
   * relationship to recursive definition
@@ -574,7 +582,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 13_complexity_sorting_searching.md ---------)
-# ALGORITHM COMPLEXITY NOTIONS
+# Algorithm Complexity Notions
   * Complexity of matrix multiplication as an example
 ## Simple search
   * Searching and complexity of searching
@@ -599,7 +607,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 14_more_complexity.md ---------)
-# ALGORITHM COMPLEXITY CALCULATION
+# Algorithm Complexity Calculation
   * Revisit the three sorting algorithms
   * Searching, linear and binary search
   * Analysis including that of recursion
@@ -609,7 +617,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 15_structure.md ---------)
-# STRUCTURE AND UNIONS in C
+# Structure and Unions in C
   * Simple notions of structure type - declaration, access, via pointers?
   * Structure examples.
   * Typedef and its use in structures. Example is simple-timing.c
@@ -622,7 +630,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 16_linked_list.md ---------)
-# LINKED LIST
+# Linked List
   * Linked list as a useful higher level data structure
   * (So called recursive structure notion)
   * advantages over an array
@@ -635,7 +643,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 
 [comment]: # (--------- 17_mergesort.md ---------)
-# ADVANCED SORT - MERGESORT
+# Advanced sort - Mergesort
   * Algorithm - This is the more important part
     * Plan of the algorithm
     * Simple split

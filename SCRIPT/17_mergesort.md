@@ -1,4 +1,4 @@
-# ADVANCED SORT - MERGESORT
+# Advanced sort - Mergesort
   * Algorithm - This is the more important part
     * Plan of the algorithm
     * Simple split

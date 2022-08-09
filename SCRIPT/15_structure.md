@@ -1,4 +1,4 @@
-# STRUCTURE AND UNIONS in C
+# Structure and Unions in C
   * Simple notions of structure type - declaration, access, via pointers?
   * Structure examples.
   * Typedef and its use in structures. Example is simple-timing.c

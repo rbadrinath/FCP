@@ -1,5 +1,5 @@
-# CONDITIONAL STATEMENTS
-## OBJECTIVE
+# Conditional Statements
+## Objective
   * Why do we need conditionals
   * if and switch
 
@@ -8,7 +8,7 @@
   * The one that requires repeatedly doing something
   * The one that requires us to store a large number of values of the same kind
 
-##  EXAMPLES
+##  Examples - go through by hand
   * read 2 numbers and print the maximum and the minumum
   * read a number and find its smallest factor > 1 
   * read a sequence of numbers and find the maximum

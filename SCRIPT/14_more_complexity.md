@@ -1,4 +1,4 @@
-# ALGORITHM COMPLEXITY CALCULATION
+# Algorithm Complexity Calculation
   * Revisit the three sorting algorithms
   * Searching, linear and binary search
   * Analysis including that of recursion

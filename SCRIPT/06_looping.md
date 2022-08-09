@@ -1,8 +1,10 @@
 # EXPRESSING REPEATED EXECUTION
+
 ## FOR
-  * LOOPING through a sequence of values
+  * Looping through a sequence of values
     * FOR
     * findmax\_list\_f.c
+
 ## WHILE and its variations
   * LOOPING through a condition
     * WHILE see findmax\_list\_w.c

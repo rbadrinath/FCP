@@ -1,5 +1,8 @@
-# FUNCTIONS
-## CONCEPTS
+# Functions
+
+## What and Why
+
+## Concepts
   * Declaration syntax
   * Functions with no parametrs
   * The notion of call and return
@@ -13,12 +16,12 @@
     *   Revisit scope 
 ## Declaration vs Definition
   * Prototype declarations
-    *   EXAMPLE funcs\_scope.c
-  * EXAMPLES WITH FUNCTIONS AND POINTERS
+    *   Example: funcs\_scope.c
+  * Examples with functions and pointers:
     * finding the minum in an array
     * magically array increment of all elements works very well
     * we can push any of our earlier examples into functions
-## RECURSION
+## Recursion
   * Base case
   * recusion step
   * relationship to recursive definition
