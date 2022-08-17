@@ -34,16 +34,17 @@ Below we list files by topic:
 ## WHILE
 
 * 3np1.c 	: The 3n+1 (Collatz's) conjecture  - simple while loop
-* list\_avg\_w : 	Find the average of n numbers
+* list\_avg\_w.c : 	Find the average of n numbers
 
 ## DO... WHILE
 
-* list\_avg\_d : 	Find the average of n numbers
+* list\_avg\_d.c : 	Find the average of n numbers
 
 ## FOR
 
-* list\_avg\_f : 	Find the average of n numbers
-* eratosthenes.c	: Eratosthenes seieve - big program - preprocessor - while loop
+* list\_avg\_f.c : 	Find the average of n numbers
+* eratosthenes.c :	: Eratosthenes seieve - big program - preprocessor - while loop
+* simple\_event\_count.c : do coint flipping and count some event
 
 ## EXERCISE
 
