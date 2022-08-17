@@ -23,5 +23,6 @@
     * Student should be able to find the avarage of an arbitrary 
       number of integers input by the user.
     * See list\_avg\_f.c list\_avg\_w.c list\_avg\_d.c
+    * Take a look at simple\_event\_count.c
 
 

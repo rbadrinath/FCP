@@ -9,7 +9,8 @@ wish to refer to how something works in C (syntax).
 
 Use any textbook you wish. However as a very good
 reference we can use the classic C book:  
-_The C Programming Language_ by Kernighan and Ritchie, 2nd Edition.
+_The C Programming Language_ by Kernighan and Ritchie, 2nd Edition.  
+The book is widely available inlcuding [free online pdfs](https://www.google.com/search?q=kernighan+ritchie+online+pdf) and [recent reprints](https://www.flipkart.com/search?q=kernighan+ritchie). 
 
 **Remember you learn more by doing than by reading.**
 
@@ -21,17 +22,16 @@ _The C Programming Language_ by Kernighan and Ritchie, 2nd Edition.
 ## Objective
   This is motivation for students about why program. 
 ## One way to look at Programming in general
-  * The idea is that we would like to codify an activity, an algorithm. 
-  To seed that idea we take simple mathematical examples.
-  * Understand what an algorithm is
-  * Write some common algorithms in as clear a way as possible
-  * eg. GCD and LCM
-
-## Examples
+  * The idea is that we would like to codify an activity, write an algorithm. 
   * The algorithmic approach
     * Computers for Data Processing and Numerical Computation
     * Symbolic Computation
-  * See how we go from algorithm to code in these two examples:
+
+## Examples
+  To seed that idea we take simple mathematical examples.
+  * Understand what an algorithm is
+  * Write some common algorithms in as clear a way as possible eg GCD and LCM
+  * See how we go from algorithm to code in these two C examples:
     * gcd.c 
     * lcm.c
 
@@ -41,7 +41,9 @@ _The C Programming Language_ by Kernighan and Ritchie, 2nd Edition.
 [comment]: # (--------- 01_intro_crud_compile.md ---------)
 
 # Computer Command Familiarity
-It is important to be familiar with the basic commands of the computer system you are using in order to be able to learning programing by doing!
+It is important to be familiar with the basic commands of the 
+computer system you are using in order to be able to 
+learning programing by doing!
 The text below assumes you are using a Linux system like Ubuntu.
 
 ## Simple Linux Commands
@@ -59,7 +61,7 @@ The text below assumes you are using a Linux system like Ubuntu.
   * First class to be boring to those with programming experience already
   * Are the students able to 
 
-## Create and Edit Files
+## Commands to Create and Edit Files
 ### Objective: CRUD files 
   * Create: copy, rename files
   * Read:   cat files
@@ -423,6 +425,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
     * Student should be able to find the avarage of an arbitrary 
       number of integers input by the user.
     * See list\_avg\_f.c list\_avg\_w.c list\_avg\_d.c
+    * Take a look at simple\_event\_count.c
 
 
 

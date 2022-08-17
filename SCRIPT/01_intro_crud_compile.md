@@ -1,6 +1,8 @@
 
 # Computer Command Familiarity
-It is important to be familiar with the basic commands of the computer system you are using in order to be able to learning programing by doing!
+It is important to be familiar with the basic commands of the 
+computer system you are using in order to be able to 
+learning programing by doing!
 The text below assumes you are using a Linux system like Ubuntu.
 
 ## Simple Linux Commands
@@ -18,7 +20,7 @@ The text below assumes you are using a Linux system like Ubuntu.
   * First class to be boring to those with programming experience already
   * Are the students able to 
 
-## Create and Edit Files
+## Commands to Create and Edit Files
 ### Objective: CRUD files 
   * Create: copy, rename files
   * Read:   cat files
