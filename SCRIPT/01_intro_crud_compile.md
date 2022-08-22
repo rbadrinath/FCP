@@ -29,6 +29,15 @@ The text below assumes you are using a Linux system like Ubuntu.
   * Windows editor to use C/C++ IDE pre insalled, or Notepad++)
   * Linux editor to use vi / vim or gedit or atom...
 ### Exercise:  
+  * A bunch of programs we will refer to here are available on github
+    * Go to github.com/rbadrinath/FCP
+    * Now you can download a file like 3np1.c to your 
+      local computer using the following procedure:
+    * Click on a file 3np1.c 
+    * Now you right click on "Raw" and then select the "Save as" menu item
+      to save the file on your local computer.
+    * An alternate is to click the "Copy" icon (Two overlapping squares)
+      and save to a local file using an editor like vim or gedit.
   * Download the file 3np1.c
   * Take an existing file and copy it to create a new file.	cp f1 f2
     * Rename the file using mv   				mv f2 f3
