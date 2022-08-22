@@ -78,9 +78,7 @@ The text below assumes you are using a Linux system like Ubuntu.
     * Now you right click on "Raw" (just above the first line of the program) 
       and then select the "Save as" menu item
       to save the file on your local computer.
-    * {\em An alternate is to click the "Copy" icon (Two overlapping squares)
-      and save to ( ie paste into) a local file using an 
-      editor like vim or gedit.}
+    * _An alternate is to click the "Copy" icon (Two overlapping squares) and save to ( ie paste into) a local file using an editor like vim or gedit._
     * You will need to download files often so feel comfortable using this procedure
   * Take an existing file and copy it to create a new file.	cp f1 f2
     * Rename the file using mv   				mv f2 f3
