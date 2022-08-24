@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+// Here we read three numbers and find their maximim
+int read_and_find_max(){
 	int a, b, c;
 	printf("Give me three numbers: ");
 	scanf("%d",&a);
@@ -19,4 +20,26 @@ int main(){
 			printf("%d",c);
 	}
 	printf("\n");
+}
+
+// Here is a function to do the same
+// For fun see what happens
+void find_max_of_2(int a, int b){
+	if ( a > b ) 
+		printf("Maximum is %d\n",a);
+	if ( b > a ) 
+		printf("Maximum is %d\n",b);
+}
+// Here is a function for the maximum of 3 numbers
+// For fun see what happens
+void find_max_of_3(int a, int b, int c){
+	if ( a > b && a > c) 
+		printf("Maximum is %d\n",a);
+	if ( b >a && b > c) 
+		printf("Maximum is %d\n",b);
+	if ( c >a && c > b) 
+		printf("Maximum is %d\n",c);
+}
+
+void main(){
 }

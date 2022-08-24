@@ -10,6 +10,7 @@
 ## Examples
   To seed that idea we take simple mathematical examples.
   * Understand what an algorithm is
+  * Take a cery simple example found in find\_max.c
   * Write some common algorithms in as clear a way as possible eg GCD and LCM
   * See how we go from algorithm to code in these two C examples:
     * gcd.c 
