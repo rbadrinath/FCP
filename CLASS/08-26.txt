@@ -1,0 +1,5 @@
+1. Motivation, book, other introductory stuff
+2. Environment / tools familiarity - cp, mv, gedit, rm, cd; a bit about tree structure directory hiarchy
+3. Download, compile  find_max.c
+4. Go through code find_max.c : The notion of functions as procedures with parameters; the notion of main().
+5. After class - MS Windows  vs Ubuntu and environment questions
