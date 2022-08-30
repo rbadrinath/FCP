@@ -1,0 +1,19 @@
+Planned:
+1. Look at main.c, stats.c hello_world.[ch] 
+2. Notion of "Everything is a (binary) number"
+  * Character as integer
+3. fillin_simple.c print_next_char.c
+4. Formally define the types and declarations in C
+5. Binary representation
+       Simple notions of binary arithmetic
+       Bitwise operations and or and not
+       Other interesting operations: shift
+5. Operators in C 
+      numbers -> numbers
+      + - / *     (dependnce on types)
+      
+      numbers -> True/False
+      == >= <=
+
+      True/False -> True/False
+      && || !

@@ -1,0 +1,12 @@
+1. Revise last class, find_max
+2. Notion of main()
+3. Going from algorithm to C program
+  3.1 Looked at lcm.c gcd.c 3np1.c
+4. Notion of stored variables
+   4.1 value
+   4.2 location
+   4.3 size
+   4.4 type
+5. Declare before use concept
+6. Notion of opators in particular assignment operator
+7. After class n = m = 25  - does his connect n and m in some way?
