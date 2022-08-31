@@ -1,0 +1,45 @@
+Write programs in C for each of the following.
+Make sure you put comments that explain your algorithm.
+
+Every program consists of reading some input and printing some output.
+
+In each case please test your program with several inputs 
+covering multiple cases and seeing what the output is:
+
+1. Read four integers, and print their mean, 
+   median and the standard deviation.
+
+2. Read two characters. Check first that they are both lower case alphabets.
+   If the distance between the two is odd, then the middle character is unique. 
+   Find and print it. 
+   If the distance between them is even, then print the middle two characters.
+
+3. Read three points each point represented by its x and y coordinates 
+   which are floating point numbers  and 
+   check if they are colinear and print the appropriate message.
+
+4. Read a positive integer and compute the factorial of that number 
+   by repeated multiplication - i.e.,  5! is 1*2*3*4*5  
+   (You'll need a loop like whileto do this)
+
+5. Write a program to read a character and test if it is an 
+   upper case letter or a lower case letter and print the message
+
+6. Read a fraction(ie, a float type), call it r (eg 0.3), 
+   and a positive integer call it n (eg 10)
+   Print the sum to n terms of the corresponding 
+   geometric series starting at 1 and with r as the common ratio.
+
+7. Read a positive integer n and test if it is prime by dividing it by 
+   each integer from 2 to n-1. Print the conclusion.
+
+8. Read a positive integer and determine if it is a power of two.
+   Print your conclusion.
+
+9. Look at the program 3np1.c on github. Modify it so that it counts how many
+   intermediate numbers before it hit 1. Print that count.
+
+10. Read a positive integer n. Then read n integers one by one. 
+   After the n integers are read, print out their sum.
+
+    

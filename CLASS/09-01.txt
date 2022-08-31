@@ -8,12 +8,15 @@ Planned:
        Simple notions of binary arithmetic
        Bitwise operations and or and not
        Other interesting operations: shift
-5. Operators in C 
+6. Operators in C 
+  Arithmetic:
       numbers -> numbers
       + - / *     (dependnce on types)
-      
+  Conditional:
       numbers -> True/False
       == >= <=
-
+  Logical:
       True/False -> True/False
       && || !
+7. Simple if  and  while  using the conditionals above
+8. Fill this form: http://shorturl.at/bgmws
