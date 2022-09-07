@@ -1,5 +1,5 @@
 Plan:
-1. Repeat the main concepts:
+1. Repeat the main concepts in programming:
     Notion of stored variables
     Notion of algorithm with instructions
     C Programs comprise functions for instructions, variables as storage
@@ -14,7 +14,9 @@ Plan:
         Recalle 13/2  is different from 13/2.0
     if (conditions) { } else { }
     while { }
+    Always remember the (edit, compile, execute) loop
 2. Towards end of class some unanswered questions include what is the & in scanf
 3. 10 Exercises in 09-05-exercises.txt
    The aim today is to simply do all those exercises.
    Along the way we re-emphasises the notions studied so far. 
+
