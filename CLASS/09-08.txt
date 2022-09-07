@@ -12,6 +12,7 @@ Plan:
     Operators: Arithmetic, comparision and logical (we didnt do examples of logical)
     Arithmetic operation and (automatic) type conversions
         Recalle 13/2  is different from 13/2.0
+    printf(), scanf() and elementery notion of the format string
     if (conditions) { } else { }
     while { }
     Always remember the (edit, compile, execute) loop
