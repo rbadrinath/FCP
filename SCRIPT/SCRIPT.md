@@ -197,7 +197,7 @@ Same with 5 < 3 && 2 > 1
 Clearly we can put paranethesis to make it clear to us (and to others)  
 ~~~text
 (5-3)-2 
-(5-(3-2)
+(5-(3-2))
 5-3-2
 ~~~
 
@@ -360,6 +360,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 ### Notion of operator precedence and associativity.
   * Consider 5 + 3 * 2
   * Consider 5 - 3 + 2
+  * Refer pp 52 of K&R
+  * One online reference is [here](https://en.cppreference.com/w/c/language/operator_precedence)
 
 ## End of class check:
   * Student should be able to write a program corresponding to a simple word 

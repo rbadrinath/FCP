@@ -28,7 +28,7 @@ Same with 5 < 3 && 2 > 1
 Clearly we can put paranethesis to make it clear to us (and to others)  
 ~~~text
 (5-3)-2 
-(5-(3-2)
+(5-(3-2))
 5-3-2
 ~~~
 
