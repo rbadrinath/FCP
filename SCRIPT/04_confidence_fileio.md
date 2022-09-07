@@ -44,6 +44,8 @@
 ## More about operators
   * ARITHMETIC OPERATORS in C
     * \+ - * / %
+  * COMPARISION OPERATORS in C
+    * > >=  < <= == !=
   * LOGICAL OPERATORS in C
     * && || !
   * BITWISE OPERATORS in C

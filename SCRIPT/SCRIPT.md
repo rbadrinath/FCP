@@ -349,6 +349,8 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 ## More about operators
   * ARITHMETIC OPERATORS in C
     * \+ - * / %
+  * COMPARISION OPERATORS in C
+    * > >=  < <= == !=
   * LOGICAL OPERATORS in C
     * && || !
   * BITWISE OPERATORS in C
