@@ -7,7 +7,4 @@ DONE:
         swapping pointers; we also saw pointers to pointers just for fun.
    We know why things go wrong if in scanf we do not give address of a variable
 
-2. Using Files for IO
-   Using files for IO
-
 QUIZ 1 done
