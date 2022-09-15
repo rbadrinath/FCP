@@ -44,12 +44,12 @@
 ## More about operators
   * ARITHMETIC OPERATORS in C
     * \+ - * / %
-  * COMPARISION OPERATORS in C
+  * COMPARISION (RELATIONAL) OPERATORS in C
     * > >=  < <= == !=
   * LOGICAL OPERATORS in C
     * && || !
   * BITWISE OPERATORS in C
-    * & | ^
+    * & | ^ ~
 
 
 ### Notion of operator precedence and associativity.
