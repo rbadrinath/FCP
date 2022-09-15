@@ -7,19 +7,6 @@ DONE:
         swapping pointers; we also saw pointers to pointers just for fun.
    We know why things go wrong if in scanf we do not give address of a variable
 
-NOT CONVERED, at least some stuff pending. Moved to next class.
-1. Constants and Operators
-   Recall constants: integers  -32  76 (decial), 073(octal) 0xFF (hexadecimal) 
-                    9.81 (float or double) 6.023E23 (exponential representation)
-		    'h'  (characer)
- 		    "hello" string
-   BITWIZE operators   & | ^ (and or xor)  ~ (not)   << >> (shift operators)
-   Arithmetic operators with effects:
-       ++ -- += -= *= /=
-   Precedence and Associativity
-   Comparision operators (the compressed if-then-else) ?:  (a ternary operator!)
-   There are no operators to compare strings
-
 2. Using Files for IO
    Using files for IO
 

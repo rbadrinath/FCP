@@ -1,0 +1,27 @@
+DONE:
+1. 
+   Comparision/Relational operators
+   BITWIZE operators & | (and or )  ~ (not)   << >> (shift operators)
+   LOGICAL && || !
+   Arithmetic/Bitwise operators with effects:
+       ++ -- += -= *= /=
+       similarly <<= >>= &= |= ^0 
+   Precedence and Associativity
+   Comparision operators (the compressed if-then-else) ?:  (a ternary operator!)
+   Comma as an (unusual) operator
+
+2. return statement in C, how functions return values;
+
+3. SCOPE and LIFETIME of variables
+   Static vs auomatic lifetime storage class
+   local vs global visibioity scope
+   We did many examples to illustrate these
+
+
+Not yet done
+1. Using Files for IO
+   Using files for IO
+
+
+
+
