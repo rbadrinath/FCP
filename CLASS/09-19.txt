@@ -1,0 +1,10 @@
+PLAN
+1. break and continue in loops
+2. More loops 'for' and 'do.. while'
+
+3. Using Files for IO
+   Using files for IO
+
+
+
+
