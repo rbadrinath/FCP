@@ -1,0 +1,12 @@
+PLAN: Bunch of stuff we wanted to do in the last class but never 
+      got around to doing it!
+
+1. break and continue in loops
+2. More loops 'for' and 'do.. while'
+
+3. Using Files for IO
+   Using files for IO
+
+
+
+

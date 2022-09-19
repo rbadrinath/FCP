@@ -1,10 +1,7 @@
-PLAN
-1. break and continue in loops
-2. More loops 'for' and 'do.. while'
+Done:
+We revised material from last class.
+We also talked about recursion.
+We saw that recursion is no different from other funciton calls.
+We understand now the call stack.
 
-3. Using Files for IO
-   Using files for IO
-
-
-
-
+The planned stuff moved to next class.
