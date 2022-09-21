@@ -1,11 +1,17 @@
 PLAN: Bunch of stuff we wanted to do in the last class but never 
       got around to doing it!
 
+0. More on preprocessing directives #define and #include 
+    #define MAX(A,B) A>B?A:B
 1. "break" and "continue" in loops
 2. More loops 'for' and 'do.. while'
-3. arrays
+    Some examples like printing in reverse
+4. switch/case 
+5. arrays declaration, initialization  and use, indexing
+   arrays as addresses
+   arrays as parameters to functions
 
-3. Using Files for IO
+6. Using Files for IO
    Using files for IO
 
 
