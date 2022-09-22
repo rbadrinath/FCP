@@ -58,6 +58,10 @@ Below we list files by topic:
 * fact.c  : The recursive factorial program
 		- simple notion of function and return
 
+## ARRAYS+POINTERS+FUNCTIONS-PARAMETERS
+
+* apnf.c   : We write a sequence of funcitons illustrating how arrays and pointers work in the context of function parameters
+
 ## SEARCHING
 
 * search.c: Has boh a simple search as well as binary search in it.
