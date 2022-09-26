@@ -1,0 +1,7 @@
+DONE:
+1. Recall last class : arrays, pointers and arrays as function parameters
+2. We do a small programming exercise to revise these concepts
+3. strings as arrays of characters with a special marker
+
+Pushed to next class:
+4. FILE IO
