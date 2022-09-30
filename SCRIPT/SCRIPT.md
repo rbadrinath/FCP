@@ -349,12 +349,12 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 ## More about operators
   * ARITHMETIC OPERATORS in C
     * \+ - * / %
-  * COMPARISION OPERATORS in C
+  * COMPARISION (RELATIONAL) OPERATORS in C
     * > >=  < <= == !=
   * LOGICAL OPERATORS in C
     * && || !
   * BITWISE OPERATORS in C
-    * & | ^
+    * & | ^ ~
 
 
 ### Notion of operator precedence and associativity.
@@ -552,6 +552,9 @@ Clearly we can put paranethesis to make it clear to us (and to others)
     * to convert string to ascii and vice versa
     * to use the man page
 
+## Exercises:
+  * Check string\_library.c
+  * try out fillin\_filio.c
 
 
 

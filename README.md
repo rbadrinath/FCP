@@ -76,6 +76,7 @@ Below we list files by topic:
 ## ARRAYS
 
 * related\_arrays.c : Read two arrays (name[][] and scores) and search.
+* string\library.c : Read an array of strings and do some replacement.
 
 
 ## MATRIX OPERATIONS

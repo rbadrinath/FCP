@@ -20,3 +20,6 @@
     * to convert string to ascii and vice versa
     * to use the man page
 
+## Exercises:
+  * Check string\_library.c
+  * try out fillin\_filio.c
