@@ -1,0 +1,20 @@
+DONE:
+1. Some common errors from in-class Exercise 1 and Exercise 2 on arrays
+2. Revisit strings
+3. We mentioned that there are a bunch of string library funcitons.
+   We looked at 'man string' on Linux 
+       (can also look for this on an internet search)
+   We saw that it would take some effort if we wanted to implement those 
+   functions themselves.
+   Useful functions:  strcpy, strcat, strchr, strcmp, strlen 
+   Student is urged to explore how these can be used.
+
+4. FILE IO: We saw that scanf and printf were just simplified ways of using
+   fscanf with 'stdin' or 'stdout' as a first argument.
+   'stdin' and 'stdout' are pre-defined "FILE *" (FILE pointers).
+   We can create our own file pointers that refer to a file on the disk using
+   the fopen() function. We call this opening a file. 
+   Refer 'man fopen'. See fileio.c on our course github.
+
+5. Class assignment 2 
+   
