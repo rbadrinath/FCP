@@ -572,9 +572,12 @@ Clearly we can put paranethesis to make it clear to us (and to others)
   * Multidimentional arrays
   * More than two dimensions
 
-## Execises
+## Examples and Execises
   * Matrix multiplication
   * matmul.c
+  * matrix\_inv.c
+  * matrix\_ops.c
+  
   
 
 

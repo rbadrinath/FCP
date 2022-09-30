@@ -8,7 +8,7 @@ EXECS=  gcd lcm 3np1 fact  main do_op hello_world simple_event_count\
         stats eratosthenes fileio io print_next_char expr find_max \
 	funcs funcs_params funcs_scope \
 	list_avg_f list_avg_w list_avg_d list_avg_array  \
-	related_arrays matrix_inv matmul \
+	related_arrays matrix_inv matmul matrix_ops\
 	search string_library\
 	basic_sorts qsort qsort_extraspace msort
 

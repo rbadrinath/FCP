@@ -81,6 +81,7 @@ Below we list files by topic:
 
 ## MATRIX OPERATIONS
 
+* matrix\_ops.c : Simple Matrix operations example
 * matmul.c      : Matrix read, write, multiply (square matrix)
 * matrix\_inv.c  : Matrix inversion from somewhere on the internet
 

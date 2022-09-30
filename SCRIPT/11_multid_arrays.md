@@ -10,9 +10,12 @@
   * Multidimentional arrays
   * More than two dimensions
 
-## Execises
+## Examples and Execises
   * Matrix multiplication
   * matmul.c
+  * matrix\_inv.c
+  * matrix\_ops.c
+  
   
 
 
