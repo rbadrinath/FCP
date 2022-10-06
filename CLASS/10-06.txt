@@ -6,3 +6,4 @@ PLAN:
     - atoi 
     - using malloc in this context
     - calloc, an equivalent of malloc
+3. Two dimentional arrays

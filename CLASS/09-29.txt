@@ -19,4 +19,3 @@ DONE:
         We used the EOF as well.
 
 5. Class assignment 2 
-   

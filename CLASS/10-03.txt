@@ -4,3 +4,4 @@
    a variable, but that is discouraged as a practice.
 2. In-class-programming-exercise-3 
 3. Introduction to malloc. Introduction to arrays of pointers.
+4. Please see fileio.c and simple_malloc.c
