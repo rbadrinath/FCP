@@ -1,0 +1,16 @@
+Write a function for the following:
+Consider the string :
+
+   "This is the  \n  house  \t\t that Jack  \n   	built"
+char s[100] = " kkkkk " ;
+
+It has newlines and tabs in it.
+
+Initialize an array to this string.
+
+From the array now just find individual words and write them out to the screen 
+one line each.
+ ------------------------------------------------------
+As a second step now, only print those that are alpha-numeric.
+So for example " Hello Mr 123, how;are you" will simple treat 
+comma and semicolon as if they were blanks.

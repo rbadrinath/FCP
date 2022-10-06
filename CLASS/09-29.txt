@@ -14,7 +14,9 @@ DONE:
    'stdin' and 'stdout' are pre-defined "FILE *" (FILE pointers).
    We can create our own file pointers that refer to a file on the disk using
    the fopen() function. We call this opening a file. 
-   Refer 'man fopen'. See fileio.c on our course github.
+   Refer 'man fopen'. 
+	See fileio.c on our course github.
+        We used the EOF as well.
 
 5. Class assignment 2 
    

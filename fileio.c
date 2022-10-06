@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void using_standardio(){
 	int n;
 	char sign;
@@ -9,13 +10,20 @@ void using_standardio(){
 }
 void using_file(){
 	int n;
+	int i;
 	char sign;
 	FILE * fp1, * fp2  ;
 	fp1=fopen("/tmp/input_file","r");
 	fp2=fopen("/tmp/output_file","w");
-	fscanf(fp1,"%d",&n);     
-	sign= n < 0 ? '-' : '+' ;
-	fprintf(fp2,"This is %cve\n",sign);
+	for (i=0;i<12; i++) {
+	   /**
+	   if ( fscanf(fp1,"%d",&n) == EOF)  {
+		   printf("TOO FEW NUMBERS IN FILE\n"); exit(1);
+	   }
+	   **/
+	   sign= n < 0 ? '-' : '+' ;
+	   fprintf(stdout,"This is %cve\n",sign);
+	}
 }
 void main(){
 	using_file();

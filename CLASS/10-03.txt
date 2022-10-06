@@ -1,0 +1,6 @@
+1. Revise common errors from the second class assignment( of 29th Sept) e.g.:
+   !(a == b ) is same as (a != b).  Call stack. Writing recursion properly.
+   arrays need a consant size during declaration. Some compilers support
+   a variable, but that is discouraged as a practice.
+2. In-class-programming-exercise-3 
+3. Introduction to malloc. Introduction to arrays of pointers.

@@ -1,0 +1,8 @@
+PLAN:
+1. Revist 09-29.txt wiith emphasis on the exercises mentioned.
+2. Relook at the in class programming exercise 3.
+    - Can we use sscanf
+    - Can we use string library functions.
+    - atoi 
+    - using malloc in this context
+    - calloc, an equivalent of malloc
