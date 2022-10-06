@@ -1,0 +1,51 @@
+Here are brief answers to come questions on Asseignment 2
+If you see any errors mail them to me at my class email address.
+
+Q1. All programs start at main(). 
+    5 6 2 7 2 8  
+
+Q2. (a) is right shift by 5 bits.
+    (b) is bitwise 'and'
+    (c) first i is assigned 5, then p is assigned 32, then this is compared
+        with 16, resulting in true which causes the value of p which is 32.
+	So the answer is 32.
+    (d) first i is assigned 5. Then i is assigned 50, which is the result.
+
+
+Q3. Note that f() receives a pointer to an integer and that integer is 
+    what it prints. It does not modify that integer. So main() too prints the
+    same. So both print 555.
+
+Q4.
+   
+        g() m is 100
+        f() n is 101
+     main() n is 100             -------> this is the bottom of the stack
+
+
+Q5 & 6. 
+    f always prints what is in the global variable
+    g always prints what is in its local variable
+
+    In Q5 the local variable g is automatic so initialised each time, so it 
+    prints the same value  201 each time it is invoked.
+    In Q5 the local variable g is static so initialised once only, so it 
+    prints the 201 th first time and 202 the second time it is invoked.
+
+	
+Q7. STOP STOP STOP FLY - seems obvious
+
+    Question -  What would happen if we exchanged the order of printf("FLY ");
+    and f(n-1);
+
+Q8.
+    float sum(int n){
+       if ( n==0 )
+            return 1;
+       else
+	    reurn sum(n-1)+1/pow(2,i) ;
+    }
+
+Q9.
+   The only two values of n for which the if statement is not executed are 
+   10 and 5. So these are the only values printed. 

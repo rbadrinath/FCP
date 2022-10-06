@@ -1,4 +1,4 @@
-PLAN:
+DONE:
 1. Revist 09-29.txt wiith emphasis on the exercises mentioned.
 2. Relook at the in class programming exercise 3.
     - Can we use sscanf
@@ -6,4 +6,7 @@ PLAN:
     - atoi 
     - using malloc in this context
     - calloc, an equivalent of malloc
-3. Two dimentional arrays
+3. Ref SCRIPT/ for more examples on arrays
+4. Two dimentional arrays matrix_ops.c matmul.c
+	also see matrix_inv.c
+
