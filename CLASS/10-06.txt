@@ -4,9 +4,11 @@ DONE:
     - Can we use sscanf
     - Can we use string library functions.
     - atoi 
-    - using malloc in this context
+    - using malloc in this context - we saw how to return an
+       array of pointers to strings each containing a word
     - calloc, an equivalent of malloc
 3. Ref SCRIPT/ for more examples on arrays
 4. Two dimentional arrays matrix_ops.c matmul.c
 	also see matrix_inv.c
+   We understood row major form; how 2-D arrays are passed as parameters
 
