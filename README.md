@@ -39,16 +39,15 @@ Below we list files by topic:
 ## DO... WHILE
 
 * list\_avg\_d.c : 	Find the average of n numbers
+* fillin\_while.c:      Test your understanding of while loop
 
 ## FOR
 
 * list\_avg\_f.c : 	Find the average of n numbers
 * eratosthenes.c :	: Eratosthenes seieve - big program - preprocessor - while loop
 * simple\_event\_count.c : do coint flipping and count some event
-
-## EXERCISE
-
 * fillin\_findmax\_loop.c: Find the average in a loop, not predetermined n
+
 
 ## FUNCTIONS
 
@@ -57,6 +56,8 @@ Below we list files by topic:
 * funcs\_scope.c : re-emphasising scope with globals and locals and functions
 * fact.c  : The recursive factorial program
 		- simple notion of function and return
+* gcd.c		 :	Compute gcd using recursion
+* lcm.c		 :	Compute lcm using recursion
 
 ## ARRAYS with POINTERS AND FUNCTIONS
 * list\_avg\_array.c : Read a list of numbers into an array and find the average.
@@ -67,6 +68,10 @@ Below we list files by topic:
 ## STRINGS
 * string\library.c : Read an array of strings and do some replacement.
 * split\_sentence.c : Split a long sentence into words.
+
+## DYNAMIC MEMORY
+* simple\_malloc.c : simple use of malloc
+*
 
 ## MATRIX OPERATIONS
 * matrix\_ops.c : Simple Matrix operations example
@@ -87,13 +92,16 @@ Below we list files by topic:
 
 * basic\_sorts.c :  Basic sorting algorithms bubble, insertion, selection
 * msort.c : Encodes merge sort
+* qsort\_extraspace.c : quick sort using an additional array
 * qsort.c	: Encodes quick sort - both in-place and extra space partitioning
 * fillin\_qsort.c : We want to create some skeleton code so people can code in the quicksort.
 
 
 ## FILE OPERATIONS
-
 * fileio.c & io.c	: fopen(), fclose(), fscanf(), fprintf()
 * fillin\_file.c  : Has some sample code to fill in missing file ops
 
+## MISCELLANEOUS
+* simple\_timing.c 	    : A program using the timing functions
+* timeutil.c and timeutil.h : Simple functions to measure code run time
 
