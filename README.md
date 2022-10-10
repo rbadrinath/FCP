@@ -58,9 +58,26 @@ Below we list files by topic:
 * fact.c  : The recursive factorial program
 		- simple notion of function and return
 
-## ARRAYS+POINTERS+FUNCTIONS-PARAMETERS
-
+## ARRAYS with POINTERS AND FUNCTIONS
+* list\_avg\_array.c : Read a list of numbers into an array and find the average.
+* related\_arrays.c : Read two arrays (name[][] and scores) and search.
 * apnf.c   : We write a sequence of funcitons illustrating how arrays and pointers work in the context of function parameters
+
+
+## STRINGS
+* string\library.c : Read an array of strings and do some replacement.
+* split\_sentence.c : Split a long sentence into words.
+
+## MATRIX OPERATIONS
+* matrix\_ops.c : Simple Matrix operations example
+* matmul.c      : Matrix read, write, multiply (square matrix)
+* matrix\_inv.c  : Matrix inversion from somewhere on the internet
+* graph\_am.c : Graph adjacency matrix implementation
+
+## STRUCTURES with arrays and pointers
+* simple\_struct.c : Introduction to structures and how they are used
+* linked\_list.c   : Structure used to created a linked list
+
 
 ## SEARCHING
 
@@ -73,17 +90,6 @@ Below we list files by topic:
 * qsort.c	: Encodes quick sort - both in-place and extra space partitioning
 * fillin\_qsort.c : We want to create some skeleton code so people can code in the quicksort.
 
-## ARRAYS
-
-* related\_arrays.c : Read two arrays (name[][] and scores) and search.
-* string\library.c : Read an array of strings and do some replacement.
-
-
-## MATRIX OPERATIONS
-
-* matrix\_ops.c : Simple Matrix operations example
-* matmul.c      : Matrix read, write, multiply (square matrix)
-* matrix\_inv.c  : Matrix inversion from somewhere on the internet
 
 ## FILE OPERATIONS
 
