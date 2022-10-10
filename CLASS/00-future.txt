@@ -1,0 +1,10 @@
+The next items planned
+* Learn structures
+* Learn linked lists
+* Learn basic search
+* Learn basic sorting methods - selection sort, insertion sort, bubble sort
+* Learn advanced methods - mergesort and maybe quicksort
+* Learn program analysis
+* Learn graph representation and graph traversal
+* main() can take parameters too!
+
