@@ -41,3 +41,7 @@ void set_list_values( struct list * node){
 // is given?
 void read_list_values( struct list * node){
 }
+
+void main() {
+	// figure out what you want to test here
+}

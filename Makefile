@@ -5,11 +5,12 @@
 # The EXECS need just the default compilation, with perhaps -lm
 #          NOTE IF IT EXTENDS TO MULTIPLE LINES DONT PUT A BLANK AFTER THE "\"
 EXECS=  gcd lcm 3np1 fact  main do_op hello_world simple_event_count\
-        stats eratosthenes fileio io print_next_char expr find_max \
+        stats eratosthenes fileio io print_next_char find_max \
 	funcs funcs_params funcs_scope \
 	list_avg_f list_avg_w list_avg_d list_avg_array  \
 	related_arrays matrix_inv matmul matrix_ops\
 	search string_library\
+	simple_struct linked_list graph_am \
 	basic_sorts qsort qsort_extraspace msort
 
 # These dont compile; students will complete them in class
