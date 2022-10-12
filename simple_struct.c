@@ -96,6 +96,10 @@ void main(){
   print_3_complex(&x[2]);
   */
 
+  //8. Just a note for those who know C++ or another object oriented language:
+  // The concept of a "class" is nothing but a struct with
+  // functions too added as fields/members.... think about it!
+  // Of course, there are many other features of object-oriented languages.
    
 }
 
