@@ -101,6 +101,10 @@ void main(){
   // functions too added as fields/members.... think about it!
   // Of course, there are many other features of object-oriented languages.
    
+  //9. Exercise
+  // Define an array of complex  numbers.
+  // Read into the array some number of complex numbers
+  // Sort them using bubble sort. Use the code for bubble sort already available
 }
 
 
