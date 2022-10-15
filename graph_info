@@ -1,0 +1,10 @@
+ 0 1 1 1 1 
+ 1 0 0 0 1
+ 1 0 0 0 1
+ 1 0 0 0 1
+ 1 1 1 1 0
+
+
+0 and 4 are adjacent too all other nodes (1 2 and 3) and to eachother.
+no other nodes are adjacent
+Here we have set a[i][i] (the diagonal values) to zero, just a convention

@@ -1,10 +1,32 @@
 The next items planned
+* main() can take parameters too. has an array of strings
+* main() can have an integer return value too.
+		see main_args.c
+* Learn to use free
+		see simple_malloc.c
 * Learn structures
+		go through simple_struct.c
 * Learn linked lists
-* Learn basic search
-* Learn basic sorting methods - selection sort, insertion sort, bubble sort
-* Learn advanced methods - mergesort and maybe quicksort
-* Learn program analysis
+		go through linked_list.c
+		do the standard linked_list operations
+			insert a new value, 
+			read a value,
+			search a value,
+			update a value,
+			delete a value
+Class Assignment 3 on 3/Nov
+
 * Learn graph representation and graph traversal
-* main() can take parameters too!
+		see graph_am.c and graph_info
+* Learn basic search
+		see search.c
+* Learn basic sorting methods - selection sort, insertion sort, bubble sort
+		see basic_sorts.c
+Class Assignment 4 on 21/Nov
+
+* Learn advanced methods - mergesort and maybe quicksort
+		see msort.c
+* Learn program analysis
+		revisit *search* and *sort*
+	
 

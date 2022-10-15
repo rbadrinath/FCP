@@ -1,11 +1,29 @@
 #include <stdio.h>
-void main(){
-	int adj_mat[4][4] = { { 0, 1, 1, 1}, 
-			      { 1, 0, 0, 1},
-			      { 1, 0, 0, 1},
-			      { 1, 1, 1, 0}} ;
 
+// 1. reading a graph
+void read_graph(int a[][5], int n){
+	FILE * fp=fopen("graph_info","r");
+	for(int i=0; i<n;i++)
+	  for(int j=0; j<n; j++)
+		  fscanf(fp,"%d ",&a[i][j]);
+}
+
+// 2. printing a graph
+void print_graph(int a[][5], int n){
+	for(int i=0; i<n;i++) {
+	  for(int j=0; j<n; j++)
+		  printf("%d ",a[i][j]);
+	  printf("\n");
+	}
+}
+void main(){
+	int adj_mat[5][5];
 	int n1,n2;
+
+	read_graph(adj_mat,5);
+	print_graph(adj_mat,5);
+
+	// 3. Simple test of adjacency
 	printf("\n Give me two nodes to check adjacency: ");
 	scanf("%d %d", &n1,&n2);
 	if ( adj_mat[n1][n2] == 1 )
@@ -14,8 +32,9 @@ void main(){
 		printf("No\n");
 
 
-
-	printf("\n Give me  a path to check : (end with -1) ");
+	// 4. Checking if a path is valid
+	// - read in the path into "path[]"
+	printf("\n Give me  a path(length<=10) to check : (end with -1) ");
 	int path[10];
 	int i=0,n=-1;
 	scanf("%d",&n);
@@ -23,17 +42,18 @@ void main(){
 		path[i++]=n;
 	        scanf("%d",&n);
 	}
-	i--;
-	while(i > 0 ) {
-		if( adj_mat[path[i]][path[i-1]] == 0 ) {
-			printf("%d and %d are not adjacent, broken path\n", path[i],path[i-1]);
-			break;
+	int l=i-1; // l is index of last node 
+
+	// - check if each node is adjacent to the next one
+	for(i=0;i < l; i++ ) { 
+		n1=path[i];
+		n2=path[i+1];
+		if( adj_mat[n1][n2] == 0 ) {
+			printf("%d and %d are not adjacent, broken path\n",
+				       	n1,n2);
+			break;  // We found non-adjacent neighbours in path
 		}
-		i--;
 	}
-	if (i == 0 )
+	if (i == l )
 		printf("Your path is good!\n");
 }
-
-
-
