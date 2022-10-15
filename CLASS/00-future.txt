@@ -21,7 +21,16 @@ Class Assignment 3 on 3/Nov
 * Learn basic search
 		see search.c
 * Learn basic sorting methods - selection sort, insertion sort, bubble sort
-		see basic_sorts.c
+		1. Selection Sort 
+			- from one filled array to another
+			- within the filled same array - real way it is done
+		2. Insertion Sort
+			- within the same array, while reading
+			- within the same array already filled
+		3. Bubble Sort
+			- within the same filled array
+		- see basic_sorts.c
+
 Class Assignment 4 on 21/Nov
 
 * Learn advanced methods - mergesort and maybe quicksort
