@@ -1,0 +1,12 @@
+Plan
+* Learn structures
+		go through simple_struct.c
+		can you do the exercise?
+* Learn linked lists
+		go through linked_list.c
+		do the standard linked_list operations
+			insert a new value, 
+			read a value,
+			search a value,
+			update a value,
+			delete a value

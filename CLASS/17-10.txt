@@ -1,0 +1,13 @@
+DONE:
+* main() can take parameters too. has an array of strings
+* main() can have an integer return value too.
+		see main_args.c
+		argc, argv[], it includes the name of the program too
+		return is related to exit value!
+* Learn to use free
+		see simple_malloc.c
+		Note: Once freed a memory shouldn't be used - unexpected result
+* Learn structures
+		go through simple_struct.c
+* Learn linked lists
+		We saw an introductory example
