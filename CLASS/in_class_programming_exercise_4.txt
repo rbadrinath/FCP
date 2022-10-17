@@ -1,0 +1,33 @@
+Define a structure with the following fields to hold information about
+a student:
+  - name (use an array of 20 characters)
+  - scholarship : is an integer indicating one of two values
+		0 - not a scholarship holder
+		1 - is an active scholarship holder
+  - amount : if the student holds a scholarship, then the amount.
+		if the student does not hold a scholarship, it is neglected 
+  - score  : an integer indicating total marks
+
+
+Functions on the student:
+  - read_student(struct student * s)
+		will read student info for a student form the user
+  - print_student(struct student s)
+		will print student info for a student
+  - print_scholarhsip_holders(struct student s[], int n)
+		will look at s[0]..s[n-1] and print only
+		those student's names who are scholarship holders
+  - compute_total_amount(struct student s[], int n)
+		will print the total scholarship amount spent on
+		students who are receiving scholarship
+  - set_scholarship(struct student s[], int i, int amount)
+		sets s[i] to be an active scholaship holder
+		and sets that person's scholarship amount to the given value
+  - find_best_non_scholarship(struct student s[], int n)
+		Of all the non-scholarship holders, find the one
+		with maximum score.
+
+
+Now write a main() function to read student info into an array
+of structures, then print a menu for the operations above. 
+Ask user for input and perform the operation.
