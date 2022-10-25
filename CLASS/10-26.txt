@@ -1,0 +1,11 @@
+Plan:
+* Learn linked lists: Now see linked_list.c
+		do the standard linked_list operations
+			insert a new value, 
+			read a value,
+			search a value,
+			update a value,
+			delete a value
+
+* Learn graph representation and graph traversal
+		see graph_am.c and graph_info
