@@ -1,4 +1,7 @@
 #include <stdio.h>
+//#include "timeutil.h"
+#define DATA_MAX 10000
+#define DATA_FILE "/tmp/sorting_data"
 
 // A few utility functions that are used to make the program easy to read:
 
@@ -12,6 +15,16 @@ int read_array(int a[]){
 	printf("Give the %d numbers : ",n);
 	for(int i=0;i<n;i++)
 		scanf("%d",&a[i]);
+	return n;
+}
+int read_array_file(int a[], const char * filename){
+	// Prompt and read in the numbers one by one
+	FILE * fp;
+	fp = fopen(filename,"r");
+	int n;
+	fscanf(fp,"%d",&n);
+	for(int i=0;i<n;i++)
+		fscanf(fp,"%d",&a[i]);
 	return n;
 }
 
@@ -38,6 +51,7 @@ void swap (int a[], int i, int j){
 // and so forth...
 void bubblesort(int a[], int left, int right){
 	int lim,j;
+	long l;
 	// lim is right most position initially
 	// lim is left+1 finally
 	for (lim=right; lim>left; lim--){ 
@@ -134,11 +148,14 @@ void selectionsort(int a[], int left, int right){
 
 
 // main() function is pretty much the same whichever sorting method is called
-int main(){
+int main(int argc, char * argv[]){
 	// n is number of items to read in to sort
 	// a is the array to store the numbers read in
-	int n, a[100];
+	int n, a[DATA_MAX];
+	// n = read_array_file(a,DATA_FILE);
 	n = read_array(a);
+	if ( n <=100 )
+		print_array(a,n);
 
 	// Sort the numbers in the array positions a[0]..a[n-1]
 	// selectionsort(a,0,n-1);

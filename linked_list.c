@@ -104,7 +104,7 @@ void main(){
 	// lests create an empty linked list
 	struct node * head = NULL;
 
-	printf("At start: "); print_list(head);
+	printf("At start: "); print_list(head);   // <empty>
 	// lets add a new value
 	head = node_insert(head, 0, 0);    		
 	printf("After 0 added: "); print_list(head);       //  0

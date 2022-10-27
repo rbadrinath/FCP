@@ -1,4 +1,4 @@
-Plan:
+Done:
 * Learn linked lists: Now see linked_list.c
 		do the standard linked_list operations
 			insert a new value, 
@@ -10,5 +10,5 @@ Plan:
 * Learn graph representation and graph traversal
 		see graph_am.c and graph_info
 
-
+Pushed to next class:
 * Learn sorting

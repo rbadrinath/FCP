@@ -1,0 +1,133 @@
+A brief answer to some of the mid term questions
+" // Er:   " is used to indicate a common error
+1.  
+ void f(int x){
+  switch(x) {
+     case 2: g();		// Er: case (x==2):...
+     case 3: common();
+		break;
+     default:
+             h();
+  }
+ }
+
+2. void g(int i){
+   printf( "%d \n", i);		// Er: missing this printf
+   i--;
+   for( ; i > 0 ; i--) {
+     printf( "%d \n", i);
+     }
+   }
+
+3.
+ (a) char quiz(char c, int n);    // Er: "{ }" in place of ";" 
+				  // Er: not knowing what is a prototype
+ (b) char quiz(char c, int n){
+	return (char) c+n;	  // Er: return c[n]
+     }
+
+4. int myrange(int x, int y){
+    y--;
+    int retval=-1;  
+    for( ;y > x; retval=0 )	 // Er: confusion with range, increasing order
+	printf("%d ",y);
+    return retval;
+   }
+5. (a) Source code is the code we write in a high level language like C
+       Executable code is code which is machine readable usually the
+          result of compiling a source code.
+   (b) #include directive simply copies the mentioned file into the current
+       code at the given place. Usually used to include some standard or often
+       used declarations of functions and types.
+   (c) #define x 2 defines x as a macro - this means x will be substituted by
+       2 before compilation really begins.  int x=2;  defines x to be a variable
+       in the C program, with space etc.
+   (d) A parameter to a function gets its value when it is passed during 
+	a function call.
+   (e) Recursive function always needs a condition check to handle the 
+       base cases and terminate the recursion.
+   (f) The ampersand is needed in scanf because we want to pass the address
+       of the variable "x" to the function in order to change its value.
+   (g) 5 / 2 is first evaluated. Since both sides of "/" are integers, the
+       operator does an integer division, resulting in 2.  This is then
+       assigned to the variable f. So the printf will print something like 2.0
+   (h) It swaps a and b. 
+
+6. if (2 < 1 < 3)            ` // Er: note this is not (2<1) && (1<3)
+	printf("1: True\n");
+   if (1 > 0 == 0)
+	printf("2: True\n");
+   if (1 > 2 <= 0)
+	printf("3: True\n");
+
+   (2< 1 < 3)  is evaluated left to right
+		since 2 < 1 is false its value is 0
+		so it becomes 0 < 3
+		which evaluates to true like 1.
+    So Answer is that the 1st and 3rd printfs are printed and the second is not.
+
+7. while ( random1000() < 500 ) {
+	int v;
+        scanf("%d", &v);
+        if (v < 0 )
+		break;
+   }
+
+8. void swap(int *p1, int *p2){
+      int x;                  
+      x = *p1;
+      *p1=*p2;
+      *p2=x;
+   }
+   void main(){
+      int a=1, b=2;
+      printf("Before: a=%d  b=%d\n",a,b);
+      swap(&a, &b);
+      printf("After:  a=%d  b=%d\n",a,b);
+   }
+   // Er: swappd p1 and p2 intead of *p1 and *p2
+   // E2: print *p1 and *p2 in reverse order inside swap, note the purpose
+   //      is that the swap must affect the calling function (hear main)
+
+9.  // Many similar ideas are possible. Here is one:
+    // The core idea is to note that:
+    //   We are printing n rows:
+    //   initially 0 spaces before stars, each subsequent line has 2 more spaces
+    //   initially 2n-1 stars, each subsequent line has 2 less stars
+  void pstar(int n){
+    int stars=2*n-1;
+    int spaces=0;
+    for (int i=0;i<n;i++) {
+       for (int j=0; j<spaces; j++) printf(" "); // first spaces
+       for (int j=0; j<stars; j++) printf("* "); // next  stars  (with spaces)
+       stars-=2;
+       spaces+=2;
+       printf("\n");
+    }
+  }
+
+10. void reverse(int n, int array1[], int array2[]) {
+    for(int i=0; i<n; i++)
+	array2[i]=array1[n-1-i];
+  }
+
+11. int sum_array(int a[], int n) {
+     if ( n == 0 )		           // base case empty sum
+         return 0;	
+     return a[0] + sum_array( &a[1], n-1); // &a[1] points to remainder of array
+    }
+    // Er: Not using recursion is a common error
+    // Er: Using recursion but recursive step as a[n-1]+ sum_array(a,n-1)
+    //         - the idea os itself ok, but not what we the problem askd for
+
+12. void insert(int arr[], int n, int val, int pos) {
+      while(int i=n-1;i>=pos ; i--) // shift a[pos] to a[n-1] right by 1
+	arr[i+1]=arr[i];
+      a[pos]=val;
+    }
+    // Er: just the statement arr[pos]=val;  - that looses what was in arr[pos]
+    // Er: The effect of insert happens in a local array b[] : That 
+    //      is insufficient as we want the effect in arr[] itself.
+    // Er: not changing arr[], but just printing with val inserted is similarly
+    //      insufficient.
+
