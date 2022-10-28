@@ -1,0 +1,29 @@
+1. If the function has a return type defined but nothing is returned 
+   using a return statement in the function, 
+   then the value returned is not defined. Eg
+       int f(int x){
+	    if ( x > 0 ) 
+		    return 1;
+       }
+   Now, what is returned if the function is called as f(-10)?  
+   The C standard document says the return value is not definied.
+   So we cant say what the expression printf(" % d ",f(-10)) will print.
+   If you are interested the latest free version of the document is here:
+	https://web.archive.org/web/20181230041359if_/http://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf see section 6.9.1, item number 12.
+   FINAL SAY: Never assume that no return statement means  th same as "return 0;"
+
+2. Variable size arrays:
+   More recent versions of C allow array size to be variable. The simplest 
+   two ways to use it are:
+   (a) The is a *local variable* declared in the body of a function, maybe in a block. 
+       The size will be determined by evaluating the size at the time the 
+       array variable declaration is encountered.
+       	{
+	   int size;
+	   scanf("%d ", &size);
+	   int a[size];
+	}
+   (b) The array is in the *parameter of a function*, and the size is also a parameter.
+	int f( int n, int a[n]){
+	   ...
+	}
