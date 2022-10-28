@@ -1,0 +1,38 @@
+1. file  commands 
+  1.1 cat
+    $ cat <filename>		       to see the text in a file
+  1.2  more
+    $ more <filename>		       to see the text in a file, but pagewise
+  1.3 ls 
+    $ ls    to see the files in the directory
+    $ ls  <filename>
+    $ ls  <dirname>
+  1.4 cp 
+    $ cp  <existing-file> <new-file>   to create another file with same content
+  1.5 mv
+    $ mv  <existing-name> <new-name>   to rename a file
+  1.6 rm
+    $ rm  <filename>  		       to remove(delete) a file
+2. concept -   about tree structure directory hiarchy
+3. direcory commands
+  3.1 pwd
+    $ pwd    				to see which directory we are at
+  3.2 cd
+    $ cd <dirname>			to change the current directory
+  3.3 mkdir
+    $ mkdir <new-dirname>		to create a new directory with the name
+  3.4 rmdir
+    $ rmdire <dirname>			to delete(remove) the named directory
+
+2.4. *Editing* utilities vim (preferred), gedit
+  remember vi has an insert mode Enter the mode with "i" and exit with ESC key
+  See https://devhints.io/vim    
+
+2.5. *utilities* grep, shuf, sort, date, wc, man
+
+2.6. concept -  shell :  
+	bash as an example
+	varaibles: $PWD, $PATH, $HOME, $USERNAME, ...
+	builtin commands: history, alias, exit, ...
+	shortcuts on the command-line: !! and !$ and the <tab> key ...
+	redirecting and piping input and output >, < and | ...
