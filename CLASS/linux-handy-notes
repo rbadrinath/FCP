@@ -1,3 +1,9 @@
+Purpose:
+  The idea is to list some good stuff to know about using Linux
+  
+  Each items has either a concept, command or utilities
+  Where there is a command, common use case(s) is given with a "$" as prompt
+
 1. file  commands 
   1.1 cat
     $ cat <filename>		       to see the text in a file
@@ -24,13 +30,14 @@
   3.4 rmdir
     $ rmdire <dirname>			to delete(remove) the named directory
 
-2.4. *Editing* utilities vim (preferred), gedit
+4. *Editing* utilities vim (preferred), gedit
   remember vi has an insert mode Enter the mode with "i" and exit with ESC key
   See https://devhints.io/vim    
+  $  vim <filename>
 
-2.5. *utilities* grep, shuf, sort, date, wc, man
+5. *utilities* grep, shuf, sort, date, wc, man
 
-2.6. concept -  shell :  
+6. concept -  shell :  
 	bash as an example
 	varaibles: $PWD, $PATH, $HOME, $USERNAME, ...
 	builtin commands: history, alias, exit, ...
