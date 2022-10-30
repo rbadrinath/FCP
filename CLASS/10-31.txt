@@ -1,0 +1,5 @@
+Plan:
+* from last class Revisit graph representation and graph traversal
+		see graph_am.c and graph_info
+
+* Learn sorting

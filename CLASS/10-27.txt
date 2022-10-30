@@ -7,8 +7,6 @@ Done:
 			update a value,
 			delete a value
 
-* Learn graph representation and graph traversal
+* Intro to graph representation and graph traversal
 		see graph_am.c and graph_info
 
-Pushed to next class:
-* Learn sorting
