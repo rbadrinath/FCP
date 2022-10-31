@@ -1,0 +1,40 @@
+------------------ about files ---------------------
+1.Repeat in_class_exercises_4.txt instead of reading student information from user, read it from a file.
+  Each line contains information for a student. Eg
+Sukanya 1 1500 132   -> Sukanya is the name, 1 indicates scholarship holder, 1500 is the scholaship amount 132 is score
+Bharath 0 120        -> Bharath is the name, 0 indicates not a scholarship holder, 120 is the score
+
+2. Open a file and read the following information per person Name (a string no spaces) and score (an integer),
+into two arrays: an array of strings, and an array of integers.  Now open a second file and write the same
+information that was read, but in reverse order into the the second file.
+After the program exits, view the scond file to see the information in reverse order.
+
+3. Open a file for appending (mode "a"). Now write 10 strings one on each line at the end of that file.
+After the program exits, view the file to see the 10 new strings are appended.
+
+------------------- about strings ----------------
+
+4. write a program to read a string and reverse the characters and place it in a new string. Use printf to see the new
+string after this reversal.
+
+5. Write your own function to take two strings a[]  and b[] and copy character by character the characters of a[] to the end of b[]. Then use printf to see the modified string b[].
+
+6.  Write your own function to to take a string and a character and test if the character is in the string. If it is in the string return the index (position) of the character found in the string(nly first). If character doesnt exist in the string return -1.
+
+--------------------- array of pointers ---------------------------
+
+7. Read a positive number n
+   Then read n strings one by one. Assume no string is more that 10 char long.
+   For each string use malloc to allocate space to hold the given string. Now copy the read string into this
+   newly malloced space.  Collect all these strings in an array of pointers to strings.
+   Write a function print_strings(a,n) where a[] is the array of pointers to strings and n is the number of
+   pointers to strings in a[]. This function simply prints all the strings in a[] one each on a separate line.
+
+---------------------- pointer arithmetic ---------------------------
+8. If a[] is an array with n integers already filled what does the following scanf do:
+   scanf("%d",a+4);
+9. What does the following do with the same array a[] of integers:
+
+     for(i=0;i<n;i++)
+       *(a+i+4)=*(a+i);
+     for(i=0;i<4;i++) a[i]=0;
