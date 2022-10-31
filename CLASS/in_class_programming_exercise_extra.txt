@@ -38,3 +38,19 @@ string after this reversal.
      for(i=0;i<n;i++)
        *(a+i+4)=*(a+i);
      for(i=0;i<4;i++) a[i]=0;
+
+---------------------  2D Arrays ------------------------------------
+
+10. This question focussus on array declaration and passing 2D arrays to functions. In main() declare a 2D array
+    to hold an adjacency matrix (see graph_am.c which we discussed in class). It is simply a square matrix
+    with zeros and ones.
+    Now write a function called delete_adge(). Its parameters are the adjacency matrix and two vertices i and j.
+    If vertex i and vertex j are adjacent, it changes the matrix so that i and j are not adjacent any longer.
+    Write a second functoin called is_cycle(). Its parameters are the adjacent matrix, an array p[] of vertices
+    and thirdly an integer n of number of vertices in p[]. It checks if the path specified by the sequence of
+    vertices in p is valid (ie each vertex is adjacent to the next) and also that any vertex in p[] is repeated.
+    RETURN VALUE: If the path in p is invalid it returns -1. 
+		  If the path is valid and has no repeated vertices it returns 0.
+		  If the path is valid but has at least one repeated vertex it returns 1.
+
+
