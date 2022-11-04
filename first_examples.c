@@ -155,3 +155,17 @@ void find_factorial(){
 
 // We need a main() to run it.
 // So write a main()
+//
+//
+// Other concepts to recall
+// Variables get values in one of 3 ways in C
+// 1. From an *assignment expression*, involving
+// 		arithmetic/logic/comparator/constant expressions (eg 4+3)
+// 		function return values (eg sin(x))
+// 		or a combination of the above (1+4*sin(x))
+// 	This can also be used at variable definition time.
+// 2. By passing value to *parameter* in a function
+// 3. By scanf (or any such modifying function) 
+//    via an *address parameter* (side effect)
+//       This method probably relies on an assignment too, inside the callee.
+
