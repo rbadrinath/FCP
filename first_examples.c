@@ -15,6 +15,12 @@ void print_triangle2(){
 }
 
 
+void read_and_print(){
+	printf(">>");
+	scanf("%d",&n);
+	printf("<< %d \n",n);
+}
+
 
 void increment_variable_values(){
 	int x;
