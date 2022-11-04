@@ -1,11 +1,30 @@
 #include <stdio.h>
 
+/*
+ *  This file has several simple examples of functions
+ */
+
+// Function prototypes
+void print_triangle();
+void print_triangle2();
+void read_and_print();
+void increment_variable_values();
+void add_3_nums();
+void prompt_and_read();
+void swap_2_vars();
+void cycle_3_vars();
+void show_common_sizes();
+void find_factorial();
+
+
+// Print a triangle
 void print_triangle1(){
 	printf("* * * * *");
 	printf("  * * *  ");
 	printf("    *    ");
 }
 
+// Print a different kind of triangle
 void print_triangle2(){
 	printf("*****");
 	printf("****");
@@ -14,14 +33,24 @@ void print_triangle2(){
 	printf("*");
 }
 
-
+/*
+// read a variable and print it
 void read_and_print(){
 	printf(">>");
 	scanf("%d",&n);
 	printf("<< %d \n",n);
 }
+*/
 
+// Another read a variable and print example
+void prompt_and_read(){
+	int n1=0;
+	printf("Before  %d\n",n1);
+	scanf("%d", &n1);
+	printf(" After  %d\n",n1);
+}
 
+// increment some variable values and print
 void increment_variable_values(){
 	int x;
 	int y;
@@ -35,6 +64,7 @@ void increment_variable_values(){
 	printf("After:-  x is %d,   y is  %d,   z is %d\n",x,y,z);
 }
 
+// adding three integers
 void add_3_nums(){
 	// declare the variables for the numbers and the sum
 	int n1;
@@ -55,15 +85,8 @@ void add_3_nums(){
 	// What about printing average?
 }
 
-void prompt_and_read(){
-	int n1=0;
-	printf("Before:- n = %d\n");
-	scanf("&d", &n);
-	printf(" After:- n = %d\n");
-}
 
-
-
+// There are two variables with values. Interchage the values they store
 void swap_2_vars(){
 	// we are swapping the contents of two variables
 	// declare the int variables to interchange
@@ -83,9 +106,9 @@ void swap_2_vars(){
 
 }
 
+// Cyclically shift values in three variables. 
 void cycle_3_vars(){
-	// we are swapping the contents of two variables
-	// declare the int variables to interchange
+	// declare the int variables
 	int a,b,c;
 	// We need another variable
 	int x;
@@ -103,6 +126,7 @@ void cycle_3_vars(){
 
 }
 
+// We would like to see sizs of different "types" 
 void show_common_sizes(){
         printf("\n For commonly used types :\n");
 	char vc;
@@ -121,10 +145,12 @@ void show_common_sizes(){
         printf("sizeof(double) is   %ld\n",sizeof(double));
 }
 
+
+// A simple way to compute the factorial of a number
 void find_factorial(){
 	// compute factorial of 6
-	int f=1*2*3*4*5*6;
-	printf("Factorial of  6   is   %d\n",f);
+	int r=1*2*3*4*5*6;
+	printf("Factorial of  6   is   %d\n",r);
 }
 
 // We need a main() to run it.
