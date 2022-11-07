@@ -1,5 +1,16 @@
-Plan:
+Done:
 * from last class Revisit graph representation and graph traversal
 		see graph_am.c and graph_info
 
-* Learn sorting
+	- With an early introduction to the big-O notation O(n)
+
+* Search:
+	Linear search in linked list and array
+	Advantage of search when array is sorted
+	Binary search. 
+
+	See the code in search.c
+
+	- Analysis and the big-O notation
+
+* Introduction to sorting ... very first ideas of insert sort
