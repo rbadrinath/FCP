@@ -1,45 +1,138 @@
-Purpose:
-  The idea is to list some good stuff to know about using Linux
-  
-  Each items has either a concept, command or utilities
-  Where there is a command, common use case(s) is given with a "$" as prompt
-
-1. file  commands 
-  1.1 cat
-    $ cat <filename>		       to see the text in a file
-  1.2  more
-    $ more <filename>		       to see the text in a file, but pagewise
-  1.3 ls 
-    $ ls    to see the files in the directory
-    $ ls  <filename>
-    $ ls  <dirname>
-  1.4 cp 
+1. file  commands  : How to view, list, rename and remove files
+-----------------
+  1. cat
+    $ cat <filename>	       to see the text in a file
+  2. more
+    $ more <filename>	       to see the text in a file, but pagewise
+  3. ls 
+    $ ls    		       to see the list of files in the current directory
+    $ ls  <dirname>		to see all files in a directory <dirname>
+    $ ls  <filename>		to list the file <filename>
+  4. cp 
     $ cp  <existing-file> <new-file>   to create another file with same content
-  1.5 mv
+  5. mv
     $ mv  <existing-name> <new-name>   to rename a file
-  1.6 rm
+  6. rm
     $ rm  <filename>  		       to remove(delete) a file
-2. concept -   about tree structure directory hiarchy
-3. direcory commands
+
+2. concept - directory structure
+--------------------------------
+   1. Note that in linux (and most operating systems) files are thought of 
+   as existing in a tree structure.
+   2. A directory is a place to hold any number of files or other directories
+   3. Example 
+       / is the top level directory - also called the root
+       /home is the directory "home" under "/"
+       /home/lab is the directrory "lab" under "home" which is under "/"
+       /home/lab/file1.c is the file "file1.c" sitting inside the "lab" directory
+   4. Often we need to use the commands in "files" above so as to 
+     copy them and move them from one directory to another. 
+   5. 'current directory' :
+     At any time at the command prompt we have a directory that we call
+     the current directory of that terminal which is used in many commands. 
+     The concept of current directory is important to know 
+     to understand how many commands work:
+
+3. directory commands - how to know create, remove and change to directories
+------------------------------
   3.1 pwd
-    $ pwd    				to see which directory we are at
+    $ pwd    			show the current directory
   3.2 cd
-    $ cd <dirname>			to change the current directory
+    $ cd <dirname>		change the current directory to <dirname>
   3.3 mkdir
-    $ mkdir <new-dirname>		to create a new directory with the name
+    $ mkdir <new-dirname>	create a new directory <new-dirname>
   3.4 rmdir
-    $ rmdire <dirname>			to delete(remove) the named directory
+    $ rmdir  <dirname>		delete(remove) the directory <dirname>
 
-4. *Editing* utilities vim (preferred), gedit
-  remember vi has an insert mode Enter the mode with "i" and exit with ESC key
-  See https://devhints.io/vim    
-  $  vim <filename>
+4. A note about file and directory names 
+----------------------------------------
+   <filename> in the above can be one of:
+   can be of three types:
+        1. <simple-filename>             Eg. cat file1.c
+        2. /<dirpath>/<simple-filename>  Eg. cat /home/lab/newdir/file1.c
+        3. <dirpath>/<simple-filename>   Eg. cat newdir/file1.c
 
-5. *utilities* grep, shuf, sort, date, wc, man
+        Type-1 assumes file1.c is in the current directory
+        Type-2 assumes file1.c is in the directory /home/lab/newdir
+	Type-3 assumes file1.c is in the directory newdir which is inside the current directory
+    Similarly <dirname> can be one of:
+	1. <simple-dirname>		Eg. mkdir newdir
+	2. /<dirpath>/<simple-dirname>	Eg. mkdir /home/lab/newdir
+	3. <dirpath>/<simple-dirname>	Eg. mkdir newdir/newsubdir
+   
 
-6. concept -  shell :  
-	bash as an example
-	varaibles: $PWD, $PATH, $HOME, $USERNAME, ...
-	builtin commands: history, alias, exit, ...
-	shortcuts on the command-line: !! and !$ and the <tab> key ...
-	redirecting and piping input and output >, < and | ...
+5. *Editing* with vim 
+---------------------
+   $ vim <filename>
+   ABOUT VIM
+   *concept* - vim operators in two important modes:
+	1. insert mode  - In this mode when you type it appears on the screen
+	2. editing mode - In this mode you can give commands (So also called
+					"command" mode)
+     In both these modes the arrow keys and pgup/pgdown  work as expected.
+     when one opens a file vim starts in editing mode.
+     Commands in insert mode:
+     *. There are no interesting commands just type and navigate using the arrow
+        or page up/down keys
+     *. <ESC-key> pressing this key takes you to editing mode. 
+        so press ESC key before trying out the following editing mode commands
+     
+     A few interesting commands in editing mode:
+     *. "dd"   deletes the line with the cursor
+     *. "5dd"  deletes 5 lines starting with the cursor line
+     *. "x"    deletes the character under the cursor position
+     *. "dw"   deletes the word starting with the cursor position
+     *. "cw"   deletes the word starting with the cursor position
+                                        and puts it in insert mode
+     *. "i"    puts it in insert mode
+     *. "o"    creates a new line below and puts it in insert mode
+     *. "O"    creates a new line above and puts it in insert mode
+     *. "u"    undo the edits 
+  
+     vim has many more interesting commands, see https://devhints.io/vim
+     for more information. Also just type vimtutor command ot get a 
+     guided tour.
+
+6. *utilities* 
+--------------
+	* Linux has many utilities that are very useful. They are 
+	  commands you can run at the prompt.
+	* Useful utilities are : -  grep, shuf, sort, date, wc, man
+	* Learn to use the "man" utitlity to understand more about
+		each of these. eg try:  :~$  man wc
+
+7. concept -  shell  
+-------------------
+        A shell is a program that runs to accept your commands. In fact,
+	it is the shell which shows the prompt like ":~$"
+
+	bash as an example of a shell and is the default shell on Ubuntu.
+
+	*Shortcuts*
+	bash is what lets you do a number of shortcuts. For example bash
+	lets you use the arrow keys to go to previous commands and execute
+	them. Other shortcuts include:
+	!!  this reruns the last command
+	the <tab> key is used for filename completion so "cat first_<tab>" will
+	expand to "cat first_example.c", assuming that file is in the 
+	current direcory.
+
+	*Builtins*
+	In addition to executing the Linux commands you give on the prompt,
+	bash also has some builtin commands.
+	Example useful builtin commands: history, alias, exit, ...
+
+	bash also support some builtin variables:
+	Examples useful varaibles: $PWD, $PATH, $HOME, $USERNAME, ...
+	For example you can say the command : cd $HOME    to 
+		change to the home directory
+
+	*Redirection and piping*
+	bash also lets you redirect input and output from a command. Eg:
+	:~$ date > of   causes the output of "date" to be stored 
+			in the file named "of" insted of on the terminal
+	:~$ ./a.out < if causes the a.out to execute but read input from
+			the file called "if" instead of the terminal
+	:~$ cat first_example.c | sort      causes the output of the 
+			first command, ie "cat first_example.c" to
+			be the input of the second command ie "sort"
