@@ -118,6 +118,23 @@ int insert_while_reading(int a[]){
 	return n;
 
 }
+
+// A simplified version.Maybe you want to understand this first?
+void insertionsort_simple(int a[], int n){
+	for(int r=1;r<n;r++) {
+		// 0..r-1 is assumed sorted
+		// we just find the right place for a[r]
+		int t = a[r];
+		int j;
+		for(j=r-1; j>=0; j--) {
+			if(a[j] > t)
+				a[j+1]=a[j];
+			else
+				break;
+		}
+		a[j+1]=t;
+	}
+}
 // ------------------------------------------------------------------
 
 // SELECTION SORT ALGORITHM
@@ -144,6 +161,21 @@ void selectionsort(int a[], int left, int right){
 		swap(a,index_min,i);
 	}
 }
+
+
+// A simplified version.Maybe you want to understand this first?
+void selectionsort_simple(int a[], int n){
+	int i;
+	for(i=0; i < n;i++){
+		int min_pos=i;
+		for(int j=i+1;j<n;j++)
+			if (a[min_pos] > a[j])
+				min_pos=j;
+		int t = a[min_pos];
+		a[min_pos]=a[i];
+		a[i]=t;
+	}
+}
 // --------------------------------------------------------------------------
 
 
@@ -159,9 +191,11 @@ int main(int argc, char * argv[]){
 
 	// Sort the numbers in the array positions a[0]..a[n-1]
 	// selectionsort(a,0,n-1);
+	selectionsort_simple(a,n);
 	// insertionsort(a,0,n-1);
-	bubblesort(a,0,n-1);
-	//n=insert_while_reading(a);
+	// insertionsort_simple(a,n);
+	// bubblesort(a,0,n-1);
+	// n=insert_while_reading(a);
 
 
 	// print the sorted array
