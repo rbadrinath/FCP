@@ -1,0 +1,14 @@
+Done:
+1. Recall information about Big-O notation form the examples
+	of binary search and graphs.
+
+2. Basic searching
+	* Insertion Sort
+	* Selection Sort
+   - For each we did the core concept and code in class.
+   - basic_sort.c is updated with the simplified versions of these as
+	discussed in class. You may also see all the versions for 
+	your understanding.
+
+   - we discussed that the selection sort algorithms was O(n^2)
+
