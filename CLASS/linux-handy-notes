@@ -9,9 +9,11 @@
     $ ls  <dirname>		to see all files in a directory <dirname>
     $ ls  <filename>		to list the file <filename>
   4. cp 
-    $ cp  <existing-file> <new-file>   to create another file with same content
+    $ cp  <filename-1> <filename-2>   to copy  the first file to the second
+    $ cp  <filename> <dirname>	      to copy the file into the directory, keeping the name same
   5. mv
-    $ mv  <existing-name> <new-name>   to rename a file
+    $ mv  <filename1> <filename2>   to rename the file from the first to the second name
+    $ mv  <filename> <dirname>	    to move the file into the given directory
   6. rm
     $ rm  <filename>  		       to remove(delete) a file
 
@@ -46,8 +48,7 @@
 
 4. A note about file and directory names 
 ----------------------------------------
-   <filename> in the above can be one of:
-   can be of three types:
+   * <filename> in the above can be one of three types:
         1. <simple-filename>             Eg. cat file1.c
         2. /<dirpath>/<simple-filename>  Eg. cat /home/lab/newdir/file1.c
         3. <dirpath>/<simple-filename>   Eg. cat newdir/file1.c
@@ -55,17 +56,19 @@
         Type-1 assumes file1.c is in the current directory
         Type-2 assumes file1.c is in the directory /home/lab/newdir
 	Type-3 assumes file1.c is in the directory newdir which is inside the current directory
-    Similarly <dirname> can be one of:
+
+    * <dirname> can be one of:
 	1. <simple-dirname>		Eg. mkdir newdir
 	2. /<dirpath>/<simple-dirname>	Eg. mkdir /home/lab/newdir
 	3. <dirpath>/<simple-dirname>	Eg. mkdir newdir/newsubdir
-    Special directory names
-	1. "/"  is the root(opmost) direcory       
+
+    * Special directory names:
+	1. "/"  is the root(topmost) direcory       
 		Eg. the command:    ls /        lists the root directory
 	2. "."  is the current direcory
 		Eg. the command:    ./a.out     executes the file a.out in the current directory
 	3. ".." is the parent to the current directory
-		Eg. the command:    cp ../main.c  .    copues the file called main.c from the parent directory to the current directory
+		Eg. the command:    cp ../main.c  .    copies the file called main.c from the parent directory to the current directory
    
 
 5. *Editing* with vim 
@@ -145,14 +148,14 @@
 	* Learn to use the "man" utitlity to understand more about
 		each of these. eg try:  :~$  man wc
 
-7. concept -  shell  
--------------------
+7. *concept* -  shell  
+----------------------
         A shell is a program that runs to accept your commands. In fact,
 	it is the shell which shows the prompt like ":~$"
 
 	bash as an example of a shell and is the default shell on Ubuntu.
 
-	*Shortcuts*
+    *Shortcuts*
 	bash is what lets you do a number of shortcuts. For example bash
 	lets you use the arrow keys to go to previous commands and execute
 	them. Other shortcuts include:
@@ -161,7 +164,7 @@
 	expand to "cat first_example.c", assuming that file is in the 
 	current direcory.
 
-	*Builtins*
+    *Builtins*
 	In addition to executing the Linux commands you give on the prompt,
 	bash also has some builtin commands.
 	Example useful builtin commands: history, alias, exit, ...
@@ -171,7 +174,7 @@
 	For example you can say the command : cd $HOME    to 
 		change to the home directory
 
-	*Redirection and piping*
+    *Redirection and piping*
 	bash also lets you redirect input and output from a command. Eg:
 	:~$ date > of   causes the output of "date" to be stored 
 			in the file named "of" insted of on the terminal
