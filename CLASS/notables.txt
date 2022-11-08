@@ -27,3 +27,8 @@
 	int f( int n, int a[n]){
 	   ...
 	}
+
+3. Nested function definitions:
+   The C standard does not support nested funciton definitions.
+   However, certain compilers (such as gcc) allow it as an extended feature.
+   The advice is to be aware, but *do not* use it.
