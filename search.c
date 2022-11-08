@@ -30,6 +30,25 @@ int binary_search( int a[], int left, int right, int q){
 	return r;
 }
 
+// A simple iterative version of binary search
+int binary_search_loop(int a[], int n, int q){
+	int i;
+	int r=n-1;
+	int l=0;
+	while(r-l >= 0 ){
+		int mid=(r+l)/2;
+		if( a[mid] == q )
+			return mid;
+		if( a[mid] > q )
+			r=mid-1;
+		else
+			l=mid+1;
+		printf("%d \n",mid);
+	}
+	return -1;
+
+}
+
 int main(){
 	// i is an iteration variable
 	// n is number of items to read in
@@ -58,8 +77,7 @@ int main(){
 	printf("Found the element at index %d\n",idx);
 	
 	// Second using the binary search method
-	idx = binary_search(a,0,n-1,q);
+	// idx = binary_search(a,0,n-1,q);
+	idx = binary_search_loop(a,n,q);
 	printf("Found the element at index %d\n",idx);
-
-
 }
