@@ -1,0 +1,36 @@
+I try to list a few interesting mistakes I see students make
+
+1. Copying arrays: Student wants to copy tha string in the array s[] to
+   the newly allocated array in t;
+   char s[10] = "hello"
+   chat *t = (char *) malloc(10);
+   ...
+   t = s;	// This does not copy strings. You may use strcpy instead
+
+2. Comparing three numbers: students wants to check if a,b, and c are in
+	increasing order:
+   if (a < b < c) 	// will evaluate to true even if a=3, b=2, c=1
+	printf("yes");
+
+   instead use
+   if (a < b && b < c)
+	printf("yes");
+
+3. Pointer to a variable:
+   int *p;
+   *p=5;
+   Here the student assumed that since p was a pointer to an integer it must
+   already be pointing to an integer. 
+   But that is not true. We must assign p the address of an integer before
+   we can use the expression "*p".
+
+4. Returning a pointer to a local variables inside a function
+   sometimes students return a pointer to a variable which is locally
+   defined (automatic storage class). 
+   Remember this variable itself does not exist beyond the function. So
+   it will not work as intended.
+
+5. Using variables without initializing them:
+   Students occasionally assume that dynamic or local variables 
+   must be zero by default.  Not true in C.
+
