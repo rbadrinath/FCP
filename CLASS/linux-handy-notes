@@ -1,4 +1,4 @@
-1. file  commands  : How to view, list, rename and remove files
+1. file  commands  : How to view, copy, list, rename and remove files
 -----------------
   1. cat
     $ cat <filename>	       to see the text in a file
@@ -59,38 +59,82 @@
 	1. <simple-dirname>		Eg. mkdir newdir
 	2. /<dirpath>/<simple-dirname>	Eg. mkdir /home/lab/newdir
 	3. <dirpath>/<simple-dirname>	Eg. mkdir newdir/newsubdir
+    Special directory names
+	1. "/"  is the root(opmost) direcory       
+		Eg. the command:    ls /        lists the root directory
+	2. "."  is the current direcory
+		Eg. the command:    ./a.out     executes the file a.out in the current directory
+	3. ".." is the parent to the current directory
+		Eg. the command:    cp ../main.c  .    copues the file called main.c from the parent directory to the current directory
    
 
 5. *Editing* with vim 
 ---------------------
    $ vim <filename>
    ABOUT VIM
-   *concept* - vim operators in two important modes:
+   *concept* - vim operates in two important modes:
 	1. insert mode  - In this mode when you type it appears on the screen
-	2. editing mode - In this mode you can give commands (So also called
-					"command" mode)
+			  so this is the mode to write code.
+	2. editing mode - In this mode you can give commands (So also called "command" mode)
      In both these modes the arrow keys and pgup/pgdown  work as expected.
      when one opens a file vim starts in editing mode.
-     Commands in insert mode:
-     *. There are no interesting commands just type and navigate using the arrow
+
+    **Commands in insert mode:**
+     * There are no interesting commands just type and navigate using the arrow
         or page up/down keys
-     *. <ESC-key> pressing this key takes you to editing mode. 
+     * <ESC-key> pressing this key takes you to editing mode. 
         so press ESC key before trying out the following editing mode commands
      
-     A few interesting commands in editing mode:
-     *. "dd"   deletes the line with the cursor
-     *. "5dd"  deletes 5 lines starting with the cursor line
-     *. "x"    deletes the character under the cursor position
-     *. "dw"   deletes the word starting with the cursor position
-     *. "cw"   deletes the word starting with the cursor position
-                                        and puts it in insert mode
-     *. "i"    puts it in insert mode
-     *. "o"    creates a new line below and puts it in insert mode
-     *. "O"    creates a new line above and puts it in insert mode
-     *. "u"    undo the edits 
+    **Commands in editing mode:** There are a large number, we list a few:
+     ** Moving around, in addition to arrow keys:
+       * "G"      moves to the end of the file
+       * ":25"    moves to the line number 25
+       * ":se nu" shows line numbers
+       * "w"	moves to the end of the current/next word
+       * "b"	moves to the beginning of the current/next word
+       * "^"	moves to the first character in the current line
+       * "$"	moves to the last  character in the current line
+       * "h","j","k","l"  work as if they were the arrow keys
+                     (<Backspace-key> also moves left)
+       * "Ctrl-u", "Ctrl-d" work as if they were page up and down keys
+
+     ** Different ways to enter insert mode:
+       * "cw"   deletes the word starting with the cursor position
+                                       and puts it in insert mode
+       * "i"    puts it in insert mode
+       * "I"    puts it in insert mode at the beginning of the current line
+       * "a"    puts it in insert mode after the current character
+       * "A"    puts it in insert mode after the end of the current line
+       * "o"    creates a new line below and puts it in insert mode there
+       * "O"    creates a new line above and puts it in insert mode there
+
+     ** Saving and Exiting:
+       * ":w"	saves the current file
+       * ":wq"     saves the current file and exits
+       * ":x"      same as "wq"
+       * ":q!"     exit without saving
+
+     ** Deleting stuff:
+       * "dd"   deletes the line with the cursor
+       * "5dd"  deletes 5 lines starting with the cursor line
+       * "x"    deletes the character under the cursor position (Same as <Delete-Key>)
+       * "5x"   deletes 5 characters starting with the current position
+       * "dw"   deletes the word starting with the cursor position
+
+     ** Undo:
+       * "u"    undo the edits 
+
+     ** Searching
+       * "/" followed by a string searches for a string in the file
+		forward from the position where the cursor was
+		Eg. "/main" goes to the place containing the word "main"
+		    If you hit the <Enter-key> it will go back to edit mode
+       * "?" is line "/" except it searches in the backward direction
+       * "n" Once done a search with "/" or "?" this will repeat the search.
+     
   
      vim has many more interesting commands, see https://devhints.io/vim
-     for more information. Also just type vimtutor command ot get a 
+     for more information. Also just type vimtutor command to get a 
      guided tour.
 
 6. *utilities* 
