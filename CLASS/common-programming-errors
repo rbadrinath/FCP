@@ -1,0 +1,56 @@
+I try to list a few interesting mistakes I see students make
+
+0. A common mistake is when using getchar or scanf to read a regular character, 
+   typically the intention is to skip newlines and spaces and tabs. 
+   However a simple scanf("%c",&ch); gets into trouble usually because 
+   some other input has happened prior to this (maybe an integer is read).
+   This results in the scanf returning immediately without waiting for the
+   user to enter another character. (Typically a newline or space is 
+   read into ch.)
+
+   The right way to do this is to read the character with scanf(" %c",&ch);
+   notice the extra space in the format string.
+
+1. Copying arrays: Student wants to copy tha string in the array s[] to
+   the newly allocated array in t;
+   char s[10] = "hello";
+   chat *t = (char *) malloc(10);
+   ...
+   t = s;	// This does not copy strings. You may use strcpy instead
+
+2. Comparing three numbers: students wants to check if a,b, and c are in
+	increasing order:
+   if (a < b < c) 	// will evaluate to true even if a=3, b=2, c=1
+	printf("yes");
+
+   instead use
+   if (a < b && b < c)
+	printf("yes");
+
+3. Pointer to a variable:
+   int *p;
+   *p=5;
+   Here the student assumed that since p was a pointer to an integer it must
+   already be pointing to an integer. 
+   But that is not true. We must assign p the address of an integer before
+   we can use the expression "*p".
+
+4. Returning a pointer to a local variables inside a function
+   sometimes students return a pointer to a variable which is locally
+   defined (automatic storage class). 
+   Remember this variable itself does not exist beyond the function. So
+   it will not work as intended.
+
+5. Using variables without initializing them:
+   Students occasionally assume that variables must be zero by default.  
+   Not true in C.
+   This mistake repeats quite often with arrays declared locally or
+   allocated using malloc();
+
+6. using "=" (the assignment operator) instead of the comparision operator "=="
+   Most compiilers these days flag a warning. But often students neglect it.
+
+7. In general dont neglect warnings. They are trying to tell you something.
+   By being more explicity, the warnings go away even if there is no problem.
+   A typical example is one of implicit function declaration, indicating
+   that a prototype is missing.
