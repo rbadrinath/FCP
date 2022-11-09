@@ -1,6 +1,7 @@
 I try to list a few interesting mistakes I see students make
 
-0. A common mistake is when using getchar or scanf to read a regular character, 
+0. Incorrect use of getchar() or scanf() to read a single character.
+   A common mistake is when using getchar or scanf to read a regular character, 
    typically the intention is to skip newlines and spaces and tabs. 
    However a simple scanf("%c",&ch); gets into trouble usually because 
    some other input has happened prior to this (maybe an integer is read).
@@ -11,19 +12,22 @@ I try to list a few interesting mistakes I see students make
    The right way to do this is to read the character with scanf(" %c",&ch);
    notice the extra space in the format string.
 
-1. Copying arrays: Student wants to copy tha string in the array s[] to
-   the newly allocated array in t;
+1. Copying arrays: 
+   Student wants to copy a string in the array s[] to
+   the newly allocated array in t:
    char s[10] = "hello";
    chat *t = (char *) malloc(10);
    ...
-   t = s;	// This does not copy strings. You may use strcpy instead
+   t = s;	// This does not copy strings though it seems to work
+   Instead the right way to do this is:
+   strcpy(t,s);
 
 2. Comparing three numbers: students wants to check if a,b, and c are in
 	increasing order:
    if (a < b < c) 	// will evaluate to true even if a=3, b=2, c=1
 	printf("yes");
 
-   instead use
+   The right way to do this is:
    if (a < b && b < c)
 	printf("yes");
 
@@ -35,22 +39,69 @@ I try to list a few interesting mistakes I see students make
    But that is not true. We must assign p the address of an integer before
    we can use the expression "*p".
 
-4. Returning a pointer to a local variables inside a function
-   sometimes students return a pointer to a variable which is locally
+   So a right way to do this is:
+   int *p;
+   int n;
+   p=&n;
+   *p=5;
+
+4. Never return a pointer to a local variables inside a function.
+   Sometimes students return a pointer to a variable which is locally
    defined (automatic storage class). 
    Remember this variable itself does not exist beyond the function. So
-   it will not work as intended.
+   it will not work as intended. If you want to return a pointer then either
+   malloc the variable or use directly what you get as a function parameter.
 
-5. Using variables without initializing them:
+   Eg:
+   char * f(){
+     char str[10];
+     char * t;
+     ...
+     return(str);         // This is not ok!
+     ...
+     t = malloc(10);
+     return t;		  // This is OK
+   }
+
+5. Using variables without initializing them is always an issue.
    Students occasionally assume that variables must be zero by default.  
    Not true in C.
+
    This mistake repeats quite often with arrays declared locally or
    allocated using malloc();
 
-6. using "=" (the assignment operator) instead of the comparision operator "=="
-   Most compiilers these days flag a warning. But often students neglect it.
+6. using "=" (the assignment operator) instead of the comparison operator "=="
+   Most compilers these days flag a warning. But often students neglect it.
+      Wrong way			      The Right way
+   if ( a = b )			   if ( a == b )
+       printf("True");		       printf("True");
+
 
 7. In general dont neglect warnings. They are trying to tell you something.
    By being more explicity, the warnings go away even if there is no problem.
    A typical example is one of implicit function declaration, indicating
-   that a prototype is missing.
+   that a prototype is missing. Here is an example:
+
+   void main(){
+        int i;
+        i = test();
+   }
+
+   int test(int a){
+        return a;
+   }
+
+   This gives a warning about implicit function declaration, but the real
+   problem is that the function expected an argument, not given in the call.
+   So always give a prototype before using the function and do not neglect
+   the 'implicit declaration' warning. Giving the correct prototype 
+   would have given a nice error message.
+
+8. Assuming incorrectly that the return value of a function is 0, even if no
+   return statement is used. While some compilers do this, the language itself
+   does not guarantee this. So do not make this assumption.
+   The right way to do this is:
+   * If the return type is given, make sure there is a 'return' satement.
+   * If the return value is not used, make sure to 
+     explicitly set the return type to void.
+
