@@ -62,6 +62,20 @@ void bubblesort(int a[], int left, int right){
 		}
 	}
 }
+
+// A simplified version
+void bubblesort_simple(int a[], int n){
+	int lim,j;
+	long l;
+	// lim is right most position initially
+	for (lim=n-1; lim>0; lim--){ 
+		for ( j=0 ; j < lim ; j++ ) {
+			// compare a[j] and a[j+1] and swap if out of order
+			if (a[j] > a[j+1] )
+				swap(a,j,j+1);
+		}
+	}
+}
 // --------------------------------------------------
 
 
@@ -191,10 +205,11 @@ int main(int argc, char * argv[]){
 
 	// Sort the numbers in the array positions a[0]..a[n-1]
 	// selectionsort(a,0,n-1);
-	selectionsort_simple(a,n);
+	// selectionsort_simple(a,n);
 	// insertionsort(a,0,n-1);
 	// insertionsort_simple(a,n);
 	// bubblesort(a,0,n-1);
+	bubblesort_simple(a,n);
 	// n=insert_while_reading(a);
 
 
