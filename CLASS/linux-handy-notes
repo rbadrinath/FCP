@@ -1,5 +1,5 @@
 1. file  commands  : How to view, copy, list, rename and remove files
------------------
+--------------------
   1. cat
     $ cat <filename>	       to see the text in a file
   2. more
@@ -20,23 +20,23 @@
 2. concept - directory structure
 --------------------------------
    1. Note that in linux (and most operating systems) files are thought of 
-   as existing in a tree structure.
+      as existing in a tree structure.
    2. A directory is a place to hold any number of files or other directories
    3. Example 
        / is the top level directory - also called the root
        /home is the directory "home" under "/"
        /home/lab is the directrory "lab" under "home" which is under "/"
        /home/lab/file1.c is the file "file1.c" sitting inside the "lab" directory
-   4. Often we need to use the commands in "files" above so as to 
-     copy them and move them from one directory to another. 
+   4. Often we need to use the commands in "file commands" section above so 
+      as to copy them and move them from one directory to another. 
    5. 'current directory' :
      At any time at the command prompt we have a directory that we call
      the current directory of that terminal which is used in many commands. 
      The concept of current directory is important to know 
-     to understand how many commands work:
+     to understand how many commands work.
 
-3. directory commands - how to know create, remove and change to directories
-------------------------------
+3. directory commands : how to know create, remove and change to directories
+-----------------------
   3.1 pwd
     $ pwd    			show the current directory
   3.2 cd
