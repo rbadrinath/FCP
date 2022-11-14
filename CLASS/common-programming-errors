@@ -105,3 +105,19 @@ I try to list a few interesting mistakes I see students make
    * If the return value is not used, make sure to 
      explicitly set the return type to void.
 
+9. Wrongly returning pointer to a local variable.
+   char * getname(){
+        char n[10];
+	scanf("%s",n);
+	return n;	// problem here because it is address 
+			// of the *local* variable called n;
+   }
+   INSTEAD, the correct way is:
+   char * getname(){
+        char * n;
+	n = (char *)malloc(10* sizeof(char)); // dynamically allocated space
+	scanf("%s",n);
+	return n;	// OK because value of n is the malloc-ed location
+   }
+   nb: this error often happens with structures and arrays.
+

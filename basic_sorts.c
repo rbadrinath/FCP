@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include "timeutil.h"
+#include "timeutil.h"
 #define DATA_MAX 10000
 #define DATA_FILE "/tmp/sorting_data"
 
@@ -198,11 +198,11 @@ int main(int argc, char * argv[]){
 	// n is number of items to read in to sort
 	// a is the array to store the numbers read in
 	int n, a[DATA_MAX];
-	// n = read_array_file(a,DATA_FILE);
-	n = read_array(a);
+	n = read_array_file(a,DATA_FILE);
+	//n = read_array(a);
 	if ( n <=100 )
 		print_array(a,n);
-
+	
 	// Sort the numbers in the array positions a[0]..a[n-1]
 	// selectionsort(a,0,n-1);
 	// selectionsort_simple(a,n);
