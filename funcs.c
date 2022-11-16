@@ -7,6 +7,7 @@
 // show prototytpe - needs edits
 
 
+
 void saybye(){
 	printf("   bye\n");
 }
@@ -50,12 +51,34 @@ int  add_numbers(int n, int m){
 	return n+m;
 }
 
+void compute_average(){
+	float n=10.0;
+	float m=20.0;
+	printf("Average is %f\n", (n+m)/2);
+}
+
+void compute_average_2(int n, int m){
+	n=10.0;
+	m=20.0;
+	printf("Average is %f\n", (n+m)/2);
+}
+
 void another(){
+	// Illustrate parameters:
+	compute_average();
+	// compute_average_2(22.0, 28.0);
+	// float p=8.0, q=24.0;
+	// compute_average_2(p,q);
+	
+	/*
+	// Illustrate return values:
 	int x=0;
 	x=get_number();
 	printf("main: %d",x);
 	print_number(x+100);
 	x = add_numbers(100,200);
 	printf("main: %d",x);
+	*/
+
 }
 

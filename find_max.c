@@ -27,9 +27,13 @@ int read_and_find_max(){
 void find_max_of_2(int a, int b){
 	if ( a > b ) 
 		printf("Maximum is %d\n",a);
-	if ( b > a ) 
+	if ( b > a ) {
+		printf("a is %d, b is %d\n",a,b);
 		printf("Maximum is %d\n",b);
+	}
 }
+
+
 // Here is a function for the maximum of 3 numbers
 // Run it see what happens
 void find_max_of_3(int a, int b, int c){

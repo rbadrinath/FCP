@@ -1,5 +1,13 @@
 I try to list a few interesting mistakes I see students make
 
+Beginning stage:
+0. At an early stage of learning a common mistake is as follows:
+   Lets say we wish to compute the volume of a cube with side s:
+   float vol, s;
+   vol=s*s*s;		// student assumes this sets up a relation!
+   scanf("%f",&s);
+   printf("%f",vol);
+
 0. Incorrect use of getchar() or scanf() to read a single character.
    A common mistake is when using getchar or scanf to read a regular character, 
    typically the intention is to skip newlines and spaces and tabs. 
