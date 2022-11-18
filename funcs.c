@@ -9,14 +9,14 @@
 
 
 void saybye(){
-	printf("   bye\n");
+	printf("  bye\n");
 }
 
 void sayhi(){
-	printf("   hi\n");
-	printf("   Now calling sayhello\n");
+	printf("  hi\n");
+	printf("  Now calling sayhello\n");
 	sayhello();
-	printf("   back from sayhello\n");
+	printf("  back from sayhello\n");
 }
 
 void sayhello(){
