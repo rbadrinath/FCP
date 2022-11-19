@@ -14,6 +14,7 @@ Below we list files by topic:
 * main.c  : A very trivial program with expressions include concept of blocks
 * hello\_world.[ch] : A very trivial program with printf and include
 * stats.c		 : Compute trivial statistic, average, some other stuff
+* input\_output.c : A description of the normal way to use scanf and printf
 
 ### EXERCISE:
 
