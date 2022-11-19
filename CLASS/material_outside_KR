@@ -1,13 +1,17 @@
    Some material taught may not be available in the Kernighan and Ritchie
-   text book on the C Programming language. So here are some references
+   text book on the C Programming language. 
+
+   I believe that the material as explained and code made 
+   available on github suffices. But some students may wish to read from a 
+   text book. So here is some reference:
    
-   I believe all that material is available in :
+   All that material is available in :
    Robert Sedwick's algorithms book: A free downloadable version is available here:
 https://theswissbay.ch/pdf/Gentoomen%20Library/Algorithms/Algorithms%20in%20C.pdf
 
 NOTE: THE SAME BOOK is available as 4th edition which is perfectly good, except it uses C++. 
 
-parts that are useful:
+Parts that are useful:
 Ch 6 : Analaysis of algorithms
 Ch 8 : Basic Sorting: insertion sort, selection sort and bubble sort - there are
 	other sorts too, but you can neglect
