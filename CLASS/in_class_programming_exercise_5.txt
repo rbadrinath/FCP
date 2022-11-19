@@ -1,0 +1,71 @@
+1. This is to give a good grounding in linked lists
+   You will create and maintain an  ordered linked list of structures.
+   we'll call it struct person.
+   It has these fields
+	* character string name[] of length 20
+	* integer age
+	* integer id
+	* integer occupation which is one of these codes:
+		0 - unoccupied
+		1 - student
+		2 - teacher
+		3 - homemaker
+		4 - employed
+		5 - others
+	* a pointer used to point to the next node in the linked list.
+   The nodes in the linked list will be ordered by the field called id.
+
+   Here are the functions you need to write:
+   struct person * read_new_person();
+	This will read from the input name, age, id and occupation
+        and put these into a newly allocated structure and return that
+	pointer to that structure.
+
+   struct person * insert_person_into_list(struct person * head, struct person *newnode);
+	This will insert the node pointed to by newnode into the list pointed to	by head and return a pointer to the new list. It has to insert
+	the new node in the right position so that the list is ordered
+	by increasing id values.
+	It returns a pointer to the head of this new list.
+
+   struct person * read_person_list();
+	This will repeatedly call read_new_person and insert_person_into list
+	functions so that a list of persons is read. You will of course
+	have to ask for the number of persons to read into the list.
+	It returns the pointer to the newly created list's head.
+
+   struct person * delete_person_from_list(struct person * head, int id);
+	This will search for the struc person in that list that matches that
+	given id and if it exists, then delete that structure form the list.
+	It returns a pointer to the head of the (possibly) changed list
+
+   int list_length(struct person * head);
+	It returns the number of structures in the list
+
+   struct list * get_as_array(struct person * head, int n);
+	It returns an array of n person structs. This array has same
+	nodes as in the first n nodes in the linked list whose head is given.
+	(so it simply duplicates part of the linked as as an array).
+	/* notice how we use struct list * to also point to an array 
+           os structures! */
+
+   int binary_search(struct person a[], int id);
+	This returns the index in the array 
+	if the person with id is in the list and -1 otherwise.
+	It does this by using binary search on the array a.
+
+
+   In your main program read a list of persons. The repeatdely get an id from the user and delete the person from the list.
+   Check the length of the list before and after all the deletetions.
+   Then in an array get all the persons in the linked list.
+   Then use ask for an id from the user and use binary search to find if
+   the person with the id is in the list. Then it prints that person's name.
+
+ 
+2. This exercise is to test your ability to do bubble sort.
+   write void bubble_sort(char * a[], int n);
+   also write void read_strings(char *a[], int n);
+    to read an array of n integers into a[]
+   This will sort the array a[] of n strings.
+   The difference is that your comparision is a string comparision.
+   - use the strcmp() function to do the string comparision.
+   - see man strcmp for how it works
