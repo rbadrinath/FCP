@@ -3,7 +3,12 @@ void main(){
 // scanf's *syntax*
     // scanf(FORMAT-STRING,   arg1, arg2, arg3, ...);
     // FORMAT-STRING is a string containing conversion specifiers
-    //   	%d, %f, %c, %s are examples of conversion specifis
+    //   	%d, %f, %c, %s are examples of conversion specifiers
+    //   	%d - for integers
+    //   	%f - for floating point numbers
+    //   	%c - for characters
+    //   	%s - for strings
+    //   	There are more, but the above are most common
     //    Almost always conversion speifiers are separated by one space
     //    eg. in the format string: "%d %d %f" we have three
     //    conversion specifiers, indicating we expect two integers followed
