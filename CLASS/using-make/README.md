@@ -26,9 +26,9 @@ There is a command in Linux called **make**.  It reads instructions from a file 
 This is a simple minimal makefile, we just say how to build the executable
 <blockquote>
 <pre>
-\# This is Makefile.v00
-\# myprog is the target, the rule lines follow afer target line
-\# *Important* Each rule line has a TAB character at its begining
+# This is Makefile.v00
+# myprog is the target, the rule lines follow afer target line
+# *Important* Each rule line has a TAB character at its begining
 myprog:
       gcc ops.c mymain.c -o myprog
 </pre>
