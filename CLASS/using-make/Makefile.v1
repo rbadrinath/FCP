@@ -1,0 +1,11 @@
+# We list how to build the .o 
+# We list how to build the executable
+mymain.o: mymain.c ops.h
+	gcc -c mymain.c
+
+ops.o: ops.c ops.h
+	gcc -c ops.c
+
+myprog: ops.o mymain.o
+	gcc ops.o mymain.o -o myprog
+

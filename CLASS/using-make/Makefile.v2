@@ -1,0 +1,24 @@
+# DEFINITIONS
+# The below two definitions are shorthands
+EXECS=myprog
+OBJS=mymain.o ops.o
+# NOW TARGETS
+# The first target is the default, 
+#      hence 'make' called without a target does this
+#      Now I make this target called 'default' which is nothing but same as 
+#      'myprog'
+default: myprog
+
+mymain.o: mymain.c ops.h
+	gcc -c mymain.c
+
+ops.o: ops.c ops.h
+	gcc -c ops.c
+
+myprog: ops.o mymain.o
+	gcc ops.o mymain.o -o myprog
+
+# Here I have added a new target called clean it simply removes some files
+clean:
+	rm -f $(OBJS) $(EXECS) 
+#same as rm -f a.out myprog mymain.o ops.o

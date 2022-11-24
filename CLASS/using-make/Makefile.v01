@@ -1,0 +1,4 @@
+# We list how to build the executable
+myprog:  ops.c mymain.c
+	gcc ops.c mymain.c -o myprog
+

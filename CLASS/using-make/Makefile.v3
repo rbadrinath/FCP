@@ -1,0 +1,18 @@
+CC=gcc
+EXECS=myprog
+OBJS=mymain.o ops.o
+# We use the fact that by default gcc is used to create .o file from .c file
+#     so the rules for the .o are missing
+# This is the first target (hence 'make' called without a target does this)
+default: myprog
+
+mymain.o: mymain.c ops.h
+
+ops.o: ops.c ops.h
+
+myprog: ops.o mymain.o
+	gcc ops.o mymain.o -o myprog
+
+clean:
+	rm -f $(OBJS) $(EXECS) 
+#same as rm -f mymain.o ops.o myprog 
