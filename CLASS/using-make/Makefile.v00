@@ -1,3 +1,4 @@
+# Makefile.v00
 # We list how to build the executable
 myprog: 
 	gcc ops.c mymain.c -o myprog

@@ -26,7 +26,7 @@ There is a command in Linux called **make**.  It reads instructions from a file 
 This is a simple minimal makefile, we just say how to build the executable
 <pre>
     # This is Makefile.v00
-    # myprog is the target, the rule line(s) follows afer the line mentioning the target with a ":". 
+    # myprog is the target, the rule lines follow afer target line
     # *Important* Each rule line has a TAB character at its begining
     myprog: 
           gcc ops.c mymain.c -o myprog
@@ -53,6 +53,7 @@ any time either ops.c or ops.h or mymain.c files change.
 
 ## Version 01 of the makefile
 <pre>
+    # This is Makefile.v01
     # We list how to build the executable
     myprog: ops.c ops.h mymain.c
 	      gcc ops.c mymain.c -o myprog
@@ -65,7 +66,7 @@ Here is a sample session:
     $ make
     make: 'myprog' is up to date.
     $ vim ops.c                   This line indicates using vim and changing the file perhaps just some comments
-    $ make myprog
+    $ make
     gcc ops.c mymain.c -o myprog
     $
 </pre>
