@@ -24,13 +24,15 @@ There is a command in Linux called **make**.  It reads instructions from a file 
 
 ## Version 00 of the makefile
 This is a simple minimal makefile, we just say how to build the executable
+<blockquote>
 <pre>
-    # This is Makefile.v00
-    # myprog is the target, the rule lines follow afer target line
-    # *Important* Each rule line has a TAB character at its begining
-    myprog: 
-          gcc ops.c mymain.c -o myprog
+\# This is Makefile.v00
+\# myprog is the target, the rule lines follow afer target line
+\# *Important* Each rule line has a TAB character at its begining
+myprog:
+      gcc ops.c mymain.c -o myprog
 </pre>
+</blockquoate>
 
 Assuming this file is named *Makefile*, each time we execute the command 
 'make myprog' it will run the compilation command if 'myprog' doesnt exist. Since
@@ -38,12 +40,12 @@ Assuming this file is named *Makefile*, each time we execute the command
 
 Here is a sample execution:
 <pre>
-    $ make 
+    $ make
     gcc ops.c mymain.c -o myprog
     $ make
     make: 'myprog' is up to date.
     $ rm myprog
-    $ make 
+    $ make
     gcc ops.c mymain.c -o myprog
     $
 </pre>
@@ -52,12 +54,14 @@ We now make a small change. This small change will cause the make to recompile t
 any time either ops.c or ops.h or mymain.c files change.
 
 ## Version 01 of the makefile
+<blockquote>
 <pre>
-    # This is Makefile.v01
-    # We list how to build the executable
-    myprog: ops.c ops.h mymain.c
-	      gcc ops.c mymain.c -o myprog
+\# This is Makefile.v01
+\# We list how to build the executable
+myprog: ops.c ops.h mymain.c
+    gcc ops.c mymain.c -o myprog
 </pre>
+</blockquote>
 The only difference is the ops.c ops.h and mymain.c listed on the target line. The items after the colon ":" on the target line are called the *dependencies*. If any of the dependencies change, then it is assumed that the corresponding target must be rebuilt.
 Here is a sample session:
 <pre>
@@ -74,24 +78,26 @@ Here is a sample session:
 ## Version 1 of the makefile
 
 Now we make another change. Instead of compiling myprog from the C files. We first have commands to create the objects files 'ops.o' and 'mymain.o' from the sources using gcc with a '-c' flag. Then we create 'myprog' form the two '.o' files. So we now have three targets, not just one:
+<blockquote>
 <pre>
-    # This is Makefile.v1 :
-    # Recall the format
-    # A blank line seprates the entries for other targets.
-    # entry for target `main.o`
-    mymain.o: mymain.c ops.h
-	    gcc -c mymain.c
+\# This is Makefile.v1 :
+\# Recall the format
+\# A blank line seprates the entries for other targets.
+\# entry for target `main.o`
+mymain.o: mymain.c ops.h
+    gcc -c mymain.c
 <br>
-    # Notice the blank line above this line indicate the end of the previous targets rules  
-    # entry for target `ops.o`
-    ops.o: ops.c ops.h
-	    gcc -c ops.c
+\# Notice the blank line above this line indicate the end of the previous targets rules  
+\# entry for target `ops.o`
+ops.o: ops.c ops.h
+    gcc -c ops.c
 <br>
-    # entry for target `myprog`
-    # We list how to build the executable
-    myprog: ops.o mymain.o
-	    gcc ops.o mymain.o -o myprog
+\# entry for target `myprog`
+\# We list how to build the executable
+myprog: ops.o mymain.o
+    gcc ops.o mymain.o -o myprog
 </pre>
+</blockquote>
 Also notice how 'myprog' is now the last target. So to build 'myprog' we need to include its name in the command line.
 Here is an example of how a session would look now:
 <pre>
@@ -111,56 +117,60 @@ traces dependecies like this.
 ## Version 2 of the makefile
 We show that you can use some shorthand for a list of files.    
 Also we create another target - `clean`. `make clean` will remove some .o and executables.  
+<blockquote>
 <pre>
-    # This is Makefile.v2
-    # DEFINITIONS
-    # The below two definitions are shorthands
-    EXECS=myprog
-    OBJS=mymain.o ops.o
-    # NOW TARGETS
-    # The first target is the default,
-    #      hence 'make' called without a target does this
-    #      Now I make this target called 'default' which is nothing but same as
-    #      'myprog'
-    default: myprog
+\# This is Makefile.v2
+\# DEFINITIONS
+\# The below two definitions are shorthands
+EXECS=myprog
+OBJS=mymain.o ops.o
+\# NOW TARGETS
+\# The first target is the default,
+\#      hence 'make' called without a target does this
+\#      Now I make this target called 'default' which is nothing but same as
+\#      'myprog'
+default: myprog
 <br>
-    mymain.o: mymain.c ops.h
-            gcc -c mymain.c
+mymain.o: mymain.c ops.h
+        gcc -c mymain.c
 <br>
-    ops.o: ops.c ops.h
-            gcc -c ops.c
+ops.o: ops.c ops.h
+        gcc -c ops.c
 <br>
-    myprog: ops.o mymain.o
-            gcc ops.o mymain.o -o myprog
+myprog: ops.o mymain.o
+        gcc ops.o mymain.o -o myprog
 <br>
-    # Here I have added a new target called clean it simply removes some files
-    clean:
-            rm -f $(OBJS) $(EXECS)
-    # same as rm -f a.out myprog mymain.o ops.o
+\# Here I have added a new target called clean it simply removes some files
+clean:
+        rm -f $(OBJS) $(EXECS)
+\# same as rm -f a.out myprog mymain.o ops.o
 </pre>
+</blockquote>
 ## Version 3 of the Makefile
 Since **make** knows about C and how to build .o files, we may simply specify as below.  
+<blockquote>
 <pre>
-    # Here we explicitly define the special variable CC which will be used for compiling C files.
-    CC=gcc
-    EXECS=myprog
-    OBJS=mymain.o ops.o
-    # We use the fact that by default gcc is used to create .o file from .c file
-    #     so the rules for the .o are missing
-    # This is the first target (hence 'make' called without a target does this)
-    default: myprog
+\# Here we explicitly define the special variable CC which will be used for compiling C files.
+CC=gcc
+EXECS=myprog
+OBJS=mymain.o ops.o
+\# We use the fact that by default gcc is used to create .o file from .c file
+\#     so the rules for the .o are missing
+\# This is the first target (hence 'make' called without a target does this)
+default: myprog
 <br>
-    mymain.o: mymain.c ops.h
+mymain.o: mymain.c ops.h
 <br>
-    ops.o: ops.c ops.h
+ops.o: ops.c ops.h
 <br>
-    myprog: ops.o mymain.o
-          gcc ops.o mymain.o -o myprog
+myprog: ops.o mymain.o
+      gcc ops.o mymain.o -o myprog
 <br>
-    clean:
-      	  rm -f $(OBJS) $(EXECS)
-    # same as rm -f mymain.o ops.o myprog
+clean:
+  	  rm -f $(OBJS) $(EXECS)
+\# same as rm -f mymain.o ops.o myprog
 </pre>
+</blockquote>
 Here is a sample session:
 <pre>
     $ make clean
