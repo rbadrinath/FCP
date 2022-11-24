@@ -146,6 +146,8 @@ clean:
 # same as rm -f a.out myprog mymain.o ops.o
 </pre>
 </blockquote>
+
+
 ## Version 3 of the Makefile
 Since **make** knows about C and how to build .o files, we may simply specify as below.  
 <blockquote>
