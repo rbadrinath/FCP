@@ -32,7 +32,7 @@ This is a simple minimal makefile, we just say how to build the executable
 myprog:
       gcc ops.c mymain.c -o myprog
 </pre>
-</blockquoate>
+</blockquote>
 
 Assuming this file is named *Makefile*, each time we execute the command 
 'make myprog' it will run the compilation command if 'myprog' doesnt exist. Since
@@ -56,8 +56,8 @@ any time either ops.c or ops.h or mymain.c files change.
 ## Version 01 of the makefile
 <blockquote>
 <pre>
-\# This is Makefile.v01
-\# We list how to build the executable
+# This is Makefile.v01
+# We list how to build the executable
 myprog: ops.c ops.h mymain.c
     gcc ops.c mymain.c -o myprog
 </pre>
@@ -80,20 +80,20 @@ Here is a sample session:
 Now we make another change. Instead of compiling myprog from the C files. We first have commands to create the objects files 'ops.o' and 'mymain.o' from the sources using gcc with a '-c' flag. Then we create 'myprog' form the two '.o' files. So we now have three targets, not just one:
 <blockquote>
 <pre>
-\# This is Makefile.v1 :
-\# Recall the format
-\# A blank line seprates the entries for other targets.
-\# entry for target `main.o`
+# This is Makefile.v1 :
+# Recall the format
+# A blank line seprates the entries for other targets.
+# entry for target `main.o`
 mymain.o: mymain.c ops.h
     gcc -c mymain.c
 <br>
-\# Notice the blank line above this line indicate the end of the previous targets rules  
-\# entry for target `ops.o`
+# Notice the blank line above this line indicate the end of the previous targets rules  
+# entry for target `ops.o`
 ops.o: ops.c ops.h
     gcc -c ops.c
 <br>
-\# entry for target `myprog`
-\# We list how to build the executable
+# entry for target `myprog`
+# We list how to build the executable
 myprog: ops.o mymain.o
     gcc ops.o mymain.o -o myprog
 </pre>
@@ -119,16 +119,16 @@ We show that you can use some shorthand for a list of files.
 Also we create another target - `clean`. `make clean` will remove some .o and executables.  
 <blockquote>
 <pre>
-\# This is Makefile.v2
-\# DEFINITIONS
-\# The below two definitions are shorthands
+# This is Makefile.v2
+# DEFINITIONS
+# The below two definitions are shorthands
 EXECS=myprog
 OBJS=mymain.o ops.o
-\# NOW TARGETS
-\# The first target is the default,
-\#      hence 'make' called without a target does this
-\#      Now I make this target called 'default' which is nothing but same as
-\#      'myprog'
+# NOW TARGETS
+# The first target is the default,
+#      hence 'make' called without a target does this
+#      Now I make this target called 'default' which is nothing but same as
+#      'myprog'
 default: myprog
 <br>
 mymain.o: mymain.c ops.h
@@ -140,23 +140,23 @@ ops.o: ops.c ops.h
 myprog: ops.o mymain.o
         gcc ops.o mymain.o -o myprog
 <br>
-\# Here I have added a new target called clean it simply removes some files
+# Here I have added a new target called clean it simply removes some files
 clean:
         rm -f $(OBJS) $(EXECS)
-\# same as rm -f a.out myprog mymain.o ops.o
+# same as rm -f a.out myprog mymain.o ops.o
 </pre>
 </blockquote>
 ## Version 3 of the Makefile
 Since **make** knows about C and how to build .o files, we may simply specify as below.  
 <blockquote>
 <pre>
-\# Here we explicitly define the special variable CC which will be used for compiling C files.
+# Here we explicitly define the special variable CC which will be used for compiling C files.
 CC=gcc
 EXECS=myprog
 OBJS=mymain.o ops.o
-\# We use the fact that by default gcc is used to create .o file from .c file
-\#     so the rules for the .o are missing
-\# This is the first target (hence 'make' called without a target does this)
+# We use the fact that by default gcc is used to create .o file from .c file
+#     so the rules for the .o are missing
+# This is the first target (hence 'make' called without a target does this)
 default: myprog
 <br>
 mymain.o: mymain.c ops.h
@@ -168,7 +168,7 @@ myprog: ops.o mymain.o
 <br>
 clean:
   	  rm -f $(OBJS) $(EXECS)
-\# same as rm -f mymain.o ops.o myprog
+# same as rm -f mymain.o ops.o myprog
 </pre>
 </blockquote>
 Here is a sample session:
@@ -181,3 +181,5 @@ Here is a sample session:
     gcc ops.o mymain.o -o myprog
     $
 </pre>
+
+Hope this gives you a good idea to get started with make. For more information visit the gnu page on make.
