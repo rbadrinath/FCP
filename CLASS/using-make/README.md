@@ -1,6 +1,6 @@
 # About make
 
-This is a *very brief* introduction to get you going with the **make**.  
+This is a *very brief* introduction to get you going with **make**.  
 
 ## The make command
 
@@ -10,7 +10,7 @@ There is a command in Linux called **make**.  It reads instructions from a file 
    The *-f makefile* can be ommited, if the name of the *makefile* is **Makefile**.
    
    Further if *target* itself is ommitted, the first of the targets is
-   assumed.
+   assumed. Thus :
    > $ make *target*     
 
    is quite a common usage. You might wonder "*What is a target?*". In our course the target is an execuable. A *rule*
@@ -185,4 +185,7 @@ Here is a sample session:
     $
 </pre>
 
+**Remember, again**: 
+Dont forget the **TAB** that is at the beginning of the rule lines.
+ 
 Hope this gives you a good idea to get started with make. For more information visit the gnu page on make.
