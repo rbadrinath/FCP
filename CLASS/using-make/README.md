@@ -15,12 +15,13 @@ There is a command in Linux called **make**.  It reads instructions from a file 
 
    is quite a common usage. You might wonder "*What is a target?*". In our course the target is an execuable. A *rule*
    is a command to create a target. So our rules are compilation commands that we would normally use on the command line.
+### Running Example
    We show how to write a makefile by showing a few examples below.
-   > For our example below we assume these files  
-   > file "ops.c" has a few functions; 
-   > file "main.c" has a main() which uses these functions;  
-   > "ops.h" has prototypes and possiby other declarations, and is included in both the above ".c" files.  
-   > 'myprog' is the executable we will create, also called the 'target'
+   For our example below we assume these files  
+   * file "ops.c" has a few functions; 
+   * file "main.c" has a main() which uses these functions;  
+   * file "ops.h" has prototypes and possiby other declarations, and is included in both the above ".c" files.  
+   * 'myprog' is the executable we will create, also called the 'target'
 
 ## Version 00 of the makefile
 This is a simple minimal makefile, we just say how to build the executable
