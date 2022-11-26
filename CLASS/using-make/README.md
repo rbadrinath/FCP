@@ -5,28 +5,28 @@ This is a *very brief* introduction to get you going with **make**.
 ## The make command
 
 There is a command in Linux called **make**.  Before we learn more, lets try to use **make** in an empty direcory.
-Here is a sample session, you can try this yourself:
+Here is a sample session, you can try this yourself. There are some comments inserted to help you follow along.
 <pre>
-   $ ls			    0. Shows the directory is empty, in particular it doesnt have a file called *Makefile*
+   $ ls			    0. Shows the directory is empty, in particular it doesnt have a file called 'Makefile'
    $ make
    make: *** No targets specified and no makefile found.  Stop.
-                                1. make says it expects a makefile; so in the next lets create a file called *Makefile*
-   $ vi Makefile                2. Now create an empty file with the name *Makefile*
+                                1. make says it expects a makefile; so in the next lets create a file called 'Makefile'
+   $ vi Makefile                2. Now create an empty file with the name 'Makefile'
    $ make
-   make: *** No targets.  Stop.         3. make says it has no targets
-   $ vi Makefile                        4. So we edit *Makefile* and specify a **target**, i.e., a new line with *mprog:*
+   make: *** No targets.  Stop.            3. make says it has no targets
+   $ vi Makefile                           4. So we edit 'Makefile' and specify a 'target', i.e., a new line with 'mprog:'
    $ cat Makefile
-   myprog:                              5. *mprog* in this example is out target (more about targets later)
+   myprog:                                 5. 'mprog' in this example is our target (more about targets later)
    $ make
-   make: Nothing to be done for 'myprog'.   6. make says there is nothing to be done for the target myprog 
+   make: Nothing to be done for 'myprog'.  6. make says there is nothing to be done for the target myprog 
    $
-   $ vi Makefile                        7. So we edit Makeile to give it something to be done for 'myprog'
-   $ cat Makefile			   We do that by specifing a **rule** on the next line after 'myprog:'
-   myprog:                                               i.e.,  a TAB followed by the linux command   *echo "hi"*
+   $ vi Makefile                           7. So we edit Makeile to give it something to be done for 'myprog'
+   $ cat Makefile			      We do that by specifing a 'rule' on the next line after 'myprog:'
+   myprog:                                               i.e.,  a TAB followed by the linux command   'echo "hi"'
          echo "hi"
    $ make
-   echo "hi"                            8. Now make is doing the rule for myprog. It first prints the rule
-   hi                                      Then it executes the rule. You could use *ls* or any other command for fun.
+   echo "hi"                               8. Now make is doing the rule for myprog. It first prints the rule
+   hi                                         Then it executes the rule. You could use 'ls' or any other command for fun.
 </pre>
 Now for some more detail. 
 The **make** command reads from a file called a *makefile* which contains rules. Typically the command is invoked as:
