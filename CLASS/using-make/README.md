@@ -8,8 +8,8 @@ There is a command in Linux called **make**.  Before we learn more, lets try to 
 Here is a sample session, you can try this yourself:
 <pre>
    $ ls			    0. Shows the directory is empty, in particular it doesnt have a file called *Makefile*
-   $ make <samp color:read>
-   make: \*\*\* No targets specified and no makefile found.  Stop. </samp>
+   $ make
+   make: \*\*\* No targets specified and no makefile found.  Stop.
                                 1. make says it expects a makefile; so in the next lets create a file called *Makefile*
    $ vi Makefile                2. Now create an empty file with the name *Makefile*
    $ make
