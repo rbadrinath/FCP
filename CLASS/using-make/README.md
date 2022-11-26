@@ -4,7 +4,24 @@ This is a *very brief* introduction to get you going with **make**.
 
 ## The make command
 
-There is a command in Linux called **make**.  It reads instructions from a file called a *makefile* which contains rules. Typically the command is invoked as:
+There is a command in Linux called **make**.  Before we learn more, lets try to use **make** in an empty direcory.
+Here is a sample session, you can try this yourself:
+<pre>
+   $ ls			    0. Shows the directory is empty, in particular it doesnt have a file called *Makefile*
+   $ make
+   make: \*\*\* No targets specified and no makefile found.  Stop.
+                                1. make says it expects a makefile; so in the next lets create a file called *Makefile*
+   $ vi Makefile                2. Now create an empty file with the name *Makefile*
+   $ make
+   make: \*\*\* No targets.  Stop.      3. make says it has no targets
+   $ vi Makefile                        4. So we edit *Makefile* and jus put one word on a new line with a colon *mprog:*
+   $ cat Makefile
+   myprog:                              5. *mprog* in this example is a `target` (more about that later)
+   $ make
+   make: Nothing to be done for 'myprog'.   6. make says there is nothing to be done for the target myprog
+   $
+</pre>
+The **make** command reads instructions from a file called a *makefile* which contains rules. Typically the command is invoked as:
    > $ make *-f  makefile*  *target* 
 
    The *-f makefile* can be ommited, if the name of the *makefile* is **Makefile**.
