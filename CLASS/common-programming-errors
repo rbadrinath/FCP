@@ -6,7 +6,8 @@ Beginning stage:
    float vol, s;
    vol=s*s*s;		// student assumes this sets up a relation!
    scanf("%f",&s);
-   printf("%f",vol);
+   printf("%f",vol);	// student assumes that vol is automatically populated!
+   Student needs to understand that efery statement is a 'do'!
 
 0. Incorrect use of getchar() or scanf() to read a single character.
    A common mistake is when using getchar or scanf to read a regular character, 
