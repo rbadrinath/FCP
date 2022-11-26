@@ -9,11 +9,11 @@ Here is a sample session, you can try this yourself:
 <pre>
    $ ls			    0. Shows the directory is empty, in particular it doesnt have a file called *Makefile*
    $ make
-   make: \*\*\* No targets specified and no makefile found.  Stop.
+   make: *** No targets specified and no makefile found.  Stop.
                                 1. make says it expects a makefile; so in the next lets create a file called *Makefile*
    $ vi Makefile                2. Now create an empty file with the name *Makefile*
    $ make
-   make: \*\*\* No targets.  Stop.      3. make says it has no targets
+   make: *** No targets.  Stop.         3. make says it has no targets
    $ vi Makefile                        4. So we edit *Makefile* and specify a **target**, i.e., a new line with *mprog:*
    $ cat Makefile
    myprog:                              5. *mprog* in this example is out target (more about targets later)
