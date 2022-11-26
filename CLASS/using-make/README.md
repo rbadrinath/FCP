@@ -31,12 +31,14 @@ Here is a sample session, you can try this yourself. There are some comments ins
 Now for some more detail. 
 The **make** command reads from a file called a *makefile* which contains rules. Typically the command is invoked as:
    > $ make *-f  makefile*  *target* 
+
    Here *-f makefile* is a way of specifying the name of the makefile.
    The *-f makefile* can be ommited, if the name of the *makefile* is **Makefile**. This is why in our examples we 
    did not use the *-f makefile* option.
    
    Further if *target* itself is ommitted, the first of the targets is assumed. Thus :
    > $ make 
+
    is quite a common usage, as you saw in our above session. 
    You might wonder "*What is a target?*". In our course the target is often an execuable. A *rule*
    is a command to create a target. So our rules are compilation commands(gcc) that we would normally use 
