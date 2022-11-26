@@ -8,30 +8,39 @@ There is a command in Linux called **make**.  Before we learn more, lets try to 
 Here is a sample session, you can try this yourself:
 <pre>
    $ ls			    0. Shows the directory is empty, in particular it doesnt have a file called *Makefile*
-   $ make
-   make: \*\*\* No targets specified and no makefile found.  Stop.
+   $ make <samp color:read>
+   make: \*\*\* No targets specified and no makefile found.  Stop. </samp>
                                 1. make says it expects a makefile; so in the next lets create a file called *Makefile*
    $ vi Makefile                2. Now create an empty file with the name *Makefile*
    $ make
    make: \*\*\* No targets.  Stop.      3. make says it has no targets
-   $ vi Makefile                        4. So we edit *Makefile* and jus put one word on a new line with a colon *mprog:*
+   $ vi Makefile                        4. So we edit *Makefile* and specify a **target**, i.e., a new line with *mprog:*
    $ cat Makefile
-   myprog:                              5. *mprog* in this example is a `target` (more about that later)
+   myprog:                              5. *mprog* in this example is out target (more about targets later)
    $ make
-   make: Nothing to be done for 'myprog'.   6. make says there is nothing to be done for the target myprog
+   make: Nothing to be done for 'myprog'.   6. make says there is nothing to be done for the target myprog 
    $
+   $ vi Makefile                        7. So we edit Makeile to give it something to be done for 'myprog'
+   $ cat Makefile			   We do that by specifing a **rule** on the next line after 'myprog:'
+   myprog:                                               i.e.,  a TAB followed by the linux command   *echo "hi"*
+         echo "hi"
+   $ make
+   echo "hi"                            8. Now make is doing the rule for myprog. It first prints the rule
+   hi                                      Then it executes the rule. You could use *ls* or any other command for fun.
 </pre>
-The **make** command reads instructions from a file called a *makefile* which contains rules. Typically the command is invoked as:
+Now for some more detail. 
+The **make** command reads from a file called a *makefile* which contains rules. Typically the command is invoked as:
    > $ make *-f  makefile*  *target* 
-
-   The *-f makefile* can be ommited, if the name of the *makefile* is **Makefile**.
+   Here *-f makefile* is a way of specifying the name of the makefile.
+   The *-f makefile* can be ommited, if the name of the *makefile* is **Makefile**. This is why in our examples we 
+   did not use the *-f makefile* option.
    
-   Further if *target* itself is ommitted, the first of the targets is
-   assumed. Thus :
-   > $ make *target*     
-
-   is quite a common usage. You might wonder "*What is a target?*". In our course the target is an execuable. A *rule*
-   is a command to create a target. So our rules are compilation commands that we would normally use on the command line.
+   Further if *target* itself is ommitted, the first of the targets is assumed. Thus :
+   > $ make 
+   is quite a common usage, as you saw in our above session. 
+   You might wonder "*What is a target?*". In our course the target is often an execuable. A *rule*
+   is a command to create a target. So our rules are compilation commands(gcc) that we would normally use 
+   on the command line.
 ### Running Example
    We show how to write a makefile by showing a few examples below.
    For our example below we assume these files  
