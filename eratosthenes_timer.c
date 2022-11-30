@@ -1,5 +1,27 @@
 // computing the primes upto a certain limit
 #include <stdio.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+struct {
+	struct timeval start;
+	struct timeval end;
+} times;
+void set_time_start(){
+	struct rusage usage;
+	int r = getrusage(RUSAGE_SELF , &usage);
+	times.start=usage.ru_utime;
+}
+void set_time_end(){
+	struct rusage usage;
+	int r = getrusage(RUSAGE_SELF , &usage);
+	times.end=usage.ru_utime;
+}
+long get_time_usage(){
+	return times.end.tv_sec*1000000+times.end.tv_usec
+		- times.start.tv_sec*1000000+-times.start.tv_usec;
+}
+
+
 #define METHOD 1
 #define LIMITN 100000		// Look for primes under this limit
 // #define LIMITN 30		// Look for primes under this limit
@@ -13,6 +35,7 @@ int main()
         } factor[ASIZE];
     int idx=0, n, isprime, j;
     printf("Will list primes starting from 2 upto %d\n",LIMITN);
+    set_time_start();
     for(n=2;n<LIMITN;n++) {	// Interesting: n is never used explicitly!
         isprime=1;
         for( j=0; j<idx;j++){
@@ -36,4 +59,7 @@ int main()
             idx++;
         }
     }
+    set_time_end();
+    long t = get_time_usage();
+    printf("time - %ld usec\n",t);
 }

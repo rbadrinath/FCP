@@ -29,7 +29,7 @@ Below we list files by topic:
 
 ## SWITCH
 
-* do\_op.c : A simple calculator
+* do\_op.c : A simple calculator. Also has a bit about character input.
 
 
 ## WHILE
@@ -45,7 +45,7 @@ Below we list files by topic:
 ## FOR
 
 * list\_avg\_f.c : 	Find the average of n numbers
-* eratosthenes.c :	: Eratosthenes seieve - big program - preprocessor - while loop
+* eratosthenes\_simple.c : Eratosthenes seieve - nested for loops
 * simple\_event\_count.c : do coint flipping and count some event
 * fillin\_findmax\_loop.c: Find the average in a loop, not predetermined n
 
@@ -61,9 +61,11 @@ Below we list files by topic:
 * lcm.c		 :	Compute lcm using recursion
 
 ## ARRAYS with POINTERS AND FUNCTIONS
-* list\_avg\_array.c : Read a list of numbers into an array and find the average.
+* list\_avg\_array.c : Read a list of numbers into an array and 
+                       find the average.
 * related\_arrays.c : Read two arrays (name[][] and scores) and search.
-* apnf.c   : We write a sequence of funcitons illustrating how arrays and pointers work in the context of function parameters
+* apnf.c   : We write a sequence of funcitons illustrating how arrays 
+		and pointers work in the context of function parameters.
 
 
 ## STRINGS
@@ -83,7 +85,8 @@ Below we list files by topic:
 ## STRUCTURES with arrays and pointers
 * simple\_struct.c : Introduction to structures and how they are used
 * linked\_list.c   : Structure used to created a linked list
-
+* eratosthenes.c   : Using structures to remember result of previous divisions
+* eratosthenes\_timer.c : Using a timer to see which version performs well.
 
 ## SEARCHING
 
@@ -101,6 +104,9 @@ Below we list files by topic:
 ## FILE OPERATIONS
 * fileio.c & io.c	: fopen(), fclose(), fscanf(), fprintf()
 * fillin\_file.c  : Has some sample code to fill in missing file ops
+* array\_ops.c    : Has some functions for array read / write.
+			Includes read from file.
+			Includes string reads with malloc.
 
 ## MISCELLANEOUS
 * simple\_timing.c 	    : A program using the timing functions
