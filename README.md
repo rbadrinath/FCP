@@ -16,6 +16,9 @@ Below we list files by topic:
 * stats.c		 : Compute trivial statistic, average, some other stuff
 * input\_output.c : A description of the normal way to use scanf and printf
 
+### Understanding types:
+conversions.c : print a character as integer and an integer as character etc.
+
 ### EXERCISE:
 
 * fillin\_simple.c : A bunch of programs to fill in.
@@ -25,6 +28,8 @@ Below we list files by topic:
 
 * find\_max.c : A simple use of max to find the maximum of three numbers.
 	Note the use of {} . Are they needed ?
+	There are examples with and without parameters. The ones with parameters are useful during discussion
+	on function parameter passing.
 * fillin\_if.c : A simple exercise to fill in to find if 3 numbers are in order
 
 ## SWITCH
@@ -54,7 +59,9 @@ Below we list files by topic:
 
 * funcs.c : Simple notion of functions, prototypes, and declare before use
 * funcs\_params.c : Function parameters
-* funcs\_scope.c : re-emphasising scope with globals and locals and functions
+* funcs\_scope.c : scope with globals and locals and functions
+* funcs\_scope2.c : re-emphasising scope with globals and locals and functions
+* find\_max.c : this includes examples of passing parameters, left to the student to write main and call with parameters.
 * fact.c  : The recursive factorial program
 		- simple notion of function and return
 * gcd.c		 :	Compute gcd using recursion
