@@ -9,6 +9,17 @@ Beginning stage:
    printf("%f",vol);	// student assumes that vol is automatically populated!
    Student needs to understand that efery statement is a 'do'!
 
+0. Assume a function prototype declared as 
+    int fact(int n){
+     // assume we have written how to compute factorial and are returning it;
+    }
+  Here is an incorrent call of the function:
+    void main(){
+         int n,f;
+         scanf("%d",&n);
+	 f = fact();	// must pass the value here!
+    }
+
 0. Incorrect use of getchar() or scanf() to read a single character.
    A common mistake is when using getchar or scanf to read a regular character, 
    typically the intention is to skip newlines and spaces and tabs. 
