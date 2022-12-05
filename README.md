@@ -67,6 +67,9 @@ conversions.c : print a character as integer and an integer as character etc.
 * gcd.c		 :	Compute gcd using recursion
 * lcm.c		 :	Compute lcm using recursion
 
+## POINTERS
+* pointer\_simple.c : A simple program to play with pointers and see effect of improper use.
+
 ## ARRAYS with POINTERS AND FUNCTIONS
 * list\_avg\_array.c : Read a list of numbers into an array and 
                        find the average.
