@@ -19,7 +19,7 @@ int test(int n){
 	// This is a simple function just to illustrate what 
 	// the frame looks like for a normal function call
 	int x=10;
-	int n = x * n; 
+	n = x * n; 
 	return n;
 }
 int main(){
