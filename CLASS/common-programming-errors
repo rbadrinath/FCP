@@ -20,6 +20,13 @@ Beginning stage:
 	 f = fact();	// must pass the value here!
     }
 
+0. Incorrect use of scanf()
+   Often students use the newline or space character in the scanf.
+   This often leads to issues when reading because space and newline 
+   mean something particular when used in the scanf context. In general 
+   avoid using these freely in the format string. At best a space between 
+   conversion specifiers is sufficient.
+
 0. Incorrect use of getchar() or scanf() to read a single character.
    A common mistake is when using getchar or scanf to read a regular character, 
    typically the intention is to skip newlines and spaces and tabs. 

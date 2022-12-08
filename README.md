@@ -62,8 +62,11 @@ conversions.c : print a character as integer and an integer as character etc.
 * funcs\_scope.c : scope with globals and locals and functions
 * funcs\_scope2.c : re-emphasising scope with globals and locals and functions
 * find\_max.c : this includes examples of passing parameters, left to the student to write main and call with parameters.
+
+## RECURSION
 * fact.c  : The recursive factorial program
 		- simple notion of function and return
+* recursion\_simple.c : a first notion of recursion with lots of examples
 * gcd.c		 :	Compute gcd using recursion
 * lcm.c		 :	Compute lcm using recursion
 
