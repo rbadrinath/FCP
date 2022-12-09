@@ -54,6 +54,8 @@ conversions.c : print a character as integer and an integer as character etc.
 * simple\_event\_count.c : do coint flipping and count some event
 * fillin\_findmax\_loop.c: Find the average in a loop, not predetermined n
 
+* for\_break\_continue.c : use of break and continue in a loop, for loop
+
 
 ## FUNCTIONS
 
