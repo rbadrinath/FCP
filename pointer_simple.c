@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define TEST_NO 2
+#define TEST_NO 1
 
 // This file has multiple tests for the way pointers work.
 // Select the test by defining the variable test in main() to be in the appropriate range
@@ -57,20 +57,20 @@ void main(){
 	 case 4: {
 		// This is to demonstrate address arithmetic
 		int *p;
-		p = (int * ) 1024;  // careful! p itself is invalid :-)
+		p = (int * ) 1024;  // careful! *p is invalid :-)
 		printf("p holds the address %p\n", p); // note "%p" format conversion
 		printf("sizeof(int) is %ld\n", sizeof(int));
 		p ++;	// Note that p++ is pointer arithmetic operation:
 	       		//	it increases p to point to the integer location 
 			//	after the current integer address p.
-		printf("p holds the address %p\n", p);
+		printf("p incremented holds the address %p\n\n", p);
 		char *pc;
 		pc = (char *) 1024;
-		printf("p holds the address %p\n", pc);
+		printf("pc holds the address %p\n", pc);
 		printf("sizeof(char) is %ld\n", sizeof(char));
 		pc ++;	// Note that p++ is pointer arithmetic:
 	       		//	it increases p to point to the character location after the current character address p.
-		printf("p holds the address %p\n", pc);
+		printf("pc incremented holds the address %p\n", pc);
 
 		break; // what if we did p = p+2;
 	    }
