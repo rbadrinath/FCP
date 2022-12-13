@@ -39,6 +39,33 @@ Beginning stage:
    The right way to do this is to read the character with scanf(" %c",&ch);
    notice the extra space in the format string.
 
+0. Incorrect understanding of break and return
+   The break  statement:   only works for loops and  switch
+                           As soon as it is executed, the program goes
+			   out of that loop or switch to the statement after it.
+   The return  statement:  works anywhere in a function
+			   As soon as it is executed, the function finishes, ie
+			   no other statement in the function is excuted.
+			   Additionally, if a value is provided, that value
+			   is the return value of the function.
+    The exit  call:	   exit() is not a C statement but a C function call.
+			   As soon as it is executed, the program terminates, ie
+			   no other statement in the program is executed.
+			   Additionally, if a value is providd, that value
+			   is the exit status of the program execution.
+   // sample incorrect use
+   // this function is to return 0 if a1!=a2 or if b1 != b2. Else it should return 1
+   int equal_pairs(int a1, int a2, int b1, int b2){
+	if (a1 != a2 )
+		return 0;
+	else
+		return 1;
+	if (b1 != b2 ) 
+		return 0;
+	else
+		return 1;
+   }
+
 1. Copying arrays: 
    Student wants to copy a string in the array s[] to
    the newly allocated array in t:
