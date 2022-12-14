@@ -8,6 +8,22 @@ void show_value_p(void *p){		// recall that a pointer holds an address value
 	printf("Inside function p is %p \n", p);
 }
 
+void swap_ints(int x, int y){
+	int t;
+	t = x;
+	x = y;
+	y = t;
+}
+
+
+void swap_ints_by_ptr( int * x, int * y){
+	int t;
+	t = *x;
+	*x = *y;
+	*y = t;
+}
+
+
 void main(){
 	int test= TEST_NO ;
 
@@ -74,6 +90,16 @@ void main(){
 
 		break; // what if we did p = p+2;
 	    }
+	 default:
+	 case 0: {
+		int i = 100,   j = 200 ;
+		if ( test ) 
+			swap_ints(i,j);
+		else
+			swap_ints_by_ptr(&i,&j);
+		printf("i = %d    j = %d\n",i,j);
+	    }
+
 	} // end of the switch
 
 
