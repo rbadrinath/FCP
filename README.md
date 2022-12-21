@@ -15,6 +15,7 @@ Below we list files by topic:
 * hello\_world.[ch] : A very trivial program with printf and include
 * stats.c		 : Compute trivial statistic, average, some other stuff
 * input\_output.c : A description of the normal way to use scanf and printf
+* limit\_explore.c : A simple exploration of integer number limits.
 
 ### Understanding types:
 conversions.c : print a character as integer and an integer as character etc.
@@ -74,6 +75,7 @@ conversions.c : print a character as integer and an integer as character etc.
 
 ## POINTERS
 * pointer\_simple.c : A simple program to play with pointers and see effect of improper use.
+* address\_explore.c : A simple program to explore addresses of locals, parameters, globals and also dynamic memory.
 
 ## ARRAYS with POINTERS AND FUNCTIONS
 * list\_avg\_array.c : Read a list of numbers into an array and 
