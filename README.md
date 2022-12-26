@@ -86,7 +86,7 @@ conversions.c : print a character as integer and an integer as character etc.
 
 
 ## STRINGS
-* string\library.c : Read an array of strings and do some replacement.
+* string\_simple.c : Read an array of strings and do some replacement.
 * split\_sentence.c : Split a long sentence into words.
 
 ## DYNAMIC MEMORY
