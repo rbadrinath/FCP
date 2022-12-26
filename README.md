@@ -83,7 +83,10 @@ conversions.c : print a character as integer and an integer as character etc.
 * related\_arrays.c : Read two arrays (name[][] and scores) and search.
 * apnf.c   : We write a sequence of funcitons illustrating how arrays 
 		and pointers work in the context of function parameters.
-
+## const static and macro substitution
+* const.c	: know how const is used, for pointers and functions too
+* static.c	: know how 'static' is used
+* macro\_substitution.c : Create macros simple ones as well as with parameters
 
 ## STRINGS
 * string\_simple.c : Read an array of strings and do some replacement.
