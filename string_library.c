@@ -4,10 +4,21 @@
 
 #define MAX 20
 
+#define main2 main
+
 // function prototypes
+int find_length(char s[]);
 void exchange_strings(char s[], char t[]);
 int compare_and_exchange(char s[], char t[]);
 int find_position(char sorted_arr[][20], int arrsize, char newstr[]);
+
+// demostrate a string as an array
+int find_length(char s[]){
+	int i;
+	// Wonder what is the sizeof(s) here? Hmmm...
+	for(i=0;s[i]!='\0';i++);
+	return i;
+}
 
 //
 // A function to exchange (swap) two character strings
@@ -43,7 +54,7 @@ int find_position(char sorted_arr[][20], int arrsize, char newstr[]){
               // than all items in the array
 }
 
-void main(){
+void main1(){
    char s[100][20]; // s is an array of strings, each of max size 20
    char newstr[20];
    int i, pos, size;
@@ -75,4 +86,14 @@ void main(){
    for ( i=0; i < size; i++)
 	   printf("%s\n",s[i]);
 
+}
+
+void main2(){
+	char s[]="Hello how are you?";
+	char *p="Hello how are you?";
+	printf("length is %d\n",find_length(s));
+	printf("length is %d\n",find_length("Hello how are you?"));
+	printf("length is %d\n",find_length(p));
+	printf("Size of s is %d\n",(int) sizeof(s));
+	printf("Size of p is %d\n",(int) sizeof(p));
 }
