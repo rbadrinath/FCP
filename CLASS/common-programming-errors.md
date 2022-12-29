@@ -1,12 +1,12 @@
 I try to list a few interesting mistakes I see students make. Some of these seem obvious, but to a newbee they are not.
 
 ## Beginning stage:
-0. At an early stage of learning a common mistake is the concept of
+1. At an early stage of learning a common mistake is the concept of
    an assignment statement. Here is an example.
    Lets say we wish to compute the volume of a cube with side s:
 <pre>
    float vol, s;
-   vol=s\*s\*s;		  // student assumes this sets up a relation/function!
+   vol=s*s*s;		  // student assumes this sets up a relation/function!
    scanf("%f",&s);
    printf("%f",vol);  // student assumes that vol is automatically populated!
 </pre>
@@ -62,7 +62,7 @@ I try to list a few interesting mistakes I see students make. Some of these seem
  <tr>  <td> The exit  call: </td><td>  exit() is not a C statement but a C function call.
 			   As soon as it is executed, the program terminates, ie
 			   no other statement in the program is executed.
-			   Additionally, if a value is providd, that value
+			   Additionally, if a value is provided, that value
 			   is the exit status of the program execution.</td>
  </tr>
 </table>
@@ -104,16 +104,16 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 3. Pointer to a variable:
 <pre>
    int *p;
-   \*p=5;
+   *p=5;
       // Here the student assumed that since p was a pointer to an integer it must
       // already be pointing to an integer.
       // But that is not true. We must assign p the address of an integer before
-      // we can use the expression "\*p".
+      // we can use the expression "*p".
       // So..... a right way to do this is:
-   int \*p;
+   int *p;
    int n;
    p=&n;
-   \*p=5;
+   *p=5;
 </pre>
 4. Never return a pointer to a local variables inside a function.
    Sometimes students return a pointer to a variable which is locally
@@ -122,9 +122,9 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    it will not work as intended. If you want to return a pointer then either
    malloc the variable or use directly what you get as a function parameter. Eg:
 <pre>
-   char \* f(){
+   char * f(){
      char str[10];
-     char \* t;
+     char * t;
      ...
      return(str);         // This is not ok!
      ...
@@ -176,16 +176,16 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 
 9. Wrongly returning pointer to a local variable.
 <pre>
-   char \* getname(){
+   char * getname(){
         char n[10];
 	scanf("%s",n);
 	return n;	// PROBLEM here because it is address 
 			// of the *local* variable called n;
    }
    //  INSTEAD, the correct way is:
-   char \* getname(){
-        char \* n;
-	n = (char \*)malloc(10\* sizeof(char)); // dynamically allocated space
+   char * getname(){
+        char * n;
+	n = (char *)malloc(10* sizeof(char)); // dynamically allocated space
 	scanf("%s",n);
 	return n;	// OK because value of n is the malloc-ed location
    }
