@@ -1,8 +1,8 @@
 I try to list a few interesting mistakes I see students make. Some of these seem obvious, but to a newbee they are not.
 
 ## General:
-1. At an early stage of learning a common mistake is the concept of
-   an assignment statement. Here is an example:
+1. At an early stage of learning a common mistake is the **concept of
+   an assignment** statement. Here is an example:
 <pre>
    // We wish to compute the volume of a cube with side s:
    float vol, s;
@@ -12,7 +12,7 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 </pre>
    Student needs to understand that every statement is a 'do'! not a relation.
 
-2. using "=" (the assignment operator) instead of the comparison operator "=="
+2. using "=" (the **assignment** operator) instead of the **comparison operator** "=="
    Most compilers these days flag a warning. But often students neglect it.
 <pre>
       Wrong way			      The Right way
@@ -30,15 +30,15 @@ I try to list a few interesting mistakes I see students make. Some of these seem
     void main(){
          int n,f;
          scanf("%d",&n);
-	     f = fact();	// must pass the value here!
+	     f = fact();	// must pass the value here! Compiler maypoint this out if the definition preceeded the use.
     }
 </pre>
 
-4. Incorrect use of scanf().  
+4. Incorrect use of **scanf**().  
    Often students use the newline or space character in the scanf.
    This often leads to issues when reading because space and newline
-   mean something particular when used in the scanf context. In general
-   avoid using these freely in the format string. At best a space between
+   mean something particular when used in the scanf context. *In general
+   avoid using using newline and spaces freely in the format string*. At best a space between
    conversion specifiers is sufficient.
 
 5. Incorrect use of getchar() or scanf() to read a single character. 
@@ -53,7 +53,7 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    notice the extra space in the format string. This use is specifically in the case that
    the students wants to read a non-whitespace.
 
-6. Incorrect understanding of break and return
+6. Incorrect understanding of **break**, **return** and **exit**
 <table>
   <tr>
     <td> The break  statement:</td> <td>   only works for loops and  switch
@@ -64,7 +64,8 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 			   As soon as it is executed, the function finishes, ie
 			   no other statement in the function is excuted.
 			   Additionally, if a value is provided, that value
-			   is the return value of the function.</td>
+			   is the return value of the function. Note that there is no need
+               for the return value/expression to be in parethesis!</td>
  </tr>
  <tr>  <td> The exit  call: </td><td>  exit() is not a C statement but a C function call.
 			   As soon as it is executed, the program terminates, ie
@@ -88,13 +89,13 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    }
 </pre>
 
-7. Using variables without initializing them is always an issue.
+7. **Using variables without initializing** them is always an issue.
    Students occasionally assume that variables must be zero by default.  
    Not true in C.  
    This mistake repeats quite often with arrays declared locally or
    allocated using malloc();
 
-8. In general dont neglect warnings. They are trying to tell you something.
+8. In general **dont neglect warnings**. They are trying to tell you something.
    By being more explicity, the warnings go away even if there is no problem.
    A typical example is one of implicit function declaration, indicating
    that a prototype is missing. Here is an example:
@@ -113,15 +114,16 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    the 'implicit declaration' warning. Giving the correct prototype 
    would have given a nice error message.
 
-9. Assuming incorrectly that the return value of a function is 0, even if no
+9. **Assuming incorrectly that the default return value of a function is 0**, even if no
    return statement is used. While some compilers do this, the language itself
    does not guarantee this. So do not make this assumption.
    The right way to do this is:
    * If the return type is given, make sure there is a 'return' satement.
    * If the return value is not used, make sure to 
      explicitly set the return type to void.
+
 ## Arrays
-1. Copying arrays: 
+1. **Copying arrays**: 
    Student wants to copy a string in the array s[] to
    the newly allocated array in t:
 <pre>
@@ -134,7 +136,7 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 </pre>
 
 ## Operators
-1. Comparing three numbers: students wants to check if a,b, and c are in
+1. **Comparing three numbers**: students wants to check if a,b, and c are in
 	increasing order:
 <pre>
    if (a < b < c) 	// NOTE: will evaluate to true even if a=3, b=2, c=1
@@ -145,21 +147,20 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 </pre>
 
 ## Pointers
-1. Pointer to a variable:
+1. **Unitialized pointers**:
 <pre>
    int *p;
-   *p=5;
-      // Here the student assumed that since p was a pointer to an integer it must
-      // already be pointing to an integer.
-      // But that is not true. We must assign p the address of an integer before
-      // we can use the expression "*p".
-      // So..... a right way to do this is:
+   *p=5;  // Here the student assumed that since p was a pointer to an integer it must
+          // already be pointing to an integer.
+          // But that is not true. We must assign p the address of an integer before
+          // we can use the expression "*p".
+   // So..... a right way to do this is:
    int *p;
    int n;
-   p=&n;
+   p=&n;  // We now have p initialized to the address of the variable n
    *p=5;
 </pre>
-2. Never return a pointer to a local variables inside a function.
+2. **Never return a pointer to a local variables** inside a function.
    Sometimes students return a pointer to a variable which is locally
    defined (automatic storage class). 
    Remember this variable itself does not exist beyond the function. So
@@ -170,7 +171,7 @@ I try to list a few interesting mistakes I see students make. Some of these seem
      char str[10];
      char * t;
      ...
-     return(str);         // This is not ok!
+     return(str);     // This is *not* ok!
      ...
      t = malloc(10);
      return t;		  // This is OK
@@ -181,15 +182,15 @@ Another example:
    char * getname(){
         char n[10];
 	scanf("%s",n);
-	return n;	// PROBLEM here because it is address 
-			// of the *local* variable called n;
+	return n;	// PROBLEM here because return value is the address 
+			    // of the *local* variable called n;
    }
    //  INSTEAD, the correct way is:
    char * getname(){
         char * n;
 	n = (char *)malloc(10* sizeof(char)); // dynamically allocated space
 	scanf("%s",n);
-	return n;	// OK because value of n is the malloc-ed location
+	return n;	      // OK because value of n is the malloc-ed location
    }
    nb: this error often happens with structures and arrays.
 </pre>
