@@ -1,6 +1,6 @@
 I try to list a few interesting mistakes I see students make. Some of these seem obvious, but to a newbee they are not.
 
-## Beginning stage:
+## General:
 1. At an early stage of learning a common mistake is the concept of
    an assignment statement. Here is an example:
 <pre>
