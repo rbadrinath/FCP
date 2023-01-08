@@ -83,6 +83,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * related\_arrays.c : Read two arrays (name[][] and scores) and search.
 * apnf.c   : We write a sequence of funcitons illustrating how arrays 
 		and pointers work in the context of function parameters.
+* arraySizePtr.c : It demonstrates some unusual usage of pointer and array declarations.
 ## const static and macro substitution
 * const.c	: know how const is used, for pointers and functions too
 * static.c	: know how 'static' is used
