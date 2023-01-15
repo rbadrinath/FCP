@@ -4,7 +4,7 @@
 
 #define MAX 20
 
-#define main2 main
+#define main1 main
 
 // function prototypes
 int find_length(char s[]);
@@ -25,6 +25,8 @@ int find_length(char s[]){
 void exchange_strings(char s[], char t[]){
   // This is very similar to swapping of the contents of two variables
   // Note that s and t are pointers...
+  // Note also that it is making a dangerous assumption
+  //      that there is enough space t do the exchange properly
   char d[MAX]; // temporary variable used for swapping.
   strcpy(d,s);
   strcpy(s,t);
@@ -55,6 +57,8 @@ int find_position(char sorted_arr[][20], int arrsize, char newstr[]){
 }
 
 void main1(){
+   // Elaborate example shows how a 2 dimensional array is used
+   // as strings
    char s[100][20]; // s is an array of strings, each of max size 20
    char newstr[20];
    int i, pos, size;
@@ -66,34 +70,55 @@ void main1(){
    }
    // Blow is a little loop that reads all items until it finds an EOF
    i=0;
-   while ( fscanf(fp,"%s",s[i++]) != EOF) printf("read\n"); 
-   size=i;
+   while ( fscanf(fp,"%s",s[i++]) != EOF); // printf("read\n"); 
    printf("I have read all stuff from the file\n");
+   // Note the real size
+   size=i-1;
+   // just to indicate that there is no string at s[size];
+   s[size][0]='\0'; // not really needed
 
+   // now read a string and insert it in the array, by doing a replacement
    // read a new string from the user - from the keyboard
-   printf("Now give me a new string to add\n");
+   printf("Now give me a new string to insert\n");
    scanf("%s", newstr);
 
-   printf("Finding its position\n");
-   pos=find_position(s,size,newstr);
+   // Find where this new string should sit in the array 
+   printf("\n\nFinding the position of \"%s\" in the array\n",newstr);
+   pos = find_position(s,size,newstr);
 
-   // now replace the string in position pos by this new string
-   printf("Replacing %s \n",s[pos]);
+   // now exchange the string in position pos and this new string
+   printf("Replacing the first \"%s\" \n",s[pos]);
    exchange_strings(s[pos],newstr);
 
    // now print the  new array of strings
-   printf("Printing new array :\n");
+   printf("\nPrinting new array :\n");
    for ( i=0; i < size; i++)
 	   printf("%s\n",s[i]);
 
+   // now print the removed string
+   printf("We replaced \"%s\" \n",newstr);
+
 }
 
+
+// This is to demonstrate pointer vs character array
 void main2(){
-	char s[]="Hello how are you?";
-	char *p="Hello how are you?";
+	char s[]="Hello how are you?";   // This is an array
+	char *p="Hello how are you?";	 // This is a pointer
 	printf("length is %d\n",find_length(s));
 	printf("length is %d\n",find_length("Hello how are you?"));
 	printf("length is %d\n",find_length(p));
 	printf("Size of s is %d\n",(int) sizeof(s));
 	printf("Size of p is %d\n",(int) sizeof(p));
+}
+
+// This is to demonstrate how a string is different from a character array
+void main3(){
+	char a[6]={'H','e','l','l','o','x'};
+        char b[6]={'F','e','l','l','o','\0'};
+        char c[6]="Hello";
+        char d[10]={'H','e','l','l','o','\0','R','a','m','\0'};
+	printf("%s\n",a);
+	printf("%s : %s : %s : %s \n",a,b,c,d);
+	printf("%s :%s: %s \n", &d[2], &d[5], &d[6]);
 }
