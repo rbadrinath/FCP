@@ -84,10 +84,14 @@ conversions.c : print a character as integer and an integer as character etc.
 * apnf.c   : We write a sequence of funcitons illustrating how arrays 
 		and pointers work in the context of function parameters.
 * arraySizePtr.c : It demonstrates some unusual usage of pointer and array declarations.
-## const static and macro substitution
+## const,static, extern
 * const.c	: know how const is used, for pointers and functions too
 * static.c	: know how 'static' is used
+* threepieces.c, tpcs.c tpcs.h : experiment with extern and static
+
+## macro substitution
 * macro\_substitution.c : Create macros simple ones as well as with parameters
+
 
 ## STRINGS
 * string\_simple.c : Read an array of strings and do some replacement.
