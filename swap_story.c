@@ -3,6 +3,7 @@
 // Look at these functions one by one
 //
 // 1. Simple swap of any two indices
+//    calling it with swap(a,i,i+1) would swap a[i] with a[i+1]
 void swap(int a[], int i, int j){
 	int t = a[i];
 	a[i]=a[j];
@@ -15,7 +16,7 @@ void swap_greaterup(int a[], int i){
 		swap(a,i,i+1);
 }
 
-// 3. Repeatedly do the  modified swapfor each valid value of i
+// 3. Repeatedly do the modified swap above for each valid value of i
 void repeat_swap_greaterup(int a[], int n){
 	for(int i=0;i<n-1;i++)
 		swap_greaterup(a,i);
