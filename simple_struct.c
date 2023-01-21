@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 // This is a common way to define a new aggregate type called a structure
+// Note that this is not a variable declaraction.
 struct complex {
 	float real;
 	float imaginary;
@@ -10,26 +11,45 @@ struct complex {
 // "imaginary" each of them is as good as a separate variable
 // but clubbed together into one larger variable... we'll see an example
 
+// After this is declared we can use "struct complex" as if it was a type.
+// For example here is a global variable of the  type "struct complex":
+struct  complex g;
 
-// Here is another interesting structure
+
+// Two other examples of structure declarations
+// (1) Note that the structure can contain other structures or arrays as well
+// ... not just basic types. Eg "struct student" below:
+struct student {
+	char name[100];
+	char marks;
+	struct complex id;
+};
+
+
+// (2) Here is another interesting structure. In "struct list" below we have
+// ... a pointer to a structure inside a structure.
 struct list {
 	int v;
 	struct list * next;
 };
-// The above has two members one of which is a pointer type.
 
-//
+// Here are some simple function definitions for structures
+// .. suggestion: Come back to this after looking at main()
 void read_complex( struct complex * v){
-	scanf("%f %f",&(*v).real, &(*v).imaginary);
+	scanf("%f %f",&v->real, &v->imaginary);
+	// Alternately:
+	// scanf("%f %f",&(*v).real, &(*v).imaginary);
 }
+
+
 void print_complex( const struct complex * v){
 	printf("%f %f",(*v).real, (*v).imaginary);
 }
 
 void add_complex( const struct complex * u, 
 		  const struct complex * v, struct complex *w){
-	(*w).real =  (*u).real+(*v).real;
-	(*w).imaginary = (*u).imaginary +(*v).imaginary ;
+	w->real  =  u->real  +  v->real;
+	(*w).imaginary  =  (*u).imaginary  +  (*v).imaginary ;
 }
 
 // note that (*v).real and v->real are the same
@@ -46,10 +66,21 @@ void print_3_complex( const struct complex v){
 void main(){
   struct complex a,b,c;
 
-  //1. The members of structures are access with the "." operator
+  //1. Basics in three pieces
+  //1.a   The members of structures are access with the "." operator
+  //      Each field is like a variable but preceeded with the struct var name
   a.real=5;
   a.imaginary=10;
   printf("%f %f\n",a.real,a.imaginary);
+
+  //1.b assignment works like for any other type (other than arrays)
+  b = a;	// Try this !
+
+  //1.c comparision doesnt work!
+  if ( a == b ) // Try this !
+	  printf(" They are equal\n");
+  else
+	  printf("They are not equal\n");
 
   /*
   //2. also we can have pointers to structures
@@ -57,23 +88,29 @@ void main(){
   p=&a;
 
   //3. Note that *p is a structure so it has real and imaginary parts
+  //   To read in a structure we need to read field by field
   printf("%f %f\n", (*p).real, (*p).imaginary);
   // Note that we can replace (*p).real by p->real .. a C language convenience
   
   //4. We can also malloc structures
   p=malloc(sizeof(struct complex));
-  p->real=55;
+  p->real=50;
   p->imaginary=100;
   printf("%f %f\n", p->real, p->imaginary);
   */
 
   /*
-  //5. We can treat structure variables just like integers and other basic types:
+  //5. We can treat structure variables just like basic types and
+  //   pass pointers to them for the functions to read, modify, etc:
   printf("\nGive me real and imaginary parts of the first number:");
   read_complex(&a);
+
   printf("\nGive me real and imaginary parts of the second number:");
   read_complex(&b);
+
+  // we want to add   a  and  b  ,  putting the result in   c
   add_complex(&a,&b,&c);
+
   printf("\nReal and imaginary parts of the sum are:");
   print_complex(&c);
   */
@@ -93,7 +130,8 @@ void main(){
   //7. We can also pass value (unlike arrays, but like other basic types)
   /*
   printf("\nReal and imaginary parts of the sum are (AGAIN):");
-  print_3_complex(&x[2]);
+  // Note that we are passing a copy of a struct to be printed.
+  print_3_complex(x[2]); 
   */
 
   //8. Just a note for those who know C++ or another object oriented language:
