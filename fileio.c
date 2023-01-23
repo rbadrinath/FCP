@@ -42,7 +42,9 @@ long rand_from_time(){
 	gettimeofday(&tv,&tz);
 	return (long) tv.tv_usec;
 }
-
+void seed_random(){
+	srand(rand_from_time());
+}
 void add_a_quote(FILE * fp){
 	static char * quotes[]={"Let go, or be dragged.",
 				"Look before you leap.",
@@ -50,7 +52,7 @@ void add_a_quote(FILE * fp){
 	"Do not let the behavior of others destroy your inner peace."};
 	fprintf(fp,"%s\n",quotes[0]);
 	/*
-	srand(rand_from_time());
+	seed_random();
 	int i=random()%4;
 	fprintf(fp,"%s\n",quotes[i]);
 	*/

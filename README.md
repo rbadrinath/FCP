@@ -134,6 +134,8 @@ conversions.c : print a character as integer and an integer as character etc.
 * array\_ops.c    : Has some functions for array read / write.
 			Includes read from file.
 			Includes string reads with malloc.
+* swap\_story.c   : Has some simple array operations. It also includes
+			a version of the basic sorting algorithms
 
 ## MISCELLANEOUS
 * simple\_timing.c 	    : A program using the timing functions
