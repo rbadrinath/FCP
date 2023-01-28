@@ -85,6 +85,7 @@ conversions.c : print a character as integer and an integer as character etc.
 		and pointers work in the context of function parameters.
 * arraySizePtr.c : It demonstrates some unusual usage of pointer and array declarations.
 * swap\_story.c : We do repeated swaps to make interesting changes to an array
+* main\_argc.c : We show main(argc,argv) as usage of array of char pointers
 
 ## const,static, extern
 * const.c	: know how const is used, for pointers and functions too
