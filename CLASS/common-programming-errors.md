@@ -133,7 +133,25 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    t = s;	// PROBLEM: This does not copy strings though it seems to work!!
    // Instead the right way to do this is:
    strcpy(t,s);
+
+   // Another problem
+   char u[10];
+   u = a;  // PROBLEM: This will give a compile error because name of an 
+	   // array cannot be an lvalue
 </pre>
+
+2.  **Array limits**:
+   A number of errors have to do with misuse of array limits.
+   int n=5;
+   int a={1,2,3,4,5};
+   // code to rotate left
+   int t=a[0];
+   for(int i=0; i < n; i++)  // this causes a[n-1] to get a[n] .. out of bound!
+        a[i]=a[i+1];
+   a[n-1]=i;
+   You are lucky if you get a segmentation fault. Mostly you will be
+   misled by a silent error.
+   Again, gdb is quite helpful in these cases.
 
 ## Operators
 1. **Comparing three numbers**: students wants to check if a,b, and c are in
