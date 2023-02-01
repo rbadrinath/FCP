@@ -106,6 +106,7 @@ conversions.c : print a character as integer and an integer as character etc.
 
 ## MATRIX OPERATIONS
 * matrix\_ops.c : Simple Matrix operations example
+* minor.c      : Computing a minor of a 2-D matrix
 * matmul.c      : Matrix read, write, multiply (square matrix)
 * matrix\_inv.c  : Matrix inversion from somewhere on the internet
 * graph\_am.c : Graph adjacency matrix implementation
