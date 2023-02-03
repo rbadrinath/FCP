@@ -79,7 +79,8 @@ void main(){
 	int mi;
 	int mj;
 
-	print_matrix(a,LENGTH);
+	print_matrix(a,LENGTH);	// NB: Just like 1-D arrays, 
+				// we just use the name of the array to pass it.
 
 	printf("mi mj : ");
 	scanf("%d %d",&mi,&mj);
