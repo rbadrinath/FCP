@@ -151,7 +151,16 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    a[n-1]=i;
    You are lucky if you get a segmentation fault. Mostly you will be
    misled by a silent error.
-   Again, gdb is quite helpful in these cases.
+   Again, gdb is quite helpful in these cases. Run it with gdb and when it
+   does the segmentation fault, just do a bt full and see where the error
+   originated from.
+
+2.1 I have noticed in my class that if it is a malloced array and the array
+   limit is exceeded, then the error during assignmen (like to a[5] above) 
+   is silent, however an error occures in some later use, as in a printf.
+   Unless you debug you may be misled from the error message that the
+   error is with malloc().
+   Again, gdb is quite helpfull.
 
 ## Operators
 1. **Comparing three numbers**: students wants to check if a,b, and c are in
