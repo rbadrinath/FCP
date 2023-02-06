@@ -142,6 +142,7 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 
 2.  **Array limits**:
    A number of errors have to do with misuse of array limits.
+<pre>
    int n=5;
    int a={1,2,3,4,5};
    // code to rotate left
@@ -149,18 +150,27 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    for(int i=0; i < n; i++)  // this causes a[n-1] to get a[n] .. out of bound!
         a[i]=a[i+1];
    a[n-1]=i;
-   You are lucky if you get a segmentation fault. Mostly you will be
+</pre>
+   * You are lucky if you get a segmentation fault. Mostly you will be
    misled by a silent error.
    Again, gdb is quite helpful in these cases. Run it with gdb and when it
    does the segmentation fault, just do a bt full and see where the error
    originated from.
 
-2.1 I have noticed in my class that if it is a malloced array and the array
+   I have noticed in my class that if it is a malloced array and the array
    limit is exceeded, then the error during assignmen (like to a[5] above) 
    is silent, however an error occures in some later use, as in a printf.
    Unless you debug you may be misled from the error message that the
    error is with malloc().
-   Again, gdb is quite helpfull.
+  Again, gdb is quite helpfull. Here is a sample error message I saw:
+<small>
+<pre>
+  malloc.c:2379: sysmalloc: Assertion `(old_top == initial_top (av) && 
+  old_size == 0) || ((unsigned long) (old_size) >= MINSIZE && prev_inuse 
+  (old_top) && ((unsigned long) old_end & (pagesize - 1)) == 0)' failed.
+  Aborted (core dumped)
+</pre>
+</small>
 
 ## Operators
 1. **Comparing three numbers**: students wants to check if a,b, and c are in
