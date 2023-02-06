@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
 // before doing the compiling to create a.out
@@ -22,6 +23,11 @@
 // 	     It is just a macro
 #define MAX(X,Y)   X > Y ? X : Y
 
+
+// Here is an unusual trick that helps when writing some macros
+// The hash sign in front of a variable converts it to a string when used in the macro body
+#define check(expr) (expr)? 1 : (printf("Error with %s, aborting!\n",#expr),exit(1))
+
 void main(){
 	int z = NUM;
 	z++;
@@ -38,4 +44,8 @@ void main(){
 
 	printf("MAX(i,j) is %d\n",MAX(i,j));
 
+	printf("Give me an integer, +ve is all good, but otherwise it will abort :");
+        scanf("%d",&i);
+        check(i>0);
+        printf("All good\n");
 }
