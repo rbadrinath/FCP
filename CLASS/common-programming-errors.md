@@ -156,27 +156,22 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    Again, gdb is quite helpful in these cases. Run it with gdb and when it
    does the segmentation fault, just do a bt full and see where the error
    originated from.
-
-   I have noticed in my class that if it is a malloced array and the array
-   limit is exceeded, then the error during assignmen (like to a[5] above) 
-   is silent, however an error occures in some later use, as in a printf.
+   * I have noticed in my class that if it is a malloced array and the array
+   limit is exceeded, then the error during assignment (like to a[5] above) 
+   is silent, however an error occures in some later array use, as in a printf.
    Unless you debug you may be misled from the error message that the
    error is with malloc().
   Again, gdb is quite helpfull. Here is a sample error message I saw:
-<small>
 <pre>
-  malloc.c:2379: sysmalloc: Assertion `(old_top == initial_top (av) && 
-  old_size == 0) || ((unsigned long) (old_size) >= MINSIZE && prev_inuse 
-  (old_top) && ((unsigned long) old_end & (pagesize - 1)) == 0)' failed.
-  Aborted (core dumped)
+    malloc.c:2379: sysmalloc: Assertion `(old_top == initial_top (av) && old_size == 0) || ((unsigned long) (old_size) >= MINSIZE && prev_inuse (old_top) && ((unsigned long) old_end & (pagesize - 1)) == 0)' failed.
+    Aborted (core dumped)
 </pre>
-</small>
 
 ## Operators
 1. **Comparing three numbers**: students wants to check if a,b, and c are in
 	increasing order:
 <pre>
-   if (a < b < c) 	// NOTE: will evaluate to true even if a=3, b=2, c=1
+   if (a < b < c) 	// NOTE: will evaluate to true even if a is 3, b is 2, c is 1
 	printf("yes");
    //  The right way to do this is:
    if (a < b && b < c)
