@@ -2,12 +2,12 @@
 
 // functions are similar to what we are used to in mathematics.
 // sin(x) where x is, say, pi/2 would be 1
-// Lets write a function to compute the well known determinant
+// Lets write a function to compute the well known discriminant
 
-// This says what the function with the name determinant does with
+// This says what the function with the name discriminant does with
 // its parameters
 float discriminant(float a, float b, float c){
-	// the parameters are assumed to be from a qaratic equation:
+	// the parameters are assumed to be from a quadratic equation:
 	// ax^2 + bx + c = 0 
 	return b*b - 4*a*c;
 }
