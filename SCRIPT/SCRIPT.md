@@ -206,7 +206,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
   
   * Lets write a fully working program with this expression.
 
-  * Exercise: Download and edit main.c
+  * Exercise: Download and edit simple\_expressions.c
 
   * Lets summarize the learning:  
 ~~~text
@@ -432,7 +432,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
 
 ## WHILE and its variations
   * LOOPING through a condition
-    * WHILE see findmax\_list\_w.c
+    * WHILE see findmax\_list\_w.c  , integrate.c
     * DO WHILE see findmax\_list\_d.c
   * What problems can you solve
     * PRACTICE fillin\_while.c    fillin\_findmax\_loop.c

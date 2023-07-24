@@ -37,7 +37,7 @@ Clearly we can put paranethesis to make it clear to us (and to others)
   
   * Lets write a fully working program with this expression.
 
-  * Exercise: Download and edit main.c
+  * Exercise: Download and edit simple\_expressions.c
 
   * Lets summarize the learning:  
 ~~~text

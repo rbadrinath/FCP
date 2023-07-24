@@ -7,7 +7,7 @@
 
 ## WHILE and its variations
   * LOOPING through a condition
-    * WHILE see findmax\_list\_w.c
+    * WHILE see findmax\_list\_w.c  , integrate.c
     * DO WHILE see findmax\_list\_d.c
   * What problems can you solve
     * PRACTICE fillin\_while.c    fillin\_findmax\_loop.c

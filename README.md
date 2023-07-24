@@ -11,7 +11,7 @@ Below we list files by topic:
 
 ##  TRIVIAL introductory stuff
 
-* main.c  : A very trivial program with expressions include concept of blocks
+* simple\_expressions.c  : A very trivial program with expressions include concept of blocks
 * hello\_world.[ch] : A very trivial program with printf and include
 * stats.c		 : Compute trivial statistic, average, some other stuff
 * input\_output.c : A description of the normal way to use scanf and printf
@@ -41,6 +41,7 @@ conversions.c : print a character as integer and an integer as character etc.
 ## WHILE
 
 * 3np1.c 	: The 3n+1 (Collatz's) conjecture  - simple while loop
+* integrate.c   : A simple numerical integration
 * list\_avg\_w.c : 	Find the average of n numbers
 
 ## DO... WHILE
