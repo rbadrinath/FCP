@@ -4,8 +4,9 @@
 #
 # The EXECS need just the default compilation, with perhaps -lm
 #          NOTE IF IT EXTENDS TO MULTIPLE LINES DONT PUT A BLANK AFTER THE "\"
-EXECS=  gcd lcm 3np1 fact  main do_op hello_world simple_event_count\
+EXECS=  gcd lcm 3np1 fact do_op hello_world simple_event_count\
         stats eratosthenes fileio io print_next_char find_max \
+	simple_expressions integrate \
 	funcs funcs_params funcs_scope \
 	list_avg_f list_avg_w list_avg_d list_avg_array  \
 	related_arrays matrix_inv matmul matrix_ops\

@@ -55,5 +55,7 @@ int main(){
 	// Function call expressions 
 	// all calls to printf() above
 	i = random();	//random is a library function being used to get a value
+	printf("Trig sum is %f \n",sin(0.1)+cos(0.2) );
+
 	testf();	// This is a function-call expression
 }
