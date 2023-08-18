@@ -35,11 +35,15 @@ I try to list a few interesting mistakes I see students make. Some of these seem
 </pre>
 
 4. Incorrect use of **scanf**().  
-   Often students use the newline or space character in the scanf.
+   Often students use the newline or space character in the scanf, sometimes 
+   they even use in the format string as a prompt to the user to give input.
+   Remember scanf only reads. It will expect to read everything in the format
+   string from the input.
    This often leads to issues when reading because space and newline
    mean something particular when used in the scanf context. *In general
-   avoid using using newline and spaces freely in the format string*. At best a space between
-   conversion specifiers is sufficient.
+   avoid using using newline and spaces freely in the format string, 
+   also no other characters at all*. 
+   At best a space between conversion specifiers is sufficient.
 
 5. Incorrect use of getchar() or scanf() to read a single character. 
    A common mistake is when using getchar or scanf to read a regular character,
