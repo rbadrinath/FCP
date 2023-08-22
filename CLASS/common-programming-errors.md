@@ -44,6 +44,14 @@ I try to list a few interesting mistakes I see students make. Some of these seem
    avoid using using newline and spaces freely in the format string, 
    also no other characters at all*. 
    At best a space between conversion specifiers is sufficient.
+<pre>
+   int n;
+   // This student wanted to print a prompt and read an integer:
+   scanf("Give me an integer: %d", &n);
+   // Here is the right way if you really want a prompt to appear:
+   printf("Give me an integer:");
+   scanf("%d",&n);
+</pre>
 
 5. Incorrect use of getchar() or scanf() to read a single character. 
    A common mistake is when using getchar or scanf to read a regular character,
