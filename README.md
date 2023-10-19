@@ -11,11 +11,13 @@ Below we list files by topic:
 
 ##  TRIVIAL introductory stuff
 
-* simple\_expressions.c  : A very trivial program with expressions include concept of blocks
 * hello\_world.[ch] : A very trivial program with printf and include
-* stats.c		 : Compute trivial statistic, average, some other stuff
+* very\_first.c  : A first C program to look at - notion of data, instruction and control
+* simple\_expressions.c  : A very trivial program with expressions include concept of blocks
+* stats.c           : Compute trivial statistic, average, some other stuff
 * input\_output.c : A description of the normal way to use scanf and printf
 * limit\_explore.c : A simple exploration of integer number limits.
+* first\_examples.c : A larger colleciton of simple explorations of the C language
 
 ### Understanding types:
 conversions.c : print a character as integer and an integer as character etc.
@@ -40,27 +42,28 @@ conversions.c : print a character as integer and an integer as character etc.
 
 ## WHILE
 
-* 3np1.c 	: The 3n+1 (Collatz's) conjecture  - simple while loop
+* 3np1.c        : The 3n+1 (Collatz's) conjecture  - simple while loop
 * integrate.c   : A simple numerical integration
 * list\_avg\_w.c : 	Find the average of n numbers
 
 ## DO... WHILE
 
 * list\_avg\_d.c : 	Find the average of n numbers
-* fillin\_while.c:      Test your understanding of while loop
+* fillin\_while.c :      Test your understanding of while loop
 
 ## FOR
 
 * list\_avg\_f.c : 	Find the average of n numbers
 * eratosthenes\_simple.c : Eratosthenes seieve - nested for loops
 * simple\_event\_count.c : do coint flipping and count some event
-* fillin\_findmax\_loop.c: Find the average in a loop, not predetermined n
+* fillin\_findmax\_loop.c : Find the average in a loop, not predetermined n
 
 * for\_break\_continue.c : use of break and continue in a loop, for loop
 
 
 ## FUNCTIONS
 
+* discriminant.c : A first look at a function example
 * funcs.c : Simple notion of functions, prototypes, and declare before use
 * funcs\_params.c : Function parameters
 * funcs\_scope.c : scope with globals and locals and functions
@@ -71,12 +74,13 @@ conversions.c : print a character as integer and an integer as character etc.
 * fact.c  : The recursive factorial program
 		- simple notion of function and return
 * recursion\_simple.c : a first notion of recursion with lots of examples
-* gcd.c		 :	Compute gcd using recursion
-* lcm.c		 :	Compute lcm using recursion
+* gcd.c   :	Compute gcd using recursion
+* lcm.c   :	Compute lcm using recursion
 
 ## POINTERS
 * pointer\_simple.c : A simple program to play with pointers and see effect of improper use.
 * address\_explore.c : A simple program to explore addresses of locals, parameters, globals and also dynamic memory.
+* ptrs-exp.c : a simple program to explore pointers and arrays
 
 ## ARRAYS with POINTERS AND FUNCTIONS
 * list\_avg\_array.c : Read a list of numbers into an array and 
@@ -89,8 +93,8 @@ conversions.c : print a character as integer and an integer as character etc.
 * main\_argc.c : We show main(argc,argv) as usage of array of char pointers
 
 ## const,static, extern
-* const.c	: know how const is used, for pointers and functions too
-* static.c	: know how 'static' is used
+* const.c   : know how const is used, for pointers and functions too
+* static.c  : know how 'static' is used
 * threepieces.c, tpcs.c tpcs.h : experiment with extern and static
 
 ## macro substitution
@@ -113,6 +117,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * graph\_am.c : Graph adjacency matrix implementation
 
 ## STRUCTURES with arrays and pointers
+* linked\_list\_intro.c : First view of linked lists
 * simple\_struct.c : Introduction to structures and how they are used
 * linked\_list.c   : Structure used to created a linked list
 * eratosthenes.c   : Using structures to remember result of previous divisions
@@ -125,19 +130,19 @@ conversions.c : print a character as integer and an integer as character etc.
 
 ## SEARCHING
 
-* search.c: Has boh a simple search as well as binary search in it.
+* search.c : Has boh a simple search as well as binary search in it.
 
 ## SORTING
 
 * basic\_sorts.c :  Basic sorting algorithms bubble, insertion, selection
 * msort.c : Encodes merge sort
 * qsort\_extraspace.c : quick sort using an additional array
-* qsort.c	: Encodes quick sort - both in-place and extra space partitioning
+* qsort.c   : Encodes quick sort - both in-place and extra space partitioning
 * fillin\_qsort.c : We want to create some skeleton code so people can code in the quicksort.
 
 
 ## FILE OPERATIONS
-* fileio.c & io.c	: fopen(), fclose(), fscanf(), fprintf()
+* fileio.c & io.c   : fopen(), fclose(), fscanf(), fprintf()
 * fillin\_file.c  : Has some sample code to fill in missing file ops
 * array\_ops.c    : Has some functions for array read / write.
 			Includes read from file.
@@ -148,4 +153,5 @@ conversions.c : print a character as integer and an integer as character etc.
 ## MISCELLANEOUS
 * simple\_timing.c 	    : A program using the timing functions
 * timeutil.c and timeutil.h : Simple functions to measure code run time
+* varargs.c : variable argument functions in C.
 
