@@ -81,6 +81,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * pointer\_simple.c : A simple program to play with pointers and see effect of improper use.
 * address\_explore.c : A simple program to explore addresses of locals, parameters, globals and also dynamic memory.
 * ptrs-exp.c : a simple program to explore pointers and arrays
+* arraysptr.c : an example using different operators on arrays
 
 ## ARRAYS with POINTERS AND FUNCTIONS
 * list\_avg\_array.c : Read a list of numbers into an array and 
