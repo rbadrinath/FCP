@@ -38,13 +38,13 @@ void main(){
 	printf("%p %p %p %p\n", p, q, &x, &y);
 	// We can also print addresses of p and q variables
 	printf("%p %p\n",&p, &q);
-	printf("%p %p\n", p, q, &x, &y, &p, &q);
+	printf("%p %p\n", p, q, &x, &y, &p, &q); // did you mean: printf("%p %p %p %p %p %p\n", p, q, &x, &y, &p, &q);
 	// printing contents pointed to by pointers
 	printf("%d %d %d %d\n", *p, *q, x, y);
 	// printing contents pointed to by uninitialized pointer - dangerous: Runtime error
 	printf("%d\n",*r);
 	// What is the size of a pointer vs integer on my system?
-	printf("%d %d", sizeof(int), sizeof(int *));
+	printf("%d %d\n", sizeof(int), sizeof(int *));
 */
 
 /*
