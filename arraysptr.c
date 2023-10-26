@@ -1,4 +1,12 @@
 #include <stdio.h>
+
+void printarray(int a[], int n){
+	// prints n elements starting at a[]
+	for(int i=0;i<n;i++)
+		printf("%d ",a[i]);
+	printf("\n");
+}
+
 void main(){
 	int i;
 	int a[100]={0,1,2,3,4,5,6,7,8,9};
@@ -45,5 +53,10 @@ void main(){
 	for(i=0;i<5;i++,pb1--,pb2++)
 		printf("%c %c\n",*pb1,*pb2);
 	
+	// printing part of an array
+	printf("print 6 elements of a starting at the index 4:\n");
+	printarray(a+4,6);  // it is 6 because there are a total of 10 elements in the array to print
+	printf("Printing the same using address operator:\n");
+	printarray(&a[4],6);
 
 }
