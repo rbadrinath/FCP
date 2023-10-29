@@ -6,7 +6,7 @@
 #define OUTFILE "/tmp/output_file"
 
 
-#define main_stdio main
+#define main_fileio main
 
 void using_standardio(){
 	int n;
@@ -16,15 +16,26 @@ void using_standardio(){
 	sign= n < 0 ? '-' : '+' ;
 	printf("This is %cve\n",sign);
 }
-void using_file(){
+void using_file(char *inputfname, char *outputfname){
 	int n;
 	int i;
 	char sign;
 	FILE * fp1, * fp2  ;
 	// printf(" Give me a number : "); Skip this; not doing user interaction
-	fp1=fopen(INFILE,"r");
-	fp2=fopen(OUTFILE,"w");
-	for (i=0;i<12; i++) {
+	
+	fp1=fopen(inputfname,"r");
+	if (fp1 == NULL ) {  // Good idea to check if the open worked
+		printf("Couldnt open file to read! Exiting!\n");
+		exit(1);
+	}
+
+	fp2=fopen(outputfname,"w");
+	if (fp2 == NULL ) {  // Good idea to check if the open worked
+		printf("Couldnt open file to write! Exiting!\n");
+		exit(1);
+	}
+
+	for (i=0;i<5; i++) { // Lets read from the input file now
 	   fscanf(fp1,"%d",&n);
 	   /*
 	   if ( fscanf(fp1,"%d",&n) == EOF)  {
@@ -65,8 +76,8 @@ void append_to_file(char * filename){
 
 // define one of these as main() for testing
 void main_fileio(){
-	using_file();
-	append_to_file(OUTFILE);
+	using_file(INFILE,OUTFILE);
+	// append_to_file(OUTFILE);
 }
 
 void main_stdio(){

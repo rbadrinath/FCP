@@ -3,7 +3,7 @@ int main(){
 	int y=99,n=99;
 	FILE * f1 = fopen("/tmp/blah","r");
 	n = fscanf(f1," %d", &y);
-	if ( n == -1 ){
+	if ( n == EOF ){
 		perror("try to read:");
 	}
 	printf(" I got : %d items %d\n",n,y);

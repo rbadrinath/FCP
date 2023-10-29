@@ -90,7 +90,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * apnf.c   : We write a sequence of funcitons illustrating how arrays 
 		and pointers work in the context of function parameters.
 * arraySizePtr.c : It demonstrates some unusual usage of pointer and array declarations.
-* swap\_story.c : We do repeated swaps to make interesting changes to an array
+* swap\_story.c : We do repeated swaps to make interesting changes to an array and includes basic sorting algorithms
 * main\_argc.c : We show main(argc,argv) as usage of array of char pointers
 
 ## const,static, extern
@@ -143,13 +143,12 @@ conversions.c : print a character as integer and an integer as character etc.
 
 
 ## FILE OPERATIONS
-* fileio.c & io.c   : fopen(), fclose(), fscanf(), fprintf()
+* fileio\_simple.c : Intro to fopen(), fclose(), fscanf(), fprintf()
+* fileio.c :  more details fileio operation examples
 * fillin\_file.c  : Has some sample code to fill in missing file ops
 * array\_ops.c    : Has some functions for array read / write.
 			Includes read from file.
 			Includes string reads with malloc.
-* swap\_story.c   : Has some simple array operations. It also includes
-			a version of the basic sorting algorithms
 
 ## MISCELLANEOUS
 * simple\_timing.c 	    : A program using the timing functions
