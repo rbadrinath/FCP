@@ -123,7 +123,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * linked\_list.c   : Structure used to created a linked list
 * eratosthenes.c   : Using structures to remember result of previous divisions
 * eratosthenes\_timer.c : Using a timer to see which version performs well.
-* array\_struct.c  : Using arrays and structures together
+* array\_struct.c  : Using arrays and structures together, we also write code to sort an array of structures using bubble sort
 
 ## UNIONS
 * union\_simple.c : Introduction to unions and how they are used

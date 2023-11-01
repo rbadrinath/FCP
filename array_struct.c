@@ -43,6 +43,33 @@ float find_force(struct particle p1, struc particle p2){
 	return force;
 }
 
+// sorting an array of particles (just to show sorting on structure arrays)
+
+// First we need a greater than function: returns  1 if and only if a[i]>a[j]
+//    else it returns 0
+int greater(struct particle *a, int i, int j){
+	if(a[i].x > a[j].x)
+		return 1;
+	if( (a[i].x == a[j].x) && (a[i].y > a[j].y) )
+		return 1;
+	return 0;
+}
+// We also need a way to swap to particles in an array
+void swap(struct particle *a, int i, int j){
+	struct particle t;
+	t = a[i];
+	a[i]=a[j];
+	a[j]=t;
+}
+
+// Now the core bubble sort algorithm - really no change
+void sort(struct particle *a, int n){
+	for(int hp=n-1;hp>0;hp--)
+		for(int i=0;i<hp;i++)
+			if(greater(a,i,i+1))
+				swap(a,i,i+1);
+}
+
 void main(){
 	struct point * a1, * a2, * a3;
 	int n1,n2,n3;
