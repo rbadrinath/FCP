@@ -93,6 +93,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * swap\_story.c : We do repeated swaps to make interesting changes to an array and includes basic sorting algorithms
 * main\_argc.c : We show main(argc,argv) as usage of array of char pointers
 
+
 ## const,static, extern
 * const.c   : know how const is used, for pointers and functions too
 * static.c  : know how 'static' is used
@@ -140,6 +141,7 @@ conversions.c : print a character as integer and an integer as character etc.
 * qsort\_extraspace.c : quick sort using an additional array
 * qsort.c   : Encodes quick sort - both in-place and extra space partitioning
 * fillin\_qsort.c : We want to create some skeleton code so people can code in the quicksort.
+* sort\_indices.c : Shows how may we sort a list of indexes to an array while not moving elements in the original array.
 
 
 ## FILE OPERATIONS
