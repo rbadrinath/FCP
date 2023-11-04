@@ -58,9 +58,10 @@ void compute_average(){
 }
 
 void compute_average_2(int n, int m){
+	// there is some implicit type conversion happening
 	n=10.0;
 	m=20.0;
-	printf("Average is %f\n", (n+m)/2);
+	printf("Average is %f\n", (float) (n+m)/2); // compile without the (float)
 }
 
 void another(){

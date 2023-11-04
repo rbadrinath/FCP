@@ -77,3 +77,7 @@ void print_sarray(char * a[], int n){
 	printf("\n");
 }
 
+
+void main(){
+	printf("Fill in the main() to o what you want!\n"); 
+}

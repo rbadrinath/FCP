@@ -153,7 +153,7 @@ void find_factorial(){
 	printf("Factorial of  6   is   %d\n",r);
 }
 
-// We need a main() to run it.
+// We need a main() to run it. Compile and see what happens
 // So write a main()
 //
 //

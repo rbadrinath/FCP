@@ -4,13 +4,19 @@
 #
 # The EXECS need just the default compilation, with perhaps -lm
 #          NOTE IF IT EXTENDS TO MULTIPLE LINES DONT PUT A BLANK AFTER THE "\"
-EXECS=  gcd lcm 3np1 fact do_op hello_world simple_event_count\
-        stats eratosthenes fileio io print_next_char find_max \
+EXECS=  very_first fileio_simple union_simple simple_malloc pointer_simple \
+	recursion_simple address_explore apnf \
+	array_ops arraySizePtr arraysptr array_struct \
+	conversions discriminant \
+	gcd lcm 3np1 fact do_op hello_world simple_event_count \
+        stats eratosthenes eratosthenes_simple eratosthenes_timer \
+	fileio print_next_char find_max \
+	for_break_continue \
 	simple_expressions integrate \
-	funcs funcs_params funcs_scope \
+	funcs funcs_params funcs_scope funcs_scope2 \
 	list_avg_f list_avg_w list_avg_d list_avg_array  \
-	related_arrays matrix_inv matmul matrix_ops\
-	search string_simple\
+	related_arrays matrix_inv matmul matrix_ops \
+	search string_simple \
 	simple_struct linked_list graph_am \
 	basic_sorts qsort qsort_extraspace msort
 

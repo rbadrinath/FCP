@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void printout(int const x, int const y){
-	x = 10, y=30;
+	x = 10, y=30;  // These assignments wont work, compile and see
 	printf("x = %d and y = %d\n",x,y);
 }
 

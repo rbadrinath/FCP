@@ -7,7 +7,7 @@ void main(){
 	// usage
 	p[0]=a;
 	q=a;
-	printf("p, p+1, diff = %p %p %d\n",p,p+1,(int)(p+1) - (int) p);
-	printf("q, q+1, diff = %p %p %d\n",q,q+1,(int)(q+1) - (int) q);
-	printf("sizeof(a) sizeof(p) sizeof(q) %lu  %lu %lu\n",sizeof(a), sizeof(p),sizeof(q));
+	printf(" p = %p\n p+1 = %p\n diff = %d\n",p,p+1,(p+1) -  p);
+	printf(" sizeof(a) = %lu\n sizeof(p) = %lu \n sizeof(q) %lu\n",
+			sizeof(a), sizeof(p),sizeof(q));
 }

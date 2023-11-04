@@ -77,10 +77,12 @@ void main(){
   b = a;	// Try this !
 
   //1.c comparision doesnt work!
+  /*
   if ( a == b ) // Try this !
 	  printf(" They are equal\n");
   else
 	  printf("They are not equal\n");
+ */
 
   /*
   //2. also we can have pointers to structures

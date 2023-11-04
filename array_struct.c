@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define konstant 8.98e09
 
 // This is a structure to represent a charged particle on a plane.
@@ -37,7 +38,7 @@ struct particle * join_particle_arrays(struct particle a1[],int n1, struct parti
 }
 
 // find the force between two particles
-float find_force(struct particle p1, struc particle p2){
+float find_force(struct particle p1, struct particle p2){
 	float force;
 	// by definition force = konstant * (q1*q2)/(r*r)
 	return force;
@@ -71,20 +72,21 @@ void sort(struct particle *a, int n){
 }
 
 void main(){
-	struct point * a1, * a2, * a3;
+	printf("Need to write a bunch of code before this starts to work!\n");
+	struct particle * a1, * a2, * a3;
 	int n1,n2,n3;
 	// n1 is the count for a1;     n2 for a2;    n3 for a3
 
-	a1=read_particle_array(&n1);
-	a2=read_particle_array(&n2);
+	a1=get_new_particle_array(&n1);
+	a2=get_new_particle_array(&n2);
 
-	a3=join_particle_arrays(a1,n1, a2,n2 )
+	a3=join_particle_arrays(a1,n1, a2,n2 );
 	n3=n1+n2;
 
 	print_particle_array(a3,n3);
 
 	int i1,i2;
-	scanf("%d %d", i1, i2); /// read indices of two particles of a3
+	scanf("%d %d", &i1, &i2); /// read indices of two particles of a3
 	printf("%e\n", find_force(a3[i1],a3[i2])); // print the force between them
 
 
