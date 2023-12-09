@@ -14,7 +14,7 @@ EXECS=  very_first fileio_simple union_simple simple_malloc pointer_simple \
 	for_break_continue \
 	simple_expressions integrate \
 	funcs funcs_params funcs_scope funcs_scope2 \
-	list_avg_f list_avg_w list_avg_d list_avg_array  \
+	list_avg_f list_avg_w list_avg_d list_avg_array shortcircuit \
 	related_arrays matrix_inv matmul matrix_ops \
 	search string_simple \
 	simple_struct linked_list graph_am \

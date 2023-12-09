@@ -44,6 +44,7 @@ conversions.c : print a character as integer and an integer as character etc.
 
 * 3np1.c        : The 3n+1 (Collatz's) conjecture  - simple while loop
 * integrate.c   : A simple numerical integration
+* shortcircuit.c : Understanding a bit more about condition evaluation
 * list\_avg\_w.c : 	Find the average of n numbers
 
 ## DO... WHILE
