@@ -12,7 +12,7 @@ Below we list files by topic:
 ##  TRIVIAL introductory stuff
 
 * hello\_world.[ch] : A very trivial program with printf and include
-* very\_first.c  : A first C program to look at - notion of data, instruction and control
+* very\_first.c  : A first C program to look at - a bit about prints, also notion of data, instruction and control
 * simple\_expressions.c  : A very trivial program with expressions include concept of blocks
 * stats.c           : Compute trivial statistic, average, some other stuff
 * input\_output.c : A description of the normal way to use scanf and printf
