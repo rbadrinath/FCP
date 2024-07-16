@@ -25,8 +25,10 @@ void main(){
 	float d;
 	char ch;
     // reading integer integers and floats
+    	printf("Input an integer n :");
 	scanf("%d",&n);
         // reading two ints and a float not the order and type of &n, &m, &d
+    	printf("Input two integers and a real n,m and d :");
 	scanf("%d %d %f", &n, &m, &d); 
 	// common errors include writing the format string with commas
     // A paritcularly confusing thing may be reading a character:
@@ -34,6 +36,7 @@ void main(){
 	// scanf("%c",&ch); // Quite often it reads a space or a newline
 			 // unintentionally 
 	// Instead the following is OK to read a non-whitespace character
+    	printf("Input a character  >");
 	scanf(" %c", &ch); // this reads the next non-newline, non-whitespace character into the variable. The extra space makes sure to neglect whitespaces.
 
 // printf's *syntax*

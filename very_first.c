@@ -4,6 +4,7 @@ void main(){
 	// Here is some interesting stuff to try out:
 	
 	// To print a sequence of numbers 1..4
+	printf("A sequence of integers:");
 	printf("%d",1);
 	printf("%d",2);
 	printf("%d",3);
@@ -16,10 +17,10 @@ void main(){
 	// So the rule with printf is:
 	//    printf("format string", value)
 	
-	return;   // This statement terminates this function 
-		  // move it around to see what happens
+// The next statement 'return' terminates this function 
+	return;   // move it around to see what happens
 
-	// Here is another example:
+	// Here is another example of printing:
 	printf("%d",123*45-345/3);
 	// Here the value to print is got by 
 	// doing arithmetic
@@ -35,8 +36,9 @@ void main(){
 	// we can also have special characters
 	// Note: Special characters always have
 	// a backslash '\' before them
-	printf("I have %d horses\n",3);
-	// We can us emultiple conversions to
+	printf("I have\n %d horses\n",3);
+	// as you se above \n is a special one and causes a break in the line.
+	// We can us multiple conversions to
 	// print multiple values:
 	printf("%d %d buckle my shoe!\n",1,2);
 	// So the (updated) rule with printf is:

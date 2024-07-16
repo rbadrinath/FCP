@@ -5,6 +5,8 @@
  This is a comment
  over one or more lines
  and ends next line
+
+IMPORTANT: compile with a -lm  , because it uses math functions
  */
 
 // This is also a comment

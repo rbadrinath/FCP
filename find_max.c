@@ -46,4 +46,8 @@ void find_max_of_3(int a, int b, int c){
 }
 
 void main(){
+	// try one of these three
+	// find_max_of_2(10,20);
+	// find_max_of_3(10,30,20); // for fun also try 100,100,100
+	// read_and_find_max();
 }

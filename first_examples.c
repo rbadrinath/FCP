@@ -45,9 +45,10 @@ void read_and_print(){
 // Another read a variable and print example
 void prompt_and_read(){
 	int n1=0;
-	printf("Before  %d\n",n1);
+	printf("Before  scanf %d\n",n1);
+	printf("Give a new value:",n1);
 	scanf("%d", &n1);
-	printf(" After  %d\n",n1);
+	printf(" After  scanf %d\n",n1);
 }
 
 // increment some variable values and print
@@ -74,8 +75,8 @@ void add_3_nums(){
 
 	// the variables must have values before you can use them
 	// How do variables get values ?
-	// option 1 set variable values
-	// option 2 read from the user
+	// option 1 set variable values like n1=45; etc
+	// option 2 read from the user using scanf like scandf("%d",&n1); etc
 
 	// add n1, n2 and n3 and store the result in 'sum'
 	sum=n1+n2+n3;
@@ -96,6 +97,7 @@ void swap_2_vars(){
 
 	// the variables must have values before you can use them
 	// How do variables get values ?
+	// see add_3_nums
 	
 	// Here is a way to interchange them
 	x= a;
@@ -115,6 +117,8 @@ void cycle_3_vars(){
 
 	// the variables must have values before you can use them
 	// How do variables get values ?
+	// see add_3_nums
+	
 	
 	// Here is a way to interchange them
 	x= a;
@@ -156,6 +160,24 @@ void find_factorial(){
 // We need a main() to run it. Compile and see what happens
 // So write a main()
 //
+void main(){
+// uncomment one of these at a time:
+	// print_triangle();
+	// print_triangle2();
+	// prompt_and_read();
+	// increment_variable_values();
+	// add_3_nums();
+	// prompt_and_read();
+	// swap_2_vars();
+	// cycle_3_vars();
+	// show_common_sizes();
+	// find_factorial();
+}
+
+
+
+
+
 //
 // Other concepts to recall
 // Variables get values in one of 3 ways in C
