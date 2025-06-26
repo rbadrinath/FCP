@@ -55,11 +55,8 @@ void main(){
 
 	// Another way to print 1, 2, 3 and 4 
 	printf("Here is another way:\n");
-	int i = 0;
-	while (i<=4) {
+	for (int i=0; i<=4; i++) 
 		printf("%d\n",i);
-		i = i + 1;
-	}
 	// The above method uses a concept - loop
 
 	// Printing  variable values
