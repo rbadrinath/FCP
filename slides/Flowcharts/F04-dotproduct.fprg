@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="dotproduct"/>
+        <attribute name="authors" value="IIITB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-26 03:20:25 PM"/>
+        <attribute name="created" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjY7MDM6MDk6NDEgUE07MjcyOA=="/>
+        <attribute name="edited" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjY7MDM6MjA6MjUgUE07MjsyODMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="True" size="5"/>
+            <declare name="dotprod" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <comment text="The next loop is a way to initialize&#13;&#10;the two vector arrays a and b.&#13;&#10;Eg. they can be initialized to &lt;0,1,2,3,4&gt;&#13;&#10;each."/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="a[i]" expression="i"/>
+                <assign variable="b[i]" expression="i"/>
+            </for>
+            <assign variable="dotprod" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="dotprod" expression="dotprod+a[i]*b[i]"/>
+            </for>
+            <output expression="dotprod" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

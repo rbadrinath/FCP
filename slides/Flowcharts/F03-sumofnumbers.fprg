@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sumofnumbers"/>
+        <attribute name="authors" value="IIITB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-26 03:30:38 PM"/>
+        <attribute name="created" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjY7MDM6MjU6NDAgUE07MjcyNQ=="/>
+        <attribute name="edited" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjY7MDM6MzA6MzggUE07MTsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, n, i" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="sum" expression="sum+i"/>
+            </for>
+            <output expression="&quot;sum computed = &quot;" newline="False"/>
+            <output expression="sum" newline="True"/>
+            <output expression="&quot;sum by formula = &quot;" newline="False"/>
+            <output expression="n*(n+1)/2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

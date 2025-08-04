@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quad"/>
+        <attribute name="authors" value="IIITB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-22 03:33:20 PM"/>
+        <attribute name="created" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMDk7MDM6MTY6MDYgUE07MjcyOA=="/>
+        <attribute name="edited" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjI7MDM6MzM6MjAgUE07NTsyODMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="steps" type="Integer" array="False" size=""/>
+            <declare name="h" type="Real" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="steps" expression="1000"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="h" expression="(b-a)/steps"/>
+            <assign variable="x" expression="a"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="steps-1" direction="inc" step="1">
+                <assign variable="sum" expression="sum+(h*gf(x))"/>
+                <assign variable="x" expression="x+h"/>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+    <function name="gf" type="Real" variable="y">
+        <parameters>
+            <parameter name="x" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="y" type="Real" array="False" size=""/>
+            <assign variable="y" expression="2.71828^(-(x*x))"/>
+        </body>
+    </function>
+</flowgorithm>

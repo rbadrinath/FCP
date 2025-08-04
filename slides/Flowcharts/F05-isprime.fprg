@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="isprime"/>
+        <attribute name="authors" value="IIITB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-26 02:57:56 PM"/>
+        <attribute name="created" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjY7MTI6MTA6MjQgUE07MjcyMQ=="/>
+        <attribute name="edited" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjY7MDI6NTc6NTYgUE07MzsyODQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="GivenNumber, factor" type="Integer" array="False" size=""/>
+            <declare name="isprime" type="Boolean" array="False" size=""/>
+            <assign variable="givenNumber" expression="55"/>
+            <assign variable="isprime" expression="true"/>
+            <for variable="factor" start="2" end="givenNumber-1" direction="inc" step="1">
+                <if expression="givenNumber%factor=0">
+                    <then>
+                        <assign variable="isprime" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="isprime=false">
+                <then>
+                    <output expression="&quot;The number is not prime&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;The number is prime&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

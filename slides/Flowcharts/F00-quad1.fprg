@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quad"/>
+        <attribute name="authors" value="IIITB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-22 05:14:16 PM"/>
+        <attribute name="created" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMDk7MDM6MTY6MDYgUE07MjcyOA=="/>
+        <attribute name="edited" value="SUlJVEI7REVTS1RPUC1DSENSTThGOzIwMjUtMDctMjI7MDU6MTQ6MTYgUE07NTsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <declare name="dis" type="Real" array="False" size=""/>
+            <assign variable="dis" expression="b*b-4*a*c"/>
+            <if expression="dis &gt; 0">
+                <then>
+                    <output expression="&quot;Has two distinct real roots&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No Distinct real roots&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
