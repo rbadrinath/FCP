@@ -1,0 +1,20 @@
+index.txt		This file
+-------------------------------------
+
+float.c (Early)	highlights crazy stuff about the floating point arithmetic
+small.c (Early)	writes out integers as characters
+studentschocolates.c (Modeling)	word problem of chocolates and students
+vadasdosas.c(Modleing)	word problems dosas and vadas and simultaneous equations
+
+mmc.c (C is fast)  matrix multiply in C with timing
+mmpy.py (C is fast) matrix multiply in python with timing
+
+GtGrLi.c (Arrays) simulates input driven steps of the goat grass lion problem; also solves it 
+
+integrate.c (for loop)	shows integration by adding tiny squares
+pouringwatersim.c ( While, if)   simulates measuring out water
+towersim.c ( While, if)	simulates input driven towers of hanoi
+
+forces.c(Arrays, structs) simulates n-boady problem
+points(Data for forces.c) points of the initial n=10 bodies in the n-body simulation above
+15puzzle.c(Arrays)	simulates input driven steps of the 15-puzzle
